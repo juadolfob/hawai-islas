@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hawái 2026 — Plan de Viaje (Oʻahu)</title>
+<title>Hawaii 2026 — Trip Plan (Oʻahu)</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300;9..144,400;9..144,500;9..144,700;9..144,900&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500;6..72,600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
@@ -908,10 +908,10 @@ table.matrix tbody tr.lead td { background: rgba(168,72,43,0.05); }
   border-left: 2px solid var(--rust); padding-left: 14px;
 }
 @media (max-width: 760px) { .lodging-cards { grid-template-columns: 1fr; } }
-/* Orden de estancia: Oʻahu / Honolulu como base única */
+/* Stay order: Oʻahu / Honolulu as the single base */
 .lodging { display: flex; flex-direction: column; }
-.lodging > .lodging-note:first-child { order: -2; }      /* el aviso de arriba se queda arriba */
-.lodging .lodging-island:last-of-type { order: -1; }     /* Oʻahu (último en el DOM) se muestra primero */
+.lodging > .lodging-note:first-child { order: -2; }      /* the top notice stays on top */
+.lodging .lodging-island:last-of-type { order: -1; }     /* Oʻahu (last in the DOM) shows first */
 
 /* ============ ACORDEÓN (secciones colapsables) ============ */
 .acc { border-top: 1.5px solid var(--ink); }
@@ -1024,7 +1024,7 @@ table.matrix tbody tr.lead td { background: rgba(168,72,43,0.05); }
 /* ============ HOJITAS TROPICALES EN LAS ESQUINAS ============ */
 .corner-leaves { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
 .container { position: relative; z-index: 1; }
-/* Velo semi-transparente en la zona de lectura: atenúa las flores/plantas detrás del texto */
+/* Semi-transparent veil over the reading area: dims the flowers/plants behind the text */
 .container::before {
   content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
   background: rgba(239, 228, 201, 0.82);
@@ -1063,14 +1063,14 @@ table.matrix tbody tr.lead td { background: rgba(168,72,43,0.05); }
 }
 .music-btn:hover { background: var(--rust-dark); transform: translateY(-1px); }
 .music-btn .mb-ico { font-size: 16px; line-height: 1; }
-/* pulso para invitar a tocar (solo cuando NO está sonando) */
+/* pulse to invite a tap (only when NOT playing) */
 .music-btn:not(.playing) { animation: mb-pulse 2.2s ease-in-out infinite; }
 @keyframes mb-pulse {
   0%, 100% { box-shadow: 0 4px 14px rgba(60,40,20,0.28); }
   50%      { box-shadow: 0 4px 22px rgba(200,90,40,0.55); }
 }
 .music-btn.playing { background: var(--sage); border-color: #4f6a4c; }
-/* barritas de ecualizador cuando está sonando */
+/* equalizer bars while playing */
 .music-btn .mb-eq { display: none; align-items: flex-end; gap: 2px; height: 14px; }
 .music-btn.playing .mb-eq { display: inline-flex; }
 .music-btn.playing .mb-ico { display: none; }
@@ -1221,7 +1221,8 @@ table.matrix tbody tr.lead td { background: rgba(168,72,43,0.05); }
 </head>
 <body>
 
-<!-- ===== Hojitas tropicales decorativas (definición reutilizable) ===== -->
+
+<!-- ===== Decorative tropical leaves (reusable definition) ===== -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
   <defs>
     <symbol id="leaf-monstera" viewBox="0 0 120 200">
@@ -1262,19 +1263,19 @@ table.matrix tbody tr.lead td { background: rgba(168,72,43,0.05); }
   <svg class="leaf br" viewBox="0 0 120 200"><use href="#leaf-monstera"/></svg>
 </div>
 
-<!-- ===== Música de fondo (Hawaiian Roller Coaster Ride · Lilo & Stitch) ===== -->
+<!-- ===== Background music (Hawaiian Roller Coaster Ride · Lilo & Stitch) ===== -->
 <audio id="bg-music" loop preload="auto" playsinline>
   <source src="audio/hawaiian-roller-coaster-ride.mp3" type="audio/mpeg">
 </audio>
-<button id="music-btn" class="music-btn" type="button" aria-label="Prender o apagar la música" title="🎶 ¡Pon la música hawaiana!">
+<button id="music-btn" class="music-btn" type="button" aria-label="Turn the music on or off" title="🎶 Play the Hawaiian music!">
   <span class="mb-ico" aria-hidden="true">🌺</span>
   <span class="mb-eq" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
-  <span class="mb-txt">Música</span>
+  <span class="mb-txt">Music</span>
 </button>
 
 <div class="container">
 
-  <!-- ===== Plantas decorativas en los bordes (detrás del contenido) ===== -->
+  <!-- ===== Decorative plants on the edges (behind the content) ===== -->
   <div class="plant-strip left" aria-hidden="true">
     <img class="plant p-md" src="img/plants/fern.png"          alt="" style="top:2%;  left:-22px; transform:rotate(-8deg);             opacity:.68">
     <img class="plant p-lg" src="img/plants/monstera.png"      alt="" style="top:13%; left:-30px; transform:rotate(10deg);             opacity:.60">
@@ -1301,15 +1302,15 @@ table.matrix tbody tr.lead td { background: rgba(168,72,43,0.05); }
   <!-- ============ MASTHEAD ============ -->
   <header class="masthead">
     <div class="top-row">
-      <span>Vol. I · Edición de Viaje</span>
-      <span>Agosto MMXXVI</span>
-      <span>Plan de Viaje</span>
+      <span>Vol. I · Travel Edition</span>
+      <span>August MMXXVI</span>
+      <span>Trip Plan</span>
     </div>
-    <h1 class="trip-title"><span style="color:#e23e87">V</span><span style="color:#e0a017">i</span><span style="color:#2f9e5b">a</span><span style="color:#1d8fb0">j</span><span style="color:#ef6c2e">e</span> <span style="color:#e23e87">a</span> <span style="color:#e0a017">H</span><span style="color:#2f9e5b">a</span><span style="color:#1d8fb0">w</span><span style="color:#ef6c2e">á</span><span style="color:#e23e87">i</span><span style="color:#e0a017">!</span></h1>
+    <h1 class="trip-title"><span style="color:#e23e87">T</span><span style="color:#e0a017">r</span><span style="color:#2f9e5b">i</span><span style="color:#1d8fb0">p</span> <span style="color:#ef6c2e">t</span><span style="color:#e23e87">o</span> <span style="color:#e0a017">H</span><span style="color:#2f9e5b">a</span><span style="color:#1d8fb0">w</span><span style="color:#ef6c2e">a</span><span style="color:#e23e87">i</span><span style="color:#e0a017">i</span><span style="color:#2f9e5b">!</span></h1>
     <div class="subtitle">
-      <div><strong>Punto de entrada</strong>Honolulu, isla de Oʻahu — HNL 13:34</div>
-      <div><strong>Ventana operativa</strong>17 al 22 de agosto, 2026</div>
-      <div><strong>Decidido</strong>Oʻahu solamente · Waikiki 5 noches</div>
+      <div><strong>Entry point</strong>Honolulu, Oʻahu island — HNL 13:34</div>
+      <div><strong>Operating window</strong>August 17-22, 2026</div>
+      <div><strong>Decided</strong>Oʻahu only · Waikiki 5 nights</div>
     </div>
   </header>
 
@@ -1317,7 +1318,7 @@ table.matrix tbody tr.lead td { background: rgba(168,72,43,0.05); }
   <section class="map-section">
     <div class="map-frame">
       <div class="map-header">
-        <h2>Plancha I · Disposición del archipiélago</h2>
+        <h2>Plate I · Layout of the archipelago</h2>
         <span class="meta">19°N — 22°N · 155°W — 160°W</span>
       </div>
 
@@ -1347,7 +1348,7 @@ table.matrix tbody tr.lead td { background: rgba(168,72,43,0.05); }
           <text class="compass-text" x="0" y="-30" text-anchor="middle">N</text>
           <text class="compass-text" x="32" y="3" text-anchor="middle">E</text>
           <text class="compass-text" x="0" y="40" text-anchor="middle">S</text>
-          <text class="compass-text" x="-32" y="3" text-anchor="middle">O</text>
+          <text class="compass-text" x="-32" y="3" text-anchor="middle">W</text>
         </g>
 
         <!-- Scale bar -->
@@ -1363,7 +1364,7 @@ table.matrix tbody tr.lead td { background: rgba(168,72,43,0.05); }
 
         <!-- ====================== ISLANDS (NW to SE) ====================== -->
 
-        <!-- ===== Otras islas · contexto atenuado (gris claro) ===== -->
+        <!-- ===== Other islands · muted context (light gray) ===== -->
         <!-- Niʻihau -->
         <g>
           <path class="island-shape ghost"
@@ -1389,7 +1390,7 @@ table.matrix tbody tr.lead td { background: rgba(168,72,43,0.05); }
           <text class="island-label-mono ghost" x="878" y="350" text-anchor="middle">Kahoʻolawe</text>
         </g>
 
-        <!-- Kauaʻi (descartada → contexto atenuado) -->
+        <!-- Kauaʻi (dropped → muted context) -->
         <g>
           <path class="island-shape ghost"
                 d="M 220,130 Q 215,108 235,98 Q 260,90 285,98 Q 310,108 318,130 Q 322,150 312,170 Q 295,185 270,188 Q 245,186 228,172 Q 215,155 220,130 Z"/>
@@ -1401,7 +1402,7 @@ table.matrix tbody tr.lead td { background: rgba(168,72,43,0.05); }
           <path class="island-shape entry"
                 d="M 420,200 Q 415,178 432,168 Q 455,158 482,162 Q 510,165 528,178 Q 545,192 548,212 Q 545,232 525,242 Q 500,250 472,248 Q 445,244 428,232 Q 416,220 420,200 Z"/>
           <text class="island-label" x="484" y="276" text-anchor="middle" font-weight="700">Oʻahu</text>
-          <text class="island-label-mono" x="484" y="290" text-anchor="middle">I · Punto de entrada</text>
+          <text class="island-label-mono" x="484" y="290" text-anchor="middle">I · Entry point</text>
 
           <!-- HNL callout -->
           <circle class="entry-marker" cx="468" cy="232" r="4"/>
@@ -1410,15 +1411,15 @@ table.matrix tbody tr.lead td { background: rgba(168,72,43,0.05); }
           <text class="island-label-mono" x="568" y="298">21°19′N 157°55′W</text>
         </g>
 
-        <!-- Isla vecina fuera del plan actual -->
+        <!-- Neighboring island outside the current plan -->
         <g>
           <path class="island-shape ghost"
                 d="M 830,260 Q 822,242 842,232 Q 862,228 880,238 Q 890,250 888,262 Q 900,260 920,265 Q 950,272 970,288 Q 985,305 980,322 Q 970,338 945,342 Q 915,342 892,332 Q 880,322 882,308 Q 868,308 852,302 Q 832,294 826,278 Q 822,268 830,260 Z"/>
-          <text class="island-label-mono ghost" x="905" y="372" text-anchor="middle">isla vecina</text>
-          <text class="island-label-mono ghost" x="905" y="386" text-anchor="middle">contexto · no incluida</text>
+          <text class="island-label-mono ghost" x="905" y="372" text-anchor="middle">neighboring island</text>
+          <text class="island-label-mono ghost" x="905" y="386" text-anchor="middle">context · not included</text>
         </g>
 
-        <!-- Hawaiʻi / Big Island (descartada → contexto atenuado) -->
+        <!-- Hawaiʻi / Big Island (dropped → muted context) -->
         <g>
           <path class="island-shape ghost"
                 d="M 1010,310 Q 1000,290 1018,272 Q 1042,258 1075,260 Q 1108,265 1128,285 Q 1145,308 1148,338 Q 1148,372 1132,395 Q 1112,415 1080,420 Q 1048,420 1022,408 Q 1000,392 992,365 Q 988,338 1010,310 Z"/>
@@ -1429,98 +1430,98 @@ table.matrix tbody tr.lead td { background: rgba(168,72,43,0.05); }
     </div>
   </section>
 
-  <!-- ============ ACORDEÓN 1 · ITINERARIO ============ -->
+  <!-- ============ ACCORDION 1 · FLIGHTS ============ -->
   <details class="acc" open>
     <summary>
       <span class="acc-num">1</span>
-      <span class="acc-title">Vuelos</span>
+      <span class="acc-title">Flights</span>
       <span class="acc-hint">✈️ MEX ⇄ HNL</span>
       <span class="acc-chev">›</span>
     </summary>
     <div class="acc-body">
-      <p class="itin-intro"><strong>Oʻahu solamente</strong> · 17 → 22 ago 2026 · 5 noches. Entramos y salimos por <strong>Honolulu (HNL)</strong>; una sola base en <strong>Waikiki</strong>, sin vuelos internos ni cambio de hotel.</p>
+      <p class="itin-intro"><strong>Oʻahu only</strong> · Aug 17-22, 2026 · 5 nights. We fly in and out through <strong>Honolulu (HNL)</strong>; a single base in <strong>Waikiki</strong>, no internal flights or hotel changes.</p>
 
       <div class="flights">
-        <div class="flight"><span class="leg">✈ MEX → HNL</span><span class="when">Lun 17 ago · llega 13:34 · United (XXXXXX)</span><span class="st ok">confirmado</span></div>
-        <div class="flight"><span class="leg">✈ HNL → MEX</span><span class="when">Sáb 22 ago · sale 21:40 · United · vuelo nocturno</span><span class="st ok">confirmado</span></div>
+        <div class="flight"><span class="leg">✈ MEX → HNL</span><span class="when">Mon Aug 17 · arrives 13:34 · United (XXXXXX)</span><span class="st ok">confirmed</span></div>
+        <div class="flight"><span class="leg">✈ HNL → MEX</span><span class="when">Sat Aug 22 · departs 21:40 · United · overnight flight</span><span class="st ok">confirmed</span></div>
       </div>
 
-      <p class="itin-note">Distribución: <strong>5 noches Oʻahu / Waikiki</strong>. Más simple: una sola reserva, sin vuelos internos y sin cambio de hotel.</p>
+      <p class="itin-note">Breakdown: <strong>5 nights Oʻahu / Waikiki</strong>. Simpler: a single booking, no internal flights and no hotel changes.</p>
     </div>
   </details>
 
-  <!-- ============ ACORDEÓN 2 · CALENDARIO ============ -->
+  <!-- ============ ACCORDION 2 · CALENDAR ============ -->
   <details class="acc" open>
     <summary>
       <span class="acc-num">2</span>
-      <span class="acc-title">Itinerario</span>
-      <span class="acc-hint">📅 día a día · agosto</span>
+      <span class="acc-title">Itinerary</span>
+      <span class="acc-hint">📅 day by day · August</span>
       <span class="acc-chev">›</span>
     </summary>
     <div class="acc-body">
-      <p class="cal-lead">📅 <strong>Agosto 2026</strong> · semana del 17 al 22 — el plan de cada día + lo que está pasando en la isla.</p>
+      <p class="cal-lead">📅 <strong>August 2026</strong> · the week of the 17th to the 22nd — the plan for each day + what's happening on the island.</p>
       <div class="cal">
 
         <div class="cal-day">
-          <div class="cal-head"><span class="cal-dow">LUN</span><span class="cal-dnum">17</span><span class="cal-mon">ago</span><span class="cal-tag arr">llegada</span></div>
-          <div class="cal-plan"><b>Plan:</b> llegan a <strong>HNL 13:34</strong> → check-in Waikiki → playa tranquila. <em>Viaje largo.</em></div>
+          <div class="cal-head"><span class="cal-dow">MON</span><span class="cal-dnum">17</span><span class="cal-mon">Aug</span><span class="cal-tag arr">arrival</span></div>
+          <div class="cal-plan"><b>Plan:</b> arrive at <strong>HNL 13:34</strong> → check in Waikiki → quiet beach time. <em>Long travel day.</em></div>
           <div class="cal-evs">
-            <div class="cal-ev day"><span class="ce-t">todo el día</span><span class="ce-x">🌊 Duke's OceanFest · playa</span></div>
+            <div class="cal-ev day"><span class="ce-t">all day</span><span class="ce-x">🌊 Duke's OceanFest · beach</span></div>
           </div>
-          <div class="cal-rsv">⏰ Hanauma del miér: reservar HOY 7am HI</div>
+          <div class="cal-rsv">⏰ Wednesday's Hanauma: book TODAY 7am HI</div>
         </div>
 
         <div class="cal-day">
-          <div class="cal-head"><span class="cal-dow">MAR</span><span class="cal-dnum">18</span><span class="cal-mon">ago</span><span class="cal-tag full">día completo</span></div>
-          <div class="cal-plan"><b>Plan:</b> <strong>Pearl Harbor</strong> temprano + <strong>Waimea Valley</strong> (jardín + cascada, 3pm) → <strong>Toa Lūʻau</strong> 5pm.</div>
+          <div class="cal-head"><span class="cal-dow">TUE</span><span class="cal-dnum">18</span><span class="cal-mon">Aug</span><span class="cal-tag full">full day</span></div>
+          <div class="cal-plan"><b>Plan:</b> <strong>Pearl Harbor</strong> early + <strong>Waimea Valley</strong> (garden + waterfall, 3pm) → <strong>Toa Lūʻau</strong> 5pm.</div>
           <div class="cal-evs">
-            <div class="cal-ev day"><span class="ce-t">todo el día</span><span class="ce-x">🌊 OceanFest</span></div>
-            <a class="cal-ev cal-ev-link" href="attractions.html#a7" title="Ver esta actividad en la página de atracciones"><span class="ce-t">3:00pm</span><span class="ce-x">🌺 Waimea Valley · jardín y cascada</span><span class="ce-go">→</span></a>
-            <a class="cal-ev cal-ev-link" href="attractions.html#t33" title="Ver esta actividad en la página de atracciones"><span class="ce-t">5:00pm</span><span class="ce-x">🔥 Toa Lūʻau · Silver Seating</span><span class="ce-go">→</span></a>
+            <div class="cal-ev day"><span class="ce-t">all day</span><span class="ce-x">🌊 OceanFest</span></div>
+            <a class="cal-ev cal-ev-link" href="attractions.html#a7" title="See this activity on the attractions page"><span class="ce-t">3:00pm</span><span class="ce-x">🌺 Waimea Valley · garden and waterfall</span><span class="ce-go">→</span></a>
+            <a class="cal-ev cal-ev-link" href="attractions.html#t33" title="See this activity on the attractions page"><span class="ce-t">5:00pm</span><span class="ce-x">🔥 Toa Lūʻau · Silver Seating</span><span class="ce-go">→</span></a>
           </div>
-          <div class="cal-rsv book">⚠ Pearl Harbor: aún falta reservar · ✓ Toa Lūʻau confirmado y pagado (#BXXXXXXXXXXX)</div>
+          <div class="cal-rsv book">⚠ Pearl Harbor: still needs booking · ✓ Toa Lūʻau confirmed and paid (#BXXXXXXXXXXX)</div>
         </div>
 
         <div class="cal-day">
-          <div class="cal-head"><span class="cal-dow">MIÉ</span><span class="cal-dnum">19</span><span class="cal-mon">ago</span><span class="cal-tag full">día completo</span></div>
-          <div class="cal-plan"><b>Plan:</b> día completo en <strong>Kualoa Ranch</strong> — UTV Raptor 🦖 + Secret Island Beach.</div>
+          <div class="cal-head"><span class="cal-dow">WED</span><span class="cal-dnum">19</span><span class="cal-mon">Aug</span><span class="cal-tag full">full day</span></div>
+          <div class="cal-plan"><b>Plan:</b> full day at <strong>Kualoa Ranch</strong> — UTV Raptor 🦖 + Secret Island Beach.</div>
           <div class="cal-evs">
-            <div class="cal-ev day"><span class="ce-t">todo el día</span><span class="ce-x">🌊 OceanFest</span></div>
-            <div class="cal-ev"><span class="ce-t">7:30am</span><span class="ce-x">📋 check-in Kualoa (45 min antes)</span></div>
-            <a class="cal-ev cal-ev-link" href="attractions.html#t21" title="Ver esta actividad en la página de atracciones"><span class="ce-t">8:15am</span><span class="ce-x">🦖 UTV Raptor Tour · 2h · Kid 2 maneja</span><span class="ce-go">→</span></a>
-            <div class="cal-ev"><span class="ce-t">11:45am</span><span class="ce-x">📋 check-in Secret Island Beach</span></div>
-            <a class="cal-ev cal-ev-link" href="attractions.html#t60" title="Ver esta actividad en la página de atracciones"><span class="ce-t">12:30pm</span><span class="ce-x">🏝️ Secret Island Beach · 3h30 · kayak y paddleboard</span><span class="ce-go">→</span></a>
+            <div class="cal-ev day"><span class="ce-t">all day</span><span class="ce-x">🌊 OceanFest</span></div>
+            <div class="cal-ev"><span class="ce-t">7:30am</span><span class="ce-x">📋 Kualoa check-in (45 min ahead)</span></div>
+            <a class="cal-ev cal-ev-link" href="attractions.html#t21" title="See this activity on the attractions page"><span class="ce-t">8:15am</span><span class="ce-x">🦖 UTV Raptor Tour · 2h · Kid 2 drives</span><span class="ce-go">→</span></a>
+            <div class="cal-ev"><span class="ce-t">11:45am</span><span class="ce-x">📋 Secret Island Beach check-in</span></div>
+            <a class="cal-ev cal-ev-link" href="attractions.html#t60" title="See this activity on the attractions page"><span class="ce-t">12:30pm</span><span class="ce-x">🏝️ Secret Island Beach · 3h30 · kayak and paddleboard</span><span class="ce-go">→</span></a>
           </div>
-          <div class="cal-rsv book">✓ UTV (#XXXXXXXX) y Secret Island (#XXXXXXXX) pagados · ⚠ ESCANEAR EL PASE GO CITY en el check-in de 11:45 = reembolso de $315 · firmar waiver + ID con foto</div>
+          <div class="cal-rsv book">✓ UTV (#XXXXXXXX) and Secret Island (#XXXXXXXX) paid · ⚠ SCAN THE GO CITY PASS at the 11:45 check-in = $315 refund · sign waiver + photo ID</div>
         </div>
 
         <div class="cal-day">
-          <div class="cal-head"><span class="cal-dow">JUE</span><span class="cal-dnum">20</span><span class="cal-mon">ago</span><span class="cal-tag full">día completo</span></div>
-          <div class="cal-plan"><b>Plan:</b> <strong>Circle Island Tour</strong> con Byodo-In — vuelta completa a la isla, todo el día. 🚐</div>
+          <div class="cal-head"><span class="cal-dow">THU</span><span class="cal-dnum">20</span><span class="cal-mon">Aug</span><span class="cal-tag full">full day</span></div>
+          <div class="cal-plan"><b>Plan:</b> <strong>Circle Island Tour</strong> with Byodo-In — full loop around the island, all day. 🚐</div>
           <div class="cal-evs">
-            <div class="cal-ev day"><span class="ce-t">todo el día</span><span class="ce-x">🌊 OceanFest</span></div>
-            <div class="cal-ev"><span class="ce-t">7:10am</span><span class="ce-x">📍 estar en la parada del trolley del Twin Fin</span></div>
-            <a class="cal-ev cal-ev-link" href="attractions.html#t76" title="Ver esta actividad en la página de atracciones"><span class="ce-t">7:20am</span><span class="ce-x">🚐 pickup · Diamond Head, Makapuʻu, tortugas, Byodo-In</span><span class="ce-go">→</span></a>
-            <div class="cal-ev"><span class="ce-t">4-4:30pm</span><span class="ce-x">🏨 regreso a Waikiki (hora no garantizada)</span></div>
+            <div class="cal-ev day"><span class="ce-t">all day</span><span class="ce-x">🌊 OceanFest</span></div>
+            <div class="cal-ev"><span class="ce-t">7:10am</span><span class="ce-x">📍 be at the Twin Fin trolley stop</span></div>
+            <a class="cal-ev cal-ev-link" href="attractions.html#t76" title="See this activity on the attractions page"><span class="ce-t">7:20am</span><span class="ce-x">🚐 pickup · Diamond Head, Makapuʻu, turtles, Byodo-In</span><span class="ce-go">→</span></a>
+            <div class="cal-ev"><span class="ce-t">4-4:30pm</span><span class="ce-x">🏨 return to Waikiki (time not guaranteed)</span></div>
           </div>
-          <div class="cal-rsv book">✓ Reservado con el pase (#XXXXXXXXX) · ⚠ desayunar antes · llevar efectivo · nada con hora fija esa noche</div>
+          <div class="cal-rsv book">✓ Booked with the pass (#XXXXXXXXX) · ⚠ eat breakfast first · bring cash · nothing time-fixed that evening</div>
         </div>
 
         <div class="cal-day">
-          <div class="cal-head"><span class="cal-dow">VIE</span><span class="cal-dnum">21</span><span class="cal-mon">ago</span><span class="cal-tag full">día completo</span></div>
-          <div class="cal-plan"><b>Plan:</b> ligero — compras, playa, cena bonita o <strong>luau</strong> para cerrar.</div>
+          <div class="cal-head"><span class="cal-dow">FRI</span><span class="cal-dnum">21</span><span class="cal-mon">Aug</span><span class="cal-tag full">full day</span></div>
+          <div class="cal-plan"><b>Plan:</b> light — shopping, beach, a nice dinner or a <strong>luau</strong> to close things out.</div>
           <div class="cal-evs">
-            <div class="cal-ev day"><span class="ce-t">todo el día</span><span class="ce-x">🌊 OceanFest · 🏛️ Statehood Day (feriado)</span></div>
+            <div class="cal-ev day"><span class="ce-t">all day</span><span class="ce-x">🌊 OceanFest · 🏛️ Statehood Day (holiday)</span></div>
             <div class="cal-ev"><span class="ce-t">6:30pm</span><span class="ce-x">🛍️ Made in Hawaii</span></div>
-            <div class="cal-ev"><span class="ce-t">7:45pm</span><span class="ce-x">🎆 Fuegos del Hilton</span></div>
+            <div class="cal-ev"><span class="ce-t">7:45pm</span><span class="ce-x">🎆 Hilton fireworks</span></div>
           </div>
         </div>
 
         <div class="cal-day">
-          <div class="cal-head"><span class="cal-dow">SÁB</span><span class="cal-dnum">22</span><span class="cal-mon">ago</span><span class="cal-tag out">regreso</span></div>
-          <div class="cal-plan"><b>Plan:</b> mañana en Waikiki → maletas → <strong>HNL ~18:30</strong> → <strong>vuelo 21:40</strong>.</div>
+          <div class="cal-head"><span class="cal-dow">SAT</span><span class="cal-dnum">22</span><span class="cal-mon">Aug</span><span class="cal-tag out">departure</span></div>
+          <div class="cal-plan"><b>Plan:</b> morning in Waikiki → pack → <strong>HNL ~18:30</strong> → <strong>flight 21:40</strong>.</div>
           <div class="cal-evs">
-            <div class="cal-ev day"><span class="ce-t">todo el día</span><span class="ce-x">🌊 OceanFest (clausura) · 🛍️ Made in Hawaii</span></div>
+            <div class="cal-ev day"><span class="ce-t">all day</span><span class="ce-x">🌊 OceanFest (closing) · 🛍️ Made in Hawaii</span></div>
           </div>
         </div>
 
@@ -1528,177 +1529,177 @@ table.matrix tbody tr.lead td { background: rgba(168,72,43,0.05); }
     </div>
   </details>
 
-  <!-- ============ ACORDEÓN 2 · ATRACCIONES ============ -->
+  <!-- ============ ACCORDION 3 · ATTRACTIONS ============ -->
   <details class="acc">
     <summary>
       <span class="acc-num">3</span>
-      <span class="acc-title">Atracciones y eventos</span>
-      <span class="acc-hint">qué hacer + qué pasa</span>
+      <span class="acc-title">Attractions and events</span>
+      <span class="acc-hint">what to do + what's on</span>
       <span class="acc-chev">›</span>
     </summary>
     <div class="acc-body">
 
     <div class="acts">
     <p style="font-family:'Newsreader',serif; font-size:15px; color:var(--ink); line-height:1.6; margin-bottom:14px;">
-      Armamos una página aparte con <strong>38 lugares clasificados</strong> para ver/hacer y <strong>48 tours reservables</strong> (con foto, calificación y precio real de Viator) — eventos de su semana incluidos. 🌺
+      We put together a separate page with <strong>38 places ranked</strong> to see/do and <strong>48 bookable tours</strong> (with photo, rating and real Viator pricing) — including that week's events. 🌺
     </p>
     <a href="attractions.html" style="display:inline-flex; align-items:center; gap:8px; font-family:'Fraunces',serif; font-weight:600; font-size:16px; color:#fff; background:var(--rust); padding:13px 24px; border-radius:30px; text-decoration:none;">
-      🎉 Ver atracciones y tours completos →
+      🎉 See all attractions and tours →
     </a>
   </div>
     </div>
   </details>
 
-  <!-- ============ ACORDEÓN 3 · ALOJAMIENTO ============ -->
+  <!-- ============ ACCORDION 4 · LODGING ============ -->
   <details class="acc">
     <summary>
       <span class="acc-num">4</span>
-      <span class="acc-title">Alojamiento</span>
-      <span class="acc-hint">reserva confirmada ✓</span>
+      <span class="acc-title">Lodging</span>
+      <span class="acc-hint">booking confirmed ✓</span>
       <span class="acc-chev">›</span>
     </summary>
     <div class="acc-body">
 
   <!--
-    FUENTES DE PRECIOS Y DECISIONES DE ALOJAMIENTO:
-    ver itinerary_2026.yaml → bloque "alojamiento_investigacion" (investigado 2026-06-07).
-    Ahí están las config de camas, capacidad para 5, links para reservar y de dónde salió cada precio.
-    Precios revisados 15 jun 2026, FX ≈ MX$17.21/USD (Banxico FIX), todo incl. (impuestos ~18.7% + resort fee; parking aparte). ESTADO ACTUAL — Twin Fin confirmado.
-      Plan actualizado: Oʻahu solamente, 5 noches en Waikiki.
-      Oʻahu opciones → Twin Fin 2BR Ocean View Suite with Lanai US$4,111 visto en checkout; backups ya no son necesarios salvo cambio.
+    LODGING PRICE SOURCES AND DECISIONS:
+    see itinerary_2026.yaml → "lodging_research" block (researched 2026-06-07).
+    That's where the bed configs, capacity for 5, booking links and price sources live.
+    Prices reviewed Jun 15, 2026, FX ≈ MX$17.21/USD (Banxico FIX), all incl. (taxes ~18.7% + resort fee; parking separate). CURRENT STATUS — Twin Fin confirmed.
+      Updated plan: Oʻahu only, 5 nights in Waikiki.
+      Oʻahu options → Twin Fin 2BR Ocean View Suite with Lanai US$4,111 seen at checkout; backups no longer needed unless something changes.
   -->
   <div class="lodging">
 
     <p class="lodging-note" style="margin-top:0;border-left-color:var(--sage)">
-      <strong>Estado actual:</strong> Plan Oʻahu solamente. Reserva confirmada por <strong>The Twin Fin Hotel</strong>
-      para <strong>17 → 22 ago 2026</strong>, <strong>5 adultos</strong>, <strong>Two Bedroom Ocean View Suite with Lanai</strong>,
-      promo <strong>ACCESS</strong>. Total mostrado: <strong>US$4,111</strong>; pago mostrado: <strong>US$1,644</strong>.
-      El hotel confirmo que no se cobrara hasta aprox. 2 semanas antes del check-in, alrededor de <strong>3 ago 2026</strong>.
+      <strong>Current status:</strong> Oʻahu-only plan. Booking confirmed by <strong>The Twin Fin Hotel</strong>
+      for <strong>Aug 17-22, 2026</strong>, <strong>5 adults</strong>, <strong>Two Bedroom Ocean View Suite with Lanai</strong>,
+      promo <strong>ACCESS</strong>. Total shown: <strong>US$4,111</strong>; payment shown: <strong>US$1,644</strong>.
+      The hotel confirmed it won't charge until approx. 2 weeks before check-in, around <strong>Aug 3, 2026</strong>.
     </p>
 
     <!-- OAHU -->
     <div class="lodging-island">
       <h3>Oʻahu · Waikiki</h3>
-      <div class="meta">17 → 22 ago · 5 noches · corazón Kalākaua</div>
+      <div class="meta">Aug 17-22 · 5 nights · the Kalākaua heart</div>
       <div class="lodging-cards">
         <article class="hotel-card">
           <div class="hotel-gallery">
-            <img class="g-main" src="img/hotel-twin-fin-1.jpg" alt="Twin Fin — vista a Waikiki Beach" loading="lazy">
+            <img class="g-main" src="img/hotel-twin-fin-1.jpg" alt="Twin Fin — Waikiki Beach view" loading="lazy">
             <div class="g-thumbs">
-              <img src="img/hotel-twin-fin.jpg" alt="balcones del hotel" loading="lazy">
-              <img src="img/hotel-twin-fin-3.jpg" alt="habitación con vista al mar" loading="lazy">
+              <img src="img/hotel-twin-fin.jpg" alt="hotel balconies" loading="lazy">
+              <img src="img/hotel-twin-fin-3.jpg" alt="room with ocean view" loading="lazy">
               <img src="img/hotel-twin-fin-4.jpg" alt="Tiki's Grill & Bar" loading="lazy">
             </div>
           </div>
-          <span class="tag best">✓ Reservado</span>
+          <span class="tag best">✓ Booked</span>
           <h4>Twin Fin Waikiki</h4>
           <div class="price-opts">
-            <div class="po"><span>Total visto en checkout</span><b>US$4,111</b></div>
-            <div class="po deal"><span>Cobro aprox.</span><b>3 ago</b></div>
+            <div class="po"><span>Total shown at checkout</span><b>US$4,111</b></div>
+            <div class="po deal"><span>Charged approx.</span><b>Aug 3</b></div>
           </div>
-          <div class="po-note">5 noches · 2BR Ocean View Suite with Lanai · 5 adultos</div>
-          <div class="rating">★ aprox. 8.0–8.4/10 · ubicacion top · playa cruzando la calle</div>
-          <p class="desc">Frente a Kuhio Beach, en el mismo bloque practico de Park Shore. Es la eleccion activa confirmada aunque quede US$111 arriba del techo original.</p>
+          <div class="po-note">5 nights · 2BR Ocean View Suite with Lanai · 5 adults</div>
+          <div class="rating">★ approx. 8.0-8.4/10 · top location · beach across the street</div>
+          <p class="desc">Across from Kuhio Beach, in the same practical block as Park Shore. The active, confirmed choice, even though it lands US$111 over the original ceiling.</p>
           <div class="beds fits">
             <div class="bedrow">
-              <span class="bopt ok">2 recamaras</span> suite 2BR + lanai · <span class="ok5">cabe 5 ✓</span><br>
-              <strong>US$4,111</strong> <small>5 noches · tarifa Celebrate with 30% Off · promo ACCESS · pago mostrado US$1,644</small>
+              <span class="bopt ok">2 bedrooms</span> 2BR suite + lanai · <span class="ok5">fits 5 ✓</span><br>
+              <strong>US$4,111</strong> <small>5 nights · Celebrate with 30% Off rate · promo ACCESS · payment shown US$1,644</small>
             </div>
-            <div class="bednote">El hotel confirmo la reserva. No esperar cargo inmediato; revisar tarjeta alrededor del 3 ago 2026.</div>
+            <div class="bednote">The hotel confirmed the booking. Don't expect an immediate charge; check the card around Aug 3, 2026.</div>
           </div>
-          <div class="promo"><b>Contacto:</b> reservations@twinfinwaikiki.com · desde Mexico marcar +1 808 922 2511.</div>
+          <div class="promo"><b>Contact:</b> reservations@twinfinwaikiki.com · from Mexico dial +1 808 922 2511.</div>
         </article>
       </div>
-      <p class="lodging-note"><strong>Backups (solo referencia, ya no activos):</strong> <strong>Park Shore Waikiki</strong> (misma zona, cruzando la calle de Kūhiō Beach) · <strong>Ilikai / Aqua-Aston</strong> (más espacioso, menos arena directa) · <strong>Aston Waikiki Sunset</strong> (mejor valor/espacio) · <strong>Castle Waikiki Shore</strong> (en la arena, pero sin 2BR disponible cuando revisamos).</p>
+      <p class="lodging-note"><strong>Backups (reference only, no longer active):</strong> <strong>Park Shore Waikiki</strong> (same area, across the street from Kūhiō Beach) · <strong>Ilikai / Aqua-Aston</strong> (more spacious, less direct sand) · <strong>Aston Waikiki Sunset</strong> (better value/space) · <strong>Castle Waikiki Shore</strong> (on the sand, but no 2BR available when we checked).</p>
     </div>
 
-    <!-- QUÉ INCLUYE / AMENIDADES -->
+    <!-- WHAT'S INCLUDED / AMENITIES -->
     <div class="promos-box" style="border-top-color:var(--ocean)">
-      <h4>🏨 Qué incluye y qué hay en el hotel</h4>
-      <div class="sub">The Twin Fin (antes Aston Waikīkī Beach) · 2570 Kalākaua Ave</div>
+      <h4>🏨 What's included and what's at the hotel</h4>
+      <div class="sub">The Twin Fin (formerly Aston Waikīkī Beach) · 2570 Kalākaua Ave</div>
       <div class="amen-cols">
         <div>
-          <div class="amen-h">✅ Incluido · resort fee $45/día</div>
+          <div class="amen-h">✅ Included · resort fee $45/day</div>
           <ul>
-            <li>🏄 <strong>3 créditos diarios</strong> de renta de playa (Beach Candy): body board, SUP, silla, sombrilla, bocina Bluetooth…</li>
-            <li>📶 WiFi (hasta 4 dispositivos)</li>
-            <li>🏊 Alberca al aire libre + toallas de playa</li>
-            <li>🏋️ Gimnasio</li>
-            <li>💧 2 botellas de agua + estaciones de recarga</li>
-            <li>☕ Café en el cuarto · caja fuerte · llamadas locales</li>
+            <li>🏄 <strong>3 daily credits</strong> for beach gear rental (Beach Candy): body board, SUP, chair, umbrella, Bluetooth speaker…</li>
+            <li>📶 WiFi (up to 4 devices)</li>
+            <li>🏊 Outdoor pool + beach towels</li>
+            <li>🏋️ Gym</li>
+            <li>💧 2 water bottles + refill stations</li>
+            <li>☕ In-room coffee · safe · local calls</li>
           </ul>
         </div>
         <div>
-          <div class="amen-h">🌺 En el hotel · aparte</div>
+          <div class="amen-h">🌺 At the hotel · extra</div>
           <ul>
-            <li>🍤 <strong>Tiki's Grill & Bar</strong> — restaurante y bar en sitio</li>
-            <li>🌴 Pool deck renovado + actividades del hotel</li>
-            <li>🚗 Valet parking <strong>$48/día</strong> (+ imp.) — opcional</li>
-            <li>🏖️ <strong>Kuhio Beach</strong> cruzando la calle</li>
-            <li>🛏️ Cuartos renovados (nueva re-marca)</li>
+            <li>🍤 <strong>Tiki's Grill & Bar</strong> — on-site restaurant and bar</li>
+            <li>🌴 Renovated pool deck + hotel activities</li>
+            <li>🚗 Valet parking <strong>$48/day</strong> (+ tax) — optional</li>
+            <li>🏖️ <strong>Kuhio Beach</strong> across the street</li>
+            <li>🛏️ Renovated rooms (new rebrand)</li>
           </ul>
         </div>
       </div>
-      <p class="fineprint">El <strong>resort fee ($45 + imp./día)</strong> y el <strong>valet ($48 + imp./día)</strong> son por cuarto, por noche, aparte del total. Tarifa por noche (del correo): <strong>$665</strong> (17–19 ago) y <strong>$672</strong> (20–21 ago) · impuestos <strong>18.712%</strong> (GET 4.712% + TAT 14%).</p>
+      <p class="fineprint">The <strong>resort fee ($45 + tax/day)</strong> and <strong>valet ($48 + tax/day)</strong> are per room, per night, on top of the total. Nightly rate (from the email): <strong>$665</strong> (Aug 17-19) and <strong>$672</strong> (Aug 20-21) · taxes <strong>18.712%</strong> (GET 4.712% + TAT 14%).</p>
     </div>
 
-    <!-- EXPERIENCIAS DEL HOTEL -->
+    <!-- HOTEL EXPERIENCES -->
     <div class="promos-box" style="border-top-color:var(--gold)">
-      <h4>🏄 Experiencias y actividades del hotel</h4>
-      <div class="sub">programa del hotel · pedir horario semanal en recepción</div>
+      <h4>🏄 Hotel experiences and activities</h4>
+      <div class="sub">hotel program · ask at the front desk for the weekly schedule</div>
       <div class="amen-cols">
         <div>
-          <div class="amen-h">🆓 Gratis para huéspedes (diario)</div>
+          <div class="amen-h">🆓 Free for guests (daily)</div>
           <ul>
-            <li>🌸 Clases de lei (collares de flores)</li>
-            <li>🧘 Yoga en la playa</li>
+            <li>🌸 Lei-making classes (flower necklaces)</li>
+            <li>🧘 Beach yoga</li>
             <li>🎸 Ukulele · 💃 hula</li>
-            <li>🌊 Parley for the Oceans (conservación del mar)</li>
+            <li>🌊 Parley for the Oceans (ocean conservation)</li>
           </ul>
         </div>
         <div>
-          <div class="amen-h">🏄 Surf y comida (aparte)</div>
+          <div class="amen-h">🏄 Surf and food (extra)</div>
           <ul>
-            <li>🏄 <strong>Jamie O'Brien School of Surf</strong> — grupal desde <strong>$99</strong> (90 min) · privada $209 · grupos <strong>11:15am y 12:30pm</strong> (en Publics, lado Diamond Head)</li>
-            <li>🍤 Tiki's Grill (música en vivo) · 🥥 Coconut Club (desayuno piso 21) · 🥤 Sunrise Shack · 🍧 shave ice</li>
+            <li>🏄 <strong>Jamie O'Brien School of Surf</strong> — group from <strong>$99</strong> (90 min) · private $209 · groups at <strong>11:15am and 12:30pm</strong> (at Publics, Diamond Head side)</li>
+            <li>🍤 Tiki's Grill (live music) · 🥥 Coconut Club (21st-floor breakfast) · 🥤 Sunrise Shack · 🍧 shave ice</li>
           </ul>
         </div>
       </div>
-      <p class="fineprint">Las clases gratis (lei, yoga, ukulele, hula) y <strong>Parley</strong> son del programa del hotel — <strong>pedir el horario semanal al hacer check-in</strong>. La escuela de surf y los restaurantes se pagan aparte.</p>
+      <p class="fineprint">The free classes (lei, yoga, ukulele, hula) and <strong>Parley</strong> are part of the hotel program — <strong>ask for the weekly schedule at check-in</strong>. The surf school and restaurants are paid separately.</p>
     </div>
 
-    <!-- RESERVA CONFIRMADA -->
+    <!-- CONFIRMED BOOKING -->
     <div class="promos-box" style="border-top-color:var(--sage)">
-      <h4>✅ Reserva confirmada — The Twin Fin</h4>
-      <div class="sub">confirmada por el hotel · vigilar cargo ~3 ago 2026</div>
+      <h4>✅ Booking confirmed — The Twin Fin</h4>
+      <div class="sub">confirmed by the hotel · watch for the charge ~Aug 3, 2026</div>
       <ul>
-        <li><strong>Booking #:</strong> XXXXXXXX · <strong>The Twin Fin</strong> (antes Aston Waikīkī Beach)</li>
-        <li><strong>Habitación:</strong> Two Bedroom Ocean View Suite with Lanai · <strong>5 adultos</strong></li>
-        <li><strong>Fechas:</strong> 17 → 22 ago 2026 · 5 noches</li>
-        <li><strong>Tarifa:</strong> Celebrate with 30% Off · promo <strong>ACCESS</strong></li>
-        <li><strong>Total:</strong> US$4,111 · <strong>pago/depósito mostrado:</strong> US$1,644</li>
-        <li><strong>Titular:</strong> Dad · correo@ejemplo.com</li>
-        <li><strong>Contacto hotel:</strong> reservations@twinfinwaikiki.com · +1 808 922 2511</li>
+        <li><strong>Booking #:</strong> XXXXXXXX · <strong>The Twin Fin</strong> (formerly Aston Waikīkī Beach)</li>
+        <li><strong>Room:</strong> Two Bedroom Ocean View Suite with Lanai · <strong>5 adults</strong></li>
+        <li><strong>Dates:</strong> Aug 17-22, 2026 · 5 nights</li>
+        <li><strong>Rate:</strong> Celebrate with 30% Off · promo <strong>ACCESS</strong></li>
+        <li><strong>Total:</strong> US$4,111 · <strong>payment/deposit shown:</strong> US$1,644</li>
+        <li><strong>Guest name on file:</strong> Dad · placeholder@example.com</li>
+        <li><strong>Hotel contact:</strong> reservations@twinfinwaikiki.com · +1 808 922 2511</li>
       </ul>
       <p class="fineprint">
-        <strong>⏰ Lo que falta:</strong> el hotel <strong>no cobra hasta ~2 semanas antes</strong> del check-in — vigilar el cargo de <strong>US$1,644 alrededor del 3 ago 2026</strong> y <strong>guardar el correo de confirmación</strong>. Después: cerrar actividades en Oʻahu (Pearl Harbor / USS Arizona, Diamond Head, Hanauma Bay, North Shore, Kualoa).</p>
+        <strong>⏰ Still pending:</strong> the hotel <strong>doesn't charge until ~2 weeks before</strong> check-in — watch for the <strong>US$1,644 charge around Aug 3, 2026</strong> and <strong>keep the confirmation email</strong>. After that: lock in Oʻahu activities (Pearl Harbor / USS Arizona, Diamond Head, Hanauma Bay, North Shore, Kualoa).</p>
     </div>
 
-    <!-- AUTO RENTADO -->
+    <!-- RENTAL CAR -->
     <div class="promos-box" style="border-top-color:var(--rust)">
-      <h4>🚗 Auto rentado — Sixt</h4>
-      <div class="sub">reserva confirmada · pagar en counter</div>
+      <h4>🚗 Rental car — Sixt</h4>
+      <div class="sub">booking confirmed · pay at the counter</div>
       <ul>
-        <li><strong>Reserva #:</strong> 9736931118 · <strong>Sixt Rent a Car</strong></li>
-        <li><strong>Auto:</strong> Standard Elite (BMW X3) o similar</li>
-        <li><strong>Recoger:</strong> 17 ago, 2:30pm · <strong>Entregar:</strong> 22 ago, 5:30pm · 6 días</li>
-        <li><strong>Lugar:</strong> Oahu Honolulu Aeropuerto (mismo edificio, 300 Rodgers Blvd)</li>
-        <li><strong>Total en counter:</strong> US$827.60 · <strong>depósito:</strong> US$200 (se libera al devolver)</li>
-        <li><strong>Incluye:</strong> Protección Completa, conductor adicional, GPS, asistencia 24/7, km ilimitados</li>
-        <li><strong>Conductor:</strong> Dad</li>
+        <li><strong>Booking #:</strong> 9736931118 · <strong>Sixt Rent a Car</strong></li>
+        <li><strong>Car:</strong> Standard Elite (BMW X3) or similar</li>
+        <li><strong>Pickup:</strong> Aug 17, 2:30pm · <strong>Dropoff:</strong> Aug 22, 5:30pm · 6 days</li>
+        <li><strong>Place:</strong> Oahu Honolulu Airport (same building, 300 Rodgers Blvd)</li>
+        <li><strong>Total at counter:</strong> US$827.60 · <strong>deposit:</strong> US$200 (released at return)</li>
+        <li><strong>Includes:</strong> Full Protection, additional driver, GPS, 24/7 assistance, unlimited miles</li>
+        <li><strong>Driver:</strong> Dad</li>
       </ul>
       <p class="fineprint">
-        <strong>⏱ Colchón ajustado:</strong> aterrizan 1:34pm y recogen el auto a las 2:30pm (~56 min) — no hay aduana en HNL (ya se hizo en Houston), así que alcanza. <strong>Entrega tarde:</strong> ~58 min de tolerancia; después cobran <strong>un día completo</strong> (no por hora) — si van a llegar tarde, avisar antes por la app/teléfono.</p>
+        <strong>⏱ Tight buffer:</strong> land 1:34pm and pick up the car at 2:30pm (~56 min) — no customs at HNL (already cleared in Houston), so it works. <strong>Late return:</strong> ~58 min grace period; after that they charge <strong>a full day</strong> (not hourly) — if running late, call ahead via the app/phone.</p>
     </div>
 
   </div>
@@ -1708,25 +1709,25 @@ table.matrix tbody tr.lead td { background: rgba(168,72,43,0.05); }
   <!-- ============ FOOTER ============ -->
   <footer class="footer">
     <div>
-      <h4>Reservas anticipadas críticas</h4>
+      <h4>Critical advance bookings</h4>
       <ul>
-        <li>Pearl Harbor — boletos liberan a 8 semanas vista</li>
-        <li>Hanauma Bay — reserva en línea 48 h antes</li>
-        <li>Diamond Head — obligatoria para no-residentes</li>
+        <li>Pearl Harbor — tickets release 8 weeks out</li>
+        <li>Hanauma Bay — book online 48h ahead</li>
+        <li>Diamond Head — mandatory for non-residents</li>
       </ul>
     </div>
     <div>
-      <h4>Decisión — Oʻahu ✓</h4>
+      <h4>Decision — Oʻahu ✓</h4>
       <p style="font-style: italic; line-height: 1.55; font-size: 14px;">
-        <strong>¡Decidido! La familia se queda en Oʻahu.</strong> El itinerario queda con <strong>Waikiki como base única</strong> durante las 5 noches.
+        <strong>Decided! The family is staying on Oʻahu.</strong> The itinerary runs on <strong>Waikiki as the single base</strong> for all 5 nights.
       </p>
       <p style="margin-top: 12px; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em;">
-        ✓ Oʻahu · Waikiki 5 noches
+        ✓ Oʻahu · Waikiki 5 nights
       </p>
       <p style="margin-top: 16px; font-style: italic; line-height: 1.55; font-size: 14px;">
-        Esto reduce estrés, elimina vuelos internos, evita doble check-in/check-out y deja más tiempo real para playa, Pearl Harbor, North Shore, Kualoa, Hanauma Bay y descanso.
+        This cuts stress, removes internal flights, avoids a double check-in/checkout, and leaves more real time for the beach, Pearl Harbor, North Shore, Kualoa, Hanauma Bay and rest.
       </p>
-      <p class="colophon" style="margin-top: 16px;">— Decisión registrada · Oʻahu · MMXXVI —</p>
+      <p class="colophon" style="margin-top: 16px;">— Decision recorded · Oʻahu · MMXXVI —</p>
     </div>
   </footer>
 
@@ -1738,16 +1739,16 @@ table.matrix tbody tr.lead td { background: rgba(168,72,43,0.05); }
     var btn = document.getElementById('music-btn');
     if (!audio || !btn) return;
     var txt = btn.querySelector('.mb-txt');
-    var LOW = 0.18;                 // volumen bajito
-    var started = false;            // ya suena con sonido
+    var LOW = 0.18;                 // low volume
+    var started = false;            // already playing with sound
     var justUnlocked = false;
-    // solo gestos que SÍ habilitan autoplay en Chrome (scroll/wheel NO cuentan)
+    // only gestures that DO enable autoplay in Chrome (scroll/wheel do NOT count)
     var unlockEvents = ['pointerdown', 'pointerup', 'click', 'keydown', 'touchstart', 'touchend'];
 
     function setUI(playing) {
       btn.classList.toggle('playing', playing);
-      txt.textContent = playing ? 'Sonando' : 'Música';
-      btn.title = playing ? 'Pausar la música 🎶' : '🎶 ¡Pon la música hawaiana!';
+      txt.textContent = playing ? 'Playing' : 'Music';
+      btn.title = playing ? 'Pause the music 🎶' : '🎶 Play the Hawaiian music!';
     }
     function cleanup() {
       unlockEvents.forEach(function (ev) { window.removeEventListener(ev, unlock, true); });
@@ -1758,7 +1759,7 @@ table.matrix tbody tr.lead td { background: rgba(168,72,43,0.05); }
       var pr = audio.play();
       if (pr && pr.then) {
         pr.then(function () { started = true; setUI(true); cleanup(); })
-          .catch(function () { /* gesto no válido aún: mantener escuchando el siguiente */ });
+          .catch(function () { /* not a valid gesture yet: keep listening for the next one */ });
       } else { started = true; setUI(true); cleanup(); }
     }
     function unlock() {
@@ -1771,22 +1772,22 @@ table.matrix tbody tr.lead td { background: rgba(168,72,43,0.05); }
       unlockEvents.forEach(function (ev) { window.addEventListener(ev, unlock, { capture: true, passive: true }); });
     }
 
-    // 1) intento de autoplay con sonido bajito (algunos navegadores lo permiten)
+    // 1) try low-volume autoplay (some browsers allow it)
     audio.volume = LOW;
     var p0 = audio.play();
     if (p0 && p0.then) {
       p0.then(function () { started = true; setUI(true); })
         .catch(function () {
-          // 2) bloqueado → autoplay en silencio y des-silenciar al primer gesto
+          // 2) blocked → autoplay muted and unmute on the first gesture
           audio.muted = true;
           audio.play().catch(function () {});
           addUnlock();
         });
     }
 
-    // botón manual (prender/pausar)
+    // manual button (play/pause)
     btn.addEventListener('click', function () {
-      if (justUnlocked) return;                 // el gesto ya lo arrancó
+      if (justUnlocked) return;                 // the gesture already started it
       if (audio.paused || audio.muted) { cleanup(); startAudible(); }
       else { audio.pause(); setUI(false); }
     });
