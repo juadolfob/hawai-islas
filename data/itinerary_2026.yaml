@@ -141,7 +141,7 @@ segmentos:
 # =============================================================
 equipaje:
   viva_aerobus_papas:
-    pasajeros: [Papá, Mamá]
+    pasajeros: [Dad, Mom]
     ruta: "CEN <-> CDMX"
     de_mano: "1 artículo personal (~10 kg, bajo el asiento)"
     documentado: "1 maleta de 15 kg — INCLUIDA"
@@ -155,7 +155,7 @@ equipaje:
     estado: confirmado
   volaris_juan_manuel:
     reserva: XXXXXX
-    pasajero: Hijo 2
+    pasajero: Kid 2
     ruta: "GDL -> CDMX"
     de_mano: "artículo personal (por confirmar)"
     documentado: "POR VERIFICAR — la tarifa básica de Volaris suele traer SOLO artículo personal; la maleta de 15 kg puede ser extra"
@@ -169,7 +169,7 @@ renta_auto:
   confirmada:
     reserva: 9736931118
     empresa: "Sixt Rent a Car"
-    conductor_principal: "Papá"
+    conductor_principal: "Dad"
     vehiculo: "Standard Elite (BMW X3) o similar — grupo RFAR"
     lugar: "Oahu Honolulu Aeropuerto, 300 Rodgers Blvd, Honolulu 96819 (mismo edificio del aeropuerto)"
     recoger: "2026-08-17 14:30"
@@ -196,7 +196,7 @@ renta_auto:
 pendientes:
 - id: vuelo_juan_manuel
   estado: IDA COMPRADA — regreso pendiente
-  pasajero: Hijo 2     # hermano, vuela desde Guadalajara
+  pasajero: Kid 2     # hermano, vuela desde Guadalajara
   aerolinea: Volaris
   ida:
     vuelo: "Y4 149 (directo, operado por Volaris México)"
@@ -219,7 +219,7 @@ pendientes:
   recomendacion: opcion_a
 
 - id: documentos_eeuu
-  estado: "PAPÁS VERIFICADOS (2026-07-15) — faltan Hijo 1 y Hijo 2"
+  estado: "PAPÁS VERIFICADOS (2026-07-15) — faltan Kid 1 y Kid 2"
   regla: >
     México está EXENTO de la "regla de 6 meses" (CBP Six-Month Club): el pasaporte
     solo debe estar VIGENTE DURANTE la estancia, no 6 meses extra. La tarjeta
@@ -232,17 +232,17 @@ pendientes:
       pasaporte: "G23609259 · vence 2027-01-20 · OK (cubre todo el viaje; exención México aplica)"
       nota: "renovar pasaporte con calma DESPUÉS del viaje; la visa BCC sigue válida con pasaporte nuevo"
   pendiente_verificar:
-  - Hijo 1
-  - Hijo 2
+  - Kid 1
+  - Kid 2
 
 - id: equipaje_volaris_juan_manuel
   estado: POR VERIFICAR
-  accion: "Revisar en Volaris (XXXXXX) si el vuelo de Hijo 2 incluye maleta documentada de 15 kg o solo artículo personal; comprar maleta si falta."
+  accion: "Revisar en Volaris (XXXXXX) si el vuelo de Kid 2 incluye maleta documentada de 15 kg o solo artículo personal; comprar maleta si falta."
 
 - id: confirmar_twin_fin
   estado: COMPLETADO
   accion: "Reserva confirmada por The Twin Fin. Revisar cargo de aprox. US$1,644 alrededor de 2026-08-03."
-  datos_busqueda: "Papá / correo@ejemplo.com / Aug 17-22 2026 / Two Bedroom Ocean View Suite with Lanai / total US$4,111"
+  datos_busqueda: "Dad / correo@ejemplo.com / Aug 17-22 2026 / Two Bedroom Ocean View Suite with Lanai / total US$4,111"
 
 riesgos:
 - conexion_iah_apretada: 2h 14m incluye inmigración EE.UU.; vulnerable a retraso de UA1085
@@ -335,7 +335,7 @@ hawai_calendario:
     actividades:
       manana:
       - 07:30  check-in en Kualoa Ranch (45 min antes, obligatorio)
-      - 08:15  UTV Raptor Tour — 2h, Hijo 2 conduce · ref XXXXXXXX
+      - 08:15  UTV Raptor Tour — 2h, Kid 2 conduce · ref XXXXXXXX
       tarde:
       - 11:45  check-in Secret Island Beach en la Ticket Office (45 min antes, obligatorio)
       - 12:30  Half Day Secret Island Beach — 3h30, kayak/paddleboard/canoa · ref XXXXXXXX
@@ -399,7 +399,7 @@ hawai_calendario:
 # =============================================================
 # ALOJAMIENTO — INVESTIGACIÓN, DECISIONES Y FUENTES DE PRECIOS
 # Investigado: 2026-06-07  (para elegir / reservar hotel)
-# Esta sección alimenta la página web (comparacion_islas_hawai.html → sección "Alojamiento")
+# Esta sección alimenta la página web (island-comparison.html → sección "Alojamiento")
 # =============================================================
 alojamiento_investigacion:
 
@@ -591,7 +591,7 @@ reservaciones_actividades:
     confirmation_number: "XXXXXXXXXX"
     proveedor: Kualoa Ranch (directo, booking.kualoa.com)
     punto_de_encuentro: Kualoa Ranch, 49-560 Kamehameha Hwy, Kāneʻohe, HI 96744
-    nota: Llegar 45 min antes (~7:30am) para check-in y seguridad. Hijo 2 puede manejar (21+ con licencia). Confirmamos que la ruta sí pasa por el paddock del Indominus Rex.
+    nota: Llegar 45 min antes (~7:30am) para check-in y seguridad. Kid 2 puede manejar (21+ con licencia). Confirmamos que la ruta sí pasa por el paddock del Indominus Rex.
   - estado: RESERVA CONFIRMADA Y PAGADA
     actividad: Kualoa Ranch — Half Day Secret Island Beach Activity
     fecha: "2026-08-19"
@@ -1684,12 +1684,12 @@ pendientes_tecnicos:
     solucion_acordada: 'Volver al esquema de DOS repos que ya se usaba antes: uno PÚBLICO solo con el sitio, uno PRIVADO con toda la documentación y datos personales.'
     repo_publico:
       nombre: juadolfob/hawai-islas (público)
-      contenido: 'SOLO archivos del sitio: index.html, atracciones.html, comparacion_islas_hawai.html, comparacion_hospedaje.html, itinerario_render_hawai.html, img/, audio/'
+      contenido: 'SOLO archivos del sitio: index.html, attractions.html, island-comparison.html, lodging-comparison.html, itinerary.html, img/, audio/'
       url: https://juadolfob.github.io/hawai-islas/
       nota: Mantener este nombre para no romper la URL que ya tiene la familia
     repo_privado:
       nombre: un repo aparte, privado (ej. hawai-planeacion)
-      contenido: data/ (itinerario_hawai_2026.yaml, islas_hawai.yaml), docs/, reservas/ (PDFs)
+      contenido: data/ (itinerary_2026.yaml, islands.yaml), docs/, reservas/ (PDFs)
     OJO_datos_sensibles:
     - 'NO volver público el repo con estos datos dentro — y limpiar el historial de git, no basta con borrar los archivos:'
     - 'PNR de United: XXXXXX — el más grave, con apellido + PNR se puede ver y cancelar el vuelo'

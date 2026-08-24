@@ -1,94 +1,92 @@
-# 🌺 Hawái 2026 — un viaje planeado con IA
+# 🌺 Hawaii 2026 — a trip planned with AI
 
-> Planeación completa de un viaje familiar a **Oʻahu** (17 → 22 de agosto de 2026, 5 adultos),
-> hecha en conjunto con un asistente de IA: desde comparar islas hasta cerrar el itinerario día por día.
+> Full planning record for a family trip to **Oʻahu** (Aug 17–22, 2026, five adults),
+> put together with an AI assistant — from "which island?" all the way to a locked-in
+> day-by-day itinerary.
 >
-> **The whole trip was planned with an AI assistant.** This repo is the artifact of that process —
-> research, comparisons, a voting app for the family, and the final day-by-day plan.
-> All personal data has been replaced with placeholders (see [Privacidad](#-privacidad)).
+> All personal data has been replaced with placeholders. See [Privacy](#-privacy).
 
-**Sitio:** https://juadolfob.github.io/hawai-islas/
+**Live site:** https://juadolfob.github.io/oahu-2026-ai-planned-trip/
 
 ---
 
-## Qué es esto
+## What this is
 
-No es un blog de viaje. Es el **rastro de trabajo** de planear unas vacaciones en familia
-usando IA como copiloto — con los datos, las comparaciones y las decisiones que quedaron por escrito.
+Not a travel blog. This is the **work trail** of planning a family vacation with AI as a
+copilot — the data, the comparisons and the decisions, written down as they happened.
 
-Empezó con una pregunta simple (*¿a qué isla vamos?*) y terminó en un itinerario cerrado,
-con reservas hechas, presupuesto verificado y una app de votación para que los cinco opinaran.
+It started with one question (*which island do we go to?*) and ended with a closed
+itinerary: bookings made, budget verified, and a voting app so all five could weigh in.
 
-## Cómo se hizo
+## How it was built
 
-**1. Investigación → datos estructurados.**
-En vez de notas sueltas, todo se fue volcando a YAML: islas, hoteles, tours, precios,
-ventanas de reserva, traslapes entre actividades. Un solo archivo como fuente de verdad
-([`data/itinerario_hawai_2026.yaml`](data/itinerario_hawai_2026.yaml), ~1,700 líneas).
+**1. Research → structured data.**
+Instead of scattered notes, everything went into YAML: islands, hotels, tours, prices,
+booking windows, overlaps between activities. One file as the source of truth
+([`data/itinerary_2026.yaml`](data/itinerary_2026.yaml), ~1,700 lines).
 
-**2. Datos → sitio.**
-De ese YAML salieron las páginas HTML: comparación de islas, catálogo de atracciones,
-comparación de hospedaje e itinerario visual. Todo autocontenido — se abren sin servidor.
+**2. Data → site.**
+The HTML pages were generated from that YAML: island comparison, attraction catalog,
+lodging comparison and a visual itinerary. Everything is self-contained — the pages open
+straight in a browser, no server needed.
 
-**3. Decisiones en familia.**
-El problema real no era encontrar cosas que hacer, era **elegir entre demasiadas**.
-Se armó un sistema de votación con estrellas sobre 115 actividades: cada quien elegía
-"quién soy" y calificaba. Los votos vivían en una Realtime Database para que se
-sincronizaran en vivo entre los cinco.
+**3. Deciding as a family.**
+The real problem was never finding things to do, it was **choosing among too many**.
+So we built a star-voting system across 115 activities: each person picked "who am I"
+and rated. Votes lived in a Realtime Database so all five stayed in sync live.
 
-**4. Depuración por traslape.**
-La parte más útil y menos obvia: detectar que muchas actividades **ya venían incluidas**
-en otras. El Circle Island Tour traía Diamond Head, Halona Blowhole, Makapuʻu, Dole y
-Sunset Beach; el Toa Lūʻau incluía la entrada a Waimea Valley. Ir marcando esos traslapes
-evitó pagar dos veces por lo mismo y liberó días completos.
+**4. Overlap pruning.**
+The most useful and least obvious part: spotting how much was **already included**
+elsewhere. The Circle Island Tour already covered Diamond Head, Halona Blowhole,
+Makapuʻu, Dole and Sunset Beach; the Toa Lūʻau bundled entry to Waimea Valley.
+Flagging those overlaps avoided paying twice and freed up entire days.
 
-**5. Bitácora.**
-Durante el viaje se registró lo que realmente pasó
-([`docs/bitacora.md`](docs/bitacora.md)) — contra lo que estaba planeado.
+**5. Trip log.**
+During the trip we recorded what actually happened
+([`docs/trip-log.md`](docs/trip-log.md)) against what was planned.
 
-## Qué hay aquí
+## What's in here
 
-| Archivo | Qué es |
+| File | What it is |
 | --- | --- |
-| [`index.html`](index.html) | Comparación de islas — la portada |
-| [`atracciones.html`](atracciones.html) | Catálogo de atracciones y tours, con votación por estrellas |
-| [`comparacion_hospedaje.html`](comparacion_hospedaje.html) | Comparación de hoteles |
-| [`itinerario_render_hawai.html`](itinerario_render_hawai.html) | Itinerario visual |
-| `data/` | Las fuentes en YAML |
-| `docs/` | Notas de trabajo, estado del plan y bitácora |
-| `img/` · `audio/` | Recursos del sitio |
+| [`index.html`](index.html) | Island comparison — the landing page |
+| [`attractions.html`](attractions.html) | Attraction and tour catalog, with star voting |
+| [`lodging-comparison.html`](lodging-comparison.html) | Hotel comparison |
+| [`itinerary.html`](itinerary.html) | Visual itinerary |
+| `data/` | YAML sources |
+| `docs/` | Working notes, plan status and trip log |
+| `img/` · `audio/` | Site assets |
 
-> Las rutas `img/` y `audio/` no se deben mover: los `.html` las referencian directamente.
+> Don't move `img/` or `audio/` — the HTML references those paths directly.
 
-## La votación, congelada
+## The voting, frozen
 
-Los votos vivían en una base de datos en tiempo real para que la familia votara desde
-sus teléfonos y se vieran los cambios al instante. Terminado el viaje, la base se apagó
-y **los resultados finales quedaron incrustados directamente en el HTML**.
+Votes lived in a realtime database so the family could vote from their phones and see
+changes instantly. Once the trip ended the database was shut down and **the final results
+were embedded directly into the HTML**.
 
-La interfaz sigue funcionando: puedes elegir quién eres y votar, pero ahora se guarda
-solo en tu navegador (`localStorage`). Sin backend, sin llaves, sin nada que mantener.
+The interface still works: you can pick who you are and vote, but it now saves only to
+your browser (`localStorage`). No backend, no keys, nothing to maintain.
 
-## 🔒 Privacidad
+## 🔒 Privacy
 
-Este repo fue privado durante la planeación porque contenía datos reales.
-Antes de hacerlo público **se reemplazó toda la información personal**:
+This repo was private during planning because it held real data. Before going public,
+**all personal information was replaced**:
 
-- Nombres → roles genéricos (`Papá`, `Mamá`, `Hijo 1`, `Hijo 2`, `Hijo 3`)
-- Códigos de reservación, PNRs y números de confirmación → `XXXXXX`
-- Correos, teléfonos, fechas de nacimiento y números de lealtad → placeholders
-- Se eliminaron los PDFs de confirmación y el reporte de pago
-- Se eliminó la configuración de la base de datos
+- Names → generic roles (`Dad`, `Mom`, `Kid 1`, `Kid 2`, `Kid 3`)
+- Booking codes, airline PNRs and confirmation numbers → `XXXXXX`
+- Emails, phone numbers, birth dates and loyalty numbers → placeholders
+- Confirmation PDFs and the payment report were deleted
+- The database configuration was removed
 
-El historial de git se reescribió desde cero, porque borrar los archivos no basta:
-los datos siguen siendo recuperables en commits anteriores.
+Git history was rebuilt from scratch, because deleting files isn't enough — the data
+stays recoverable in earlier commits.
 
-Los precios, horarios, rutas y opiniones sobre lugares son reales — esa parte es
-justamente lo que puede servirle a alguien más.
+Prices, schedules, routes and opinions about places are real — that's the part that
+might actually be useful to someone else.
 
-## Si te sirve para tu propio viaje
+## If you're planning your own trip
 
-Lo aprovechable sin cambiar nada: la comparación entre islas, el catálogo de
-atracciones con precios y calificaciones, la comparación de hoteles en Waikīkī,
-y sobre todo el **análisis de traslapes** — qué tours se pisan entre sí y qué
-ya viene incluido en cuál.
+Usable as-is: the island comparison, the attraction catalog with prices and ratings,
+the Waikīkī hotel comparison, and above all the **overlap analysis** — which tours
+step on each other and what's already bundled into what.
