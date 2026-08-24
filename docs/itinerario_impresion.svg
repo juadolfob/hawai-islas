@@ -1,0 +1,85 @@
+<svg width="800" height="1950" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#f4f9f9"/>
+  
+  <!-- Header -->
+  <rect x="50" y="30" width="700" height="120" rx="15" fill="#3b82f6"/>
+  <text x="400" y="85" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#ffffff" text-anchor="middle">🌺 Itinerario Hawái 2026 🌺</text>
+  <text x="400" y="125" font-family="Arial, sans-serif" font-size="20" fill="#e0f2fe" text-anchor="middle">Familia Familia (16 al 24 de Agosto)</text>
+
+  <!-- Day 1: 16 Ago -->
+  <rect x="50" y="180" width="700" height="130" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="70" y="220" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1e293b">✈️ Dom 16 Ago - Salida hacia CDMX</text>
+  <text x="70" y="255" font-family="Arial, sans-serif" font-size="16" fill="#475569">09:40 - Vuelo: Viva Aerobus (CEN a NLU). Conf: XXXXXX.</text>
+  <text x="70" y="280" font-family="Arial, sans-serif" font-size="16" fill="#475569">14:40 - Aterrizaje en CDMX. Pernocta en CDMX.</text>
+
+  <!-- Day 2: 17 Ago -->
+  <rect x="50" y="340" width="700" height="180" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="70" y="380" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1e293b">✈️ Lun 17 Ago - Llegada a Hawái</text>
+  <text x="70" y="415" font-family="Arial, sans-serif" font-size="16" fill="#475569">04:40 - Vuelo UA1085 (CDMX a Houston).</text>
+  <text x="70" y="440" font-family="Arial, sans-serif" font-size="16" fill="#475569">13:34 - Aterrizaje en Honolulu (HNL).</text>
+  <text x="70" y="465" font-family="Arial, sans-serif" font-size="16" fill="#475569">14:30 - Recoger Auto: Sixt (BMW X3).</text>
+  <text x="70" y="490" font-family="Arial, sans-serif" font-size="16" fill="#475569">Tarde - Check-in Hotel: The Twin Fin Waikiki (#XXXXXXXX).</text>
+
+  <!-- Day 3: 18 Ago -->
+  <rect x="50" y="550" width="700" height="130" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="70" y="590" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1e293b">🌴 Mar 18 Ago - Cultura y Naturaleza</text>
+  <text x="70" y="625" font-family="Arial, sans-serif" font-size="16" fill="#475569">15:00 - Waimea Valley (Jardín botánico y cascada).</text>
+  <text x="70" y="650" font-family="Arial, sans-serif" font-size="16" fill="#475569">17:00 - Toa Lūʻau (Cena, show polinesio y ceremonia).</text>
+
+  <!-- Day 4: 19 Ago -->
+  <rect x="50" y="710" width="700" height="155" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="70" y="750" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1e293b">⛰️ Mié 19 Ago - Aventura en Kualoa</text>
+  <text x="70" y="785" font-family="Arial, sans-serif" font-size="16" fill="#475569">08:15 - UTV Raptor Tour (Llegar 07:30).</text>
+  <text x="70" y="810" font-family="Arial, sans-serif" font-size="16" fill="#475569">11:45 - Escanear pase Go City (Ticket Office).</text>
+  <text x="70" y="835" font-family="Arial, sans-serif" font-size="16" fill="#475569">12:30 - Secret Island Beach (Kayak, paddleboard).</text>
+
+  <!-- Day 5: 20 Ago -->
+  <rect x="50" y="895" width="700" height="130" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="70" y="935" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1e293b">🚌 Jue 20 Ago - Vuelta a la Isla</text>
+  <text x="70" y="970" font-family="Arial, sans-serif" font-size="16" fill="#475569">07:20 - Pickup: Circle Island Tour + Byodo-In.</text>
+  <text x="70" y="995" font-family="Arial, sans-serif" font-size="16" fill="#475569">16:30 - Regreso aproximado al hotel.</text>
+
+  <!-- Day 6: 21 Ago -->
+  <rect x="50" y="1055" width="700" height="105" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="70" y="1095" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1e293b">🍹 Vie 21 Ago - Día Libre</text>
+  <text x="70" y="1130" font-family="Arial, sans-serif" font-size="16" fill="#475569">Día sin actividades. ¡A relajarse en la playa!</text>
+
+  <!-- Day 7: 22 Ago -->
+  <rect x="50" y="1190" width="700" height="180" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  
+  <!-- Columna 1: Itinerario General -->
+  <text x="70" y="1230" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1e293b">👋 Sáb 22 Ago - Despedida</text>
+  <text x="70" y="1265" font-family="Arial, sans-serif" font-size="16" fill="#475569">11:00 - Check-out del Hotel.</text>
+  <text x="70" y="1290" font-family="Arial, sans-serif" font-size="16" fill="#475569">17:30 - Entregar Auto Sixt (BMW X3).</text>
+  <text x="70" y="1315" font-family="Arial, sans-serif" font-size="16" fill="#475569">18:30 - Llegada al aeropuerto HNL.</text>
+  <text x="70" y="1340" font-family="Arial, sans-serif" font-size="16" fill="#475569">21:40 - Salida vuelo UA1806 hacia Denver.</text>
+
+  <!-- Línea divisoria -->
+  <line x1="380" y1="1235" x2="380" y2="1350" stroke="#cbd5e1" stroke-width="1" stroke-dasharray="4"/>
+
+  <!-- Columna 2: Hijo 3 -->
+  <text x="410" y="1265" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#0369a1">💼 Entrevista (Hijo 3)</text>
+  <text x="410" y="1295" font-family="Arial, sans-serif" font-size="16" fill="#475569">Programada para este día.</text>
+  <text x="410" y="1320" font-family="Arial, sans-serif" font-size="16" fill="#475569">Tener la computadora lista.</text>
+
+  <!-- Day 8: 23 Ago -->
+  <rect x="50" y="1400" width="700" height="130" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="70" y="1440" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1e293b">✈️ Dom 23 Ago - Llegada a CDMX</text>
+  <text x="70" y="1475" font-family="Arial, sans-serif" font-size="16" fill="#475569">21:10 - Aterrizaje en CDMX (MEX).</text>
+  <text x="70" y="1500" font-family="Arial, sans-serif" font-size="16" fill="#475569">Traslado y pernocta en CDMX.</text>
+
+  <!-- Day 9: 24 Ago -->
+  <rect x="50" y="1560" width="700" height="130" rx="10" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <text x="70" y="1600" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#1e293b">✈️ Lun 24 Ago - Regreso a Casa</text>
+  <text x="70" y="1635" font-family="Arial, sans-serif" font-size="16" fill="#475569">06:40 - Vuelo: Viva Aerobus (NLU a CEN). Conf: XXXXXX.</text>
+  <text x="70" y="1660" font-family="Arial, sans-serif" font-size="16" fill="#475569">07:55 - Aterrizaje en Ciudad Obregón. ¡Fin!</text>
+
+  <!-- Notes -->
+  <rect x="50" y="1720" width="700" height="140" rx="10" fill="#fef3c7" stroke="#fbbf24" stroke-width="2"/>
+  <text x="70" y="1760" font-family="Arial, sans-serif" font-size="22" font-weight="bold" fill="#b45309">📌 Notas Importantes</text>
+  <text x="70" y="1795" font-family="Arial, sans-serif" font-size="16" fill="#92400e">• Hotel: Pago pendiente de aprox. US$1,644 alrededor del 3 de agosto.</text>
+  <text x="70" y="1820" font-family="Arial, sans-serif" font-size="16" fill="#92400e">• Firmas: Recuerden firmar los waivers de Kualoa y Go Tours Hawaii antes.</text>
+  <text x="70" y="1845" font-family="Arial, sans-serif" font-size="16" fill="#92400e">• Identificación: Llevar ID con foto que coincida a todas las actividades.</text>
+
+</svg>

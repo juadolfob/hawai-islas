@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Itinerario — Hawái 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300;9..144,400;9..144,500;9..144,600&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --parchment: #efe4c9;
+  --aged-cream: #f5ecd5;
+  --ink: #0e2438;
+  --ink-soft: #2e4358;
+  --ocean: #1c4b6e;
+  --rust: #b8553a;
+  --rust-dark: #8c3a25;
+  --sage: #6f8a78;
+  --gold: #b08d3a;
+  --hairline: rgba(14,36,56,0.15);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: var(--parchment);
+  background-image:
+    radial-gradient(ellipse at 15% 20%, rgba(184,85,58,0.04) 0%, transparent 55%),
+    radial-gradient(ellipse at 85% 80%, rgba(28,75,110,0.05) 0%, transparent 55%);
+  background-attachment: fixed;
+  color: var(--ink);
+  font-family: 'Newsreader', Georgia, serif;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 56px 28px 80px; }
+
+/* ===== HEADER ===== */
+header {
+  text-align: center;
+  padding-bottom: 32px;
+  margin-bottom: 8px;
+  border-bottom: 2px solid var(--ink);
+}
+header .kicker {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--rust);
+  margin-bottom: 16px;
+}
+header h1 {
+  font-family: 'Fraunces', serif;
+  font-variation-settings: 'opsz' 144, 'SOFT' 40;
+  font-weight: 400;
+  font-style: italic;
+  font-size: clamp(44px, 11vw, 76px);
+  line-height: 0.92;
+  letter-spacing: -0.02em;
+}
+header h1 .a { color: var(--rust); font-style: normal; font-weight: 600; }
+header .dates {
+  margin-top: 18px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.15em;
+  color: var(--ink-soft);
+}
+header .pax {
+  margin-top: 8px;
+  font-style: italic;
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+
+/* ===== TIMELINE ===== */
+.timeline {
+  position: relative;
+  margin-top: 40px;
+  padding-left: 36px;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: repeating-linear-gradient(to bottom, var(--ink) 0 6px, transparent 6px 12px);
+  opacity: 0.4;
+}
+
+.node { position: relative; margin-bottom: 22px; }
+.node::before {
+  content: '';
+  position: absolute;
+  left: -31px;
+  top: 14px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--parchment);
+  border: 2px solid var(--ink);
+}
+.node.flight::before { background: var(--rust); border-color: var(--rust-dark); }
+.node.stay::before { background: var(--sage); border-color: var(--ink); }
+.node.pending::before { background: var(--aged-cream); border-color: var(--rust); border-style: dashed; }
+
+/* ===== FLIGHT TICKET ===== */
+.ticket {
+  display: flex;
+  background: var(--aged-cream);
+  border: 1px solid var(--ink);
+  overflow: hidden;
+  box-shadow: 2px 2px 0 rgba(14,36,56,0.12);
+}
+.ticket .main { flex: 1; padding: 16px 20px; }
+.ticket .stub {
+  width: 96px;
+  border-left: 2px dashed var(--ink);
+  padding: 16px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(184,85,58,0.05);
+}
+.ticket .route {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 8px;
+}
+.ticket .code {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+}
+.ticket .arrow {
+  flex: 1;
+  height: 1px;
+  background: var(--ink);
+  position: relative;
+  opacity: 0.5;
+}
+.ticket .arrow::after {
+  content: '✈';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  background: var(--aged-cream);
+  padding: 0 6px;
+  font-size: 13px;
+  color: var(--rust);
+}
+.ticket .cities {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 12px;
+}
+.ticket .times {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.ticket .time { font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 16px; }
+.ticket .dur {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+}
+.ticket .stub .airline {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.ticket .stub .fno {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  color: var(--rust-dark);
+}
+.ticket .stub .date {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 8.5px;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+  margin-top: 6px;
+  text-transform: uppercase;
+}
+
+.seg-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 8px;
+  padding-top: 4px;
+}
+
+/* ===== STAY CARD ===== */
+.stay-card {
+  background: rgba(111,138,120,0.12);
+  border-left: 3px solid var(--sage);
+  padding: 14px 20px;
+}
+.stay-card .name {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 20px;
+  font-weight: 500;
+}
+.stay-card .detail {
+  font-size: 13.5px;
+  color: var(--ink-soft);
+  margin-top: 2px;
+}
+.stay-card .nights {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-top: 6px;
+}
+
+/* ===== PENDING / DECISION CARD ===== */
+.pending-card {
+  background: rgba(184,85,58,0.07);
+  border: 1px dashed var(--rust);
+  padding: 16px 20px;
+}
+.pending-card .tag {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--rust);
+  border: 1px solid var(--rust);
+  padding: 2px 8px;
+  margin-bottom: 10px;
+}
+.pending-card .q {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 19px;
+  margin-bottom: 8px;
+}
+.pending-card .opts {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  line-height: 1.7;
+}
+.pending-card .opts b { color: var(--rust-dark); }
+
+/* ===== HAWAII HIGHLIGHT BLOCK ===== */
+.hawaii-block {
+  margin: 4px 0 22px;
+  background: linear-gradient(135deg, var(--ocean), var(--ink));
+  color: var(--aged-cream);
+  border-radius: 2px;
+  padding: 24px 24px 20px;
+  position: relative;
+  overflow: hidden;
+}
+.hawaii-block::after {
+  content: '';
+  position: absolute;
+  right: -30px; bottom: -30px;
+  width: 140px; height: 140px;
+  background: radial-gradient(circle, rgba(184,85,58,0.25), transparent 70%);
+}
+.hawaii-block .label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-bottom: 6px;
+}
+.hawaii-block h2 {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 1;
+  margin-bottom: 14px;
+}
+.hawaii-block .window {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  opacity: 0.85;
+  line-height: 1.8;
+}
+.hawaii-block .window b { color: #e8b04a; font-weight: 700; }
+
+/* ===== FOOTER NOTES ===== */
+.notes {
+  margin-top: 36px;
+  padding-top: 24px;
+  border-top: 2px solid var(--ink);
+}
+.notes h3 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.notes ul { list-style: none; display: grid; gap: 8px; }
+.notes li {
+  font-size: 13.5px;
+  font-style: italic;
+  color: var(--ink-soft);
+  padding-left: 18px;
+  position: relative;
+}
+.notes li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--rust);
+  font-style: normal;
+}
+.colophon {
+  margin-top: 28px;
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 540px) {
+  .ticket { flex-direction: column; }
+  .ticket .stub { width: 100%; border-left: none; border-top: 2px dashed var(--ink); flex-direction: row; gap: 10px; }
+  .ticket .code { font-size: 28px; }
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="kicker">Itinerario de viaje · Familia Familia</div>
+    <h1>Rumbo a <span class="a">Hawái</span></h1>
+    <div class="dates">16 — 24 AGOSTO 2026</div>
+    <div class="pax">Papá · Mamá · Hijo 1 · Hijo 2</div>
+  </header>
+
+  <div class="timeline">
+
+    <!-- 1 · Viva CEN → NLU -->
+    <div class="node flight">
+      <div class="seg-label">Dom 16 ago · Salida</div>
+      <div class="ticket">
+        <div class="main">
+          <div class="route">
+            <span class="code">CEN</span>
+            <span class="arrow"></span>
+            <span class="code">NLU</span>
+          </div>
+          <div class="cities"><span>Ciudad Obregón</span><span>AIFA · CDMX</span></div>
+          <div class="times">
+            <span class="time">09:40</span>
+            <span class="dur">4h 00m · directo</span>
+            <span class="time">14:40</span>
+          </div>
+        </div>
+        <div class="stub">
+          <div class="airline">Viva</div>
+          <div class="fno">XXXXXX</div>
+          <div class="date">16 AGO</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stay · Fiesta Inn -->
+    <div class="node stay">
+      <div class="stay-card">
+        <div class="name">Fiesta Inn Aeropuerto</div>
+        <div class="detail">Ciudad de México (MEX · Benito Juárez)</div>
+        <div class="nights">1 noche · 16 → 17 ago</div>
+      </div>
+    </div>
+
+    <!-- 2 · UA MEX → HNL (consolidado) -->
+    <div class="node flight">
+      <div class="seg-label">Lun 17 ago · Internacional</div>
+      <div class="ticket">
+        <div class="main">
+          <div class="route">
+            <span class="code">MEX</span>
+            <span class="arrow"></span>
+            <span class="code">HNL</span>
+          </div>
+          <div class="cities"><span>Ciudad de México</span><span>Honolulu</span></div>
+          <div class="times">
+            <span class="time">04:40</span>
+            <span class="dur">12h 54m total</span>
+            <span class="time">13:34</span>
+          </div>
+        </div>
+        <div class="stub">
+          <div class="airline">United</div>
+          <div class="fno">XXXXXX</div>
+          <div class="date">17 AGO</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- HAWAII BLOCK -->
+    <div class="node stay">
+      <div class="hawaii-block">
+        <div class="label">★ Destino · isla de Oʻahu</div>
+        <h2>Honolulu</h2>
+        <div class="window">
+          Llegada <b>17 ago 13:34</b> · Salida <b>22 ago 21:40</b><br>
+          5 noches · días útiles: 18, 19, 20, 21 + llegada y salida parciales
+        </div>
+      </div>
+    </div>
+
+    <!-- DECISION: OAHU ONLY -->
+    <div class="node stay">
+      <div class="pending-card" style="background: rgba(111,138,120,0.14); border: 1px solid var(--sage);">
+        <span class="tag" style="color: var(--sage); border-color: var(--sage);">Confirmado</span>
+        <div class="q">Hospedaje reservado: <span style="color: var(--rust-dark); font-style: normal; font-weight: 600;">The Twin Fin Hotel</span></div>
+        <div class="opts">
+          Two Bedroom Ocean View Suite with Lanai · 17 → 22 ago · 5 adultos<br>
+          <span style="opacity:0.7;">Total mostrado US$4,111 · pago US$1,644 se cobra aprox. 2 semanas antes, alrededor del 3 ago</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4 · UA HNL → MEX (consolidado) -->
+    <div class="node flight">
+      <div class="seg-label">Vie 22 ago · Regreso (vuelo nocturno)</div>
+      <div class="ticket">
+        <div class="main">
+          <div class="route">
+            <span class="code">HNL</span>
+            <span class="arrow"></span>
+            <span class="code">MEX</span>
+          </div>
+          <div class="cities"><span>Honolulu</span><span>Ciudad de México</span></div>
+          <div class="times">
+            <span class="time">21:40</span>
+            <span class="dur">19h 30m total · +1 día</span>
+            <span class="time">21:10</span>
+          </div>
+        </div>
+        <div class="stub">
+          <div class="airline">United</div>
+          <div class="fno">XXXXXX</div>
+          <div class="date">22→23 AGO</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pending overnight -->
+    <div class="node pending">
+      <div class="pending-card">
+        <span class="tag">Sin reserva</span>
+        <div class="q">Pernocta 23 → 24 ago en CDMX</div>
+        <div class="opts">
+          Llegada MEX 21:10 · salida NLU 06:40<br>
+          <span style="opacity:0.7;">Ventana ~9h 30m · requiere traslado MEX → AIFA</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6 · Viva NLU → CEN -->
+    <div class="node flight">
+      <div class="seg-label">Dom 24 ago · Tramo final</div>
+      <div class="ticket">
+        <div class="main">
+          <div class="route">
+            <span class="code">NLU</span>
+            <span class="arrow"></span>
+            <span class="code">CEN</span>
+          </div>
+          <div class="cities"><span>AIFA · CDMX</span><span>Ciudad Obregón</span></div>
+          <div class="times">
+            <span class="time">06:40</span>
+            <span class="dur">2h 15m · directo</span>
+            <span class="time">07:55</span>
+          </div>
+        </div>
+        <div class="stub">
+          <div class="airline">Viva</div>
+          <div class="fno">XXXXXX</div>
+          <div class="date">24 AGO</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- NOTES -->
+  <div class="notes">
+    <h3>Pendientes activos</h3>
+    <ul>
+      <li>Vigilar cargo Twin Fin: aprox. US$1,644 alrededor del 3 ago 2026</li>
+      <li>Resolver pernocta y traslado del 23 → 24 ago (MEX → AIFA)</li>
+      <li>Hijo 2: comprar su vuelo a CDMX antes del 17 jul</li>
+      <li>Verificar pasaportes y visa/ESTA vigentes para los 4 viajeros</li>
+    </ul>
+    <div class="colophon">Itinerario provisional · compilado 24 · V · MMXXVI</div>
+  </div>
+
+</div>
+</body>
+</html>

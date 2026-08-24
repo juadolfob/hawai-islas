@@ -1,0 +1,1798 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hawái 2026 — Plan de Viaje (Oʻahu)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT,WONK@9..144,300;9..144,400;9..144,500;9..144,700;9..144,900&family=Newsreader:opsz,wght@6..72,300;6..72,400;6..72,500;6..72,600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --parchment: #f6ead3;
+  --parchment-deep: #eedcbd;
+  --aged-cream: #fbf3e1;
+  --ink: #143040;
+  --ink-soft: #365064;
+  --ocean: #236886;
+  --ocean-deep: #163f59;
+  --rust: #a8482b;
+  --rust-dark: #86381f;
+  --sage: #3f6f54;
+  --volcanic: #1a1a1a;
+  --gold: #876111;
+  --hairline: rgba(20,48,64,0.18);
+  --hairline-strong: rgba(20,48,64,0.45);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  background: var(--parchment);
+  color: var(--ink);
+  font-family: 'Newsreader', Georgia, serif;
+  font-size: 17px;
+  line-height: 1.55;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Subtle parchment texture using layered gradients */
+body {
+  background-image:
+    radial-gradient(ellipse at 20% 30%, rgba(168,72,43,0.04) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 70%, rgba(35,104,134,0.05) 0%, transparent 50%),
+    repeating-linear-gradient(0deg, transparent 0px, transparent 2px, rgba(20,48,64,0.012) 2px, rgba(20,48,64,0.012) 3px),
+    repeating-linear-gradient(90deg, transparent 0px, transparent 2px, rgba(20,48,64,0.008) 2px, rgba(20,48,64,0.008) 3px);
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 60px 56px 100px;
+}
+
+/* ============ MASTHEAD ============ */
+.masthead {
+  border-top: 2px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  padding: 14px 0 28px;
+  margin-bottom: 56px;
+  position: relative;
+}
+.masthead .top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--hairline);
+  margin-bottom: 32px;
+}
+.masthead h1 {
+  font-family: 'Fraunces', serif;
+  font-variation-settings: 'opsz' 144, 'SOFT' 0, 'WONK' 0;
+  font-weight: 700;
+  font-size: clamp(38px, 7vw, 92px);
+  line-height: 1;
+  letter-spacing: -0.015em;
+  color: var(--ink);
+  font-style: italic;
+  white-space: nowrap;
+}
+.masthead h1 .accent {
+  color: var(--rust);
+  font-style: normal;
+  font-weight: 700;
+}
+.masthead .subtitle {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+  font-family: 'Newsreader', serif;
+  font-size: 15px;
+  color: var(--ink-soft);
+  font-style: italic;
+}
+.masthead .subtitle strong {
+  display: block;
+  font-family: 'JetBrains Mono', monospace;
+  font-style: normal;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+
+/* ============ MAP SECTION ============ */
+.map-section {
+  margin: 64px 0 80px;
+  position: relative;
+}
+.map-frame {
+  background: var(--aged-cream);
+  border: 1px solid var(--hairline-strong);
+  padding: 32px 24px 16px;
+  position: relative;
+  box-shadow:
+    inset 0 0 60px rgba(168,72,43,0.06),
+    0 1px 0 rgba(255,255,255,0.4);
+}
+.map-frame::before,
+.map-frame::after {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 1px solid var(--ink);
+}
+.map-frame::before { top: 8px; left: 8px; border-right: none; border-bottom: none; }
+.map-frame::after { bottom: 8px; right: 8px; border-left: none; border-top: none; }
+
+.map-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 16px;
+  padding: 0 12px;
+}
+.map-header h2 {
+  font-family: 'Fraunces', serif;
+  font-weight: 300;
+  font-size: 14px;
+  letter-spacing: 0.4em;
+  text-transform: uppercase;
+  color: var(--ink);
+}
+.map-header .meta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+}
+
+svg.archipelago { width: 100%; height: auto; display: block; }
+
+.island-shape {
+  fill: var(--sage);
+  fill-opacity: 0.85;
+  stroke: var(--ink);
+  stroke-width: 1.2;
+  transition: all 0.4s cubic-bezier(0.2,0.8,0.2,1);
+  cursor: pointer;
+}
+.island-shape:hover { fill: var(--rust); fill-opacity: 0.95; }
+.island-shape.entry { fill: var(--rust); fill-opacity: 0.92; }
+.island-shape.restricted { fill: var(--ink-soft); fill-opacity: 0.4; stroke-dasharray: 3 3; }
+.island-shape.discarded { fill: var(--ink-soft); fill-opacity: 0.35; stroke-dasharray: 4 2; }
+
+.island-label {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 500;
+  fill: var(--ink);
+  letter-spacing: 0.02em;
+}
+.island-label-mono {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  fill: var(--ink-soft);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.compass-text, .scale-text {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  fill: var(--ink-soft);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+.lat-line {
+  stroke: var(--hairline);
+  stroke-width: 0.5;
+  stroke-dasharray: 2 4;
+  fill: none;
+}
+
+/* Annotation arrow for HNL */
+.entry-marker {
+  fill: var(--rust);
+  stroke: var(--ink);
+  stroke-width: 0.8;
+}
+.entry-callout {
+  font-family: 'Newsreader', serif;
+  font-style: italic;
+  font-size: 13px;
+  font-weight: 500;
+  fill: var(--rust-dark);
+}
+.callout-line {
+  stroke: var(--rust);
+  stroke-width: 1.2;
+  fill: none;
+}
+
+/* ============ SECTION HEADERS ============ */
+.section-header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 32px;
+  align-items: baseline;
+  border-bottom: 1px solid var(--ink);
+  padding-bottom: 12px;
+  margin: 80px 0 48px;
+}
+.section-header .num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  color: var(--rust);
+  font-weight: 700;
+}
+.section-header h2 {
+  font-family: 'Fraunces', serif;
+  font-variation-settings: 'opsz' 60;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 38px;
+  letter-spacing: -0.01em;
+}
+.section-header .count {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+}
+
+/* ============ ISLAND CARDS ============ */
+.islands-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 56px;
+}
+.island-card {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 48px;
+  padding-bottom: 56px;
+  border-bottom: 1px solid var(--hairline);
+  position: relative;
+}
+.island-card:last-child { border-bottom: none; }
+
+.island-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.island-aside .index {
+  font-family: 'Fraunces', serif;
+  font-variation-settings: 'opsz' 144, 'WONK' 0;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 92px;
+  line-height: 0.8;
+  color: var(--rust);
+}
+.island-aside .silhouette {
+  width: 100%;
+  height: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.island-aside .silhouette svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+.island-aside .silhouette path {
+  fill: var(--ink);
+  fill-opacity: 0.88;
+}
+.island-aside .stat {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  padding-top: 12px;
+  border-top: 1px solid var(--hairline);
+}
+.island-aside .stat span {
+  display: block;
+  color: var(--ink);
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  margin-top: 4px;
+  text-transform: none;
+  font-family: 'Newsreader', serif;
+  font-style: italic;
+}
+
+.island-main h3 {
+  font-family: 'Fraunces', serif;
+  font-variation-settings: 'opsz' 144, 'WONK' 0;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 0.95;
+  letter-spacing: -0.025em;
+  margin-bottom: 4px;
+}
+.island-main .nickname {
+  font-family: 'Newsreader', serif;
+  font-style: italic;
+  font-size: 17px;
+  color: var(--rust-dark);
+  margin-bottom: 24px;
+  letter-spacing: 0.02em;
+}
+.island-main .tema {
+  font-family: 'Newsreader', serif;
+  font-size: 19px;
+  line-height: 1.5;
+  color: var(--ink);
+  font-weight: 400;
+  border-left: 2px solid var(--rust);
+  padding-left: 20px;
+  margin: 0 0 32px;
+  font-style: italic;
+}
+.island-main .activities-label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.island-main .activities-label::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: var(--hairline);
+}
+.activities {
+  list-style: none;
+  display: grid;
+  gap: 14px;
+  counter-reset: activity;
+}
+.activities li {
+  display: grid;
+  grid-template-columns: 32px 1fr;
+  gap: 16px;
+  counter-increment: activity;
+  font-size: 15.5px;
+  line-height: 1.5;
+}
+.activities li::before {
+  content: counter(activity, decimal-leading-zero);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--rust);
+  letter-spacing: 0.1em;
+  padding-top: 4px;
+}
+.activities li strong {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 16.5px;
+  color: var(--ink);
+}
+
+.seasonal-note {
+  margin-top: 24px;
+  padding: 12px 16px;
+  background: rgba(168,72,43,0.08);
+  border-left: 3px solid var(--rust);
+  font-size: 14px;
+  font-style: italic;
+  color: var(--rust-dark);
+}
+.seasonal-note::before {
+  content: 'NOTA ESTACIONAL · ';
+  font-family: 'JetBrains Mono', monospace;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+}
+
+/* Card variant for restricted islands */
+.island-card.restricted .island-main h3 { color: var(--ink-soft); }
+.island-card.restricted .island-aside .index { color: var(--ink-soft); }
+
+/* ============ DISCARDED STATE ============ */
+.island-card.discarded {
+  position: relative;
+  opacity: 0.72;
+}
+.island-card.discarded .island-main h3,
+.island-card.discarded .island-aside .index,
+.island-card.discarded .nickname {
+  text-decoration: line-through;
+  text-decoration-color: var(--rust);
+  text-decoration-thickness: 2px;
+}
+.island-card.discarded .silhouette path {
+  fill: var(--ink-soft);
+  fill-opacity: 0.5;
+}
+.discard-stamp {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--rust);
+  border: 2px solid var(--rust);
+  padding: 6px 14px;
+  margin-bottom: 16px;
+  transform: rotate(-2deg);
+  background: rgba(168,72,43,0.06);
+}
+.discard-rationale {
+  margin-top: 28px;
+  padding: 24px 28px;
+  background: rgba(20,48,64,0.04);
+  border-left: 3px solid var(--rust);
+}
+.discard-rationale h4 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--rust-dark);
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.discard-rationale h4 .score {
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  text-transform: none;
+}
+.discard-rationale ul {
+  list-style: none;
+  display: grid;
+  gap: 12px;
+  font-size: 14.5px;
+  line-height: 1.5;
+}
+.discard-rationale li {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 18px;
+  padding: 8px 0;
+  border-bottom: 1px dotted var(--hairline);
+}
+.discard-rationale li:last-child { border-bottom: none; }
+.discard-rationale li strong {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink);
+  padding-top: 3px;
+}
+.discard-rationale li span {
+  font-style: italic;
+  color: var(--ink);
+}
+
+/* ============ ENTRY BANNER (Oʻahu emphasis) ============ */
+.entry-banner {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background: var(--rust);
+  color: var(--aged-cream);
+  padding: 4px 10px;
+  margin-bottom: 12px;
+  border-radius: 0;
+}
+
+/* ============ FOOTER ============ */
+.footer {
+  margin-top: 80px;
+  padding-top: 32px;
+  border-top: 2px solid var(--ink);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  font-size: 13px;
+  color: var(--ink-soft);
+}
+.footer h4 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+.footer ul { list-style: none; }
+.footer li {
+  padding: 4px 0;
+  border-bottom: 1px dotted var(--hairline);
+  font-style: italic;
+}
+.footer .colophon {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.15em;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  font-style: normal;
+}
+
+/* ============ ANIMATIONS ============ */
+@keyframes rise {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.masthead, .map-section, .section-header, .island-card, .footer {
+  animation: rise 0.8s cubic-bezier(0.2,0.8,0.2,1) backwards;
+}
+.map-section { animation-delay: 0.1s; }
+.section-header { animation-delay: 0.15s; }
+.island-card:nth-child(1) { animation-delay: 0.2s; }
+.island-card:nth-child(2) { animation-delay: 0.28s; }
+.island-card:nth-child(3) { animation-delay: 0.36s; }
+.island-card:nth-child(4) { animation-delay: 0.44s; }
+.island-card:nth-child(5) { animation-delay: 0.52s; }
+.island-card:nth-child(6) { animation-delay: 0.60s; }
+
+@media (max-width: 900px) {
+  .container { padding: 32px 20px 60px; }
+  .masthead .subtitle { grid-template-columns: 1fr; gap: 16px; }
+  .island-card { grid-template-columns: 1fr; gap: 24px; }
+  .island-aside { flex-direction: row; align-items: center; }
+  .island-aside .silhouette { width: 100px; }
+  .island-main h3 { font-size: 38px; }
+  .footer { grid-template-columns: 1fr; }
+}
+
+/* ============ SCORE BADGE + MATRIX ============ */
+.score-badge {
+  display: inline-block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  background: var(--ocean);
+  color: var(--aged-cream);
+  padding: 4px 10px;
+  margin-bottom: 12px;
+}
+.matrix-section { margin: 80px 0 0; }
+.matrix-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--hairline-strong);
+  background: var(--aged-cream);
+  box-shadow: inset 0 0 60px rgba(35,104,134,0.05);
+}
+table.matrix {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  min-width: 740px;
+}
+table.matrix thead th {
+  text-align: right;
+  padding: 12px 7px;
+  border-bottom: 1.5px solid var(--ink);
+  font-size: 9.5px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  white-space: normal;
+  overflow-wrap: break-word;
+  vertical-align: bottom;
+  line-height: 1.25;
+}
+table.matrix thead th:first-child { text-align: left; }
+table.matrix tbody td {
+  text-align: right;
+  padding: 16px 10px;
+  border-bottom: 1px dotted var(--hairline);
+  color: var(--ink-soft);
+}
+table.matrix tbody td:first-child {
+  text-align: left;
+  font-family: 'Fraunces', serif;
+  font-style: italic;
+  font-size: 16px;
+  color: var(--ink);
+  white-space: nowrap;
+}
+table.matrix tbody tr:last-child td { border-bottom: none; }
+table.matrix .sum { font-weight: 700; color: var(--ink-soft); font-size: 13px; }
+table.matrix .delta-up { color: var(--sage); font-weight: 700; }
+table.matrix .delta-down { color: var(--rust-dark); font-weight: 700; }
+table.matrix tbody tr.lead td { background: rgba(168,72,43,0.05); }
+
+/* Ghost islands on map (contexto, gris claro) */
+.island-shape.ghost {
+  fill: #c3c0b6;
+  fill-opacity: 0.55;
+  stroke: var(--ink-soft);
+  stroke-opacity: 0.35;
+  stroke-width: 0.8;
+  stroke-dasharray: 3 3;
+  cursor: default;
+}
+.island-shape.ghost:hover { fill: #c3c0b6; fill-opacity: 0.55; }
+.island-label-mono.ghost { fill: #9a9488; }
+.matrix-note {
+  margin-top: 16px;
+  font-style: italic;
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+
+/* ============ ISLAND PHOTO ============ */
+.island-photo {
+  position: relative;
+  margin: 0 0 24px;
+  height: 240px;
+  border: 1px solid var(--hairline-strong);
+  background: linear-gradient(135deg, var(--ocean-deep), var(--sage));
+  overflow: hidden;
+  box-shadow: inset 0 0 40px rgba(20,48,64,0.25), 0 1px 0 rgba(255,255,255,0.4);
+}
+.island-photo .ph {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: rgba(245,236,213,0.72);
+  text-align: center;
+}
+.island-photo img {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.95) contrast(1.03);
+}
+.island-photo figcaption {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  z-index: 2;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--aged-cream);
+  padding: 24px 14px 10px;
+  background: linear-gradient(transparent, rgba(11,46,71,0.88));
+}
+@media (max-width: 900px) {
+  .island-photo { height: 200px; }
+}
+
+/* ============ ACTIVITY SLIDES (slidesitos) ============ */
+.activities.slides {
+  --act-cols: 3;            /* ← 2 o 3 columnas */
+  display: grid;
+  grid-template-columns: repeat(var(--act-cols), 1fr);
+  gap: 16px;
+  counter-reset: activity;
+}
+.activities.slides li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: none;
+  counter-increment: activity;
+  background: var(--aged-cream);
+  border: 1px solid var(--hairline);
+  overflow: hidden;
+  font-size: 13.5px;
+  line-height: 1.45;
+}
+.activities.slides li::before {
+  content: counter(activity, decimal-leading-zero);
+  position: absolute;
+  top: 8px; left: 8px;
+  z-index: 3;
+  background: var(--rust);
+  color: var(--aged-cream);
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 3px 7px;
+}
+.slide-img {
+  position: relative;
+  height: 130px;
+  background: linear-gradient(135deg, var(--ocean-deep), var(--sage));
+  overflow: hidden;
+}
+.slide-img .ph {
+  position: absolute; inset: 0; z-index: 0;
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px; letter-spacing: 0.15em; text-transform: uppercase;
+  color: rgba(245,236,213,0.72); text-align: center; padding: 0 12px;
+}
+.slide-img img {
+  position: absolute; inset: 0; z-index: 1;
+  width: 100%; height: 100%; object-fit: cover;
+}
+.slide-body { padding: 14px 14px 16px; }
+.activities.slides .slide-body strong {
+  font-family: 'Fraunces', serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 15px;
+  color: var(--ink);
+  display: block;
+  margin-bottom: 5px;
+}
+@media (max-width: 640px) {
+  .activities.slides { --act-cols: 1; }
+}
+
+/* ============ PRINT / PDF ============ */
+@media print {
+  * { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+  /* disable entrance animations so nothing prints invisible */
+  .masthead, .map-section, .section-header, .island-card, .footer, .matrix-section { animation: none !important; }
+  /* keep tiles, rows and photos from splitting across pages */
+  .activities.slides li, .matrix tbody tr, .island-photo, .slide-img, .island-aside { break-inside: avoid; }
+  .map-section, .matrix-wrap { break-inside: avoid; }
+  a { color: inherit; text-decoration: none; }
+}
+@page { margin: 12mm; }
+
+/* ============ LODGING / ALOJAMIENTO ============ */
+.lodging { display: grid; gap: 44px; }
+.lodging-island > h3 {
+  font-family: 'Fraunces', serif;
+  font-variation-settings: 'opsz' 72, 'WONK' 0;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 30px;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+.lodging-island .meta {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  margin-bottom: 18px;
+}
+.lodging-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.hotel-card {
+  border: 1px solid var(--hairline-strong);
+  background: var(--aged-cream);
+  padding: 22px 24px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.4);
+}
+.hotel-card .hotel-gallery {
+  width: calc(100% + 48px);
+  margin: -22px -24px 8px;
+  border-bottom: 1px solid var(--hairline-strong);
+}
+.hotel-card .hotel-gallery .g-main { display: block; width: 100%; height: 210px; object-fit: cover; }
+.hotel-card .hotel-gallery .g-thumbs { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2px; }
+.hotel-card .hotel-gallery .g-thumbs img { display: block; width: 100%; height: 90px; object-fit: cover; transition: opacity 0.15s; }
+.hotel-card .hotel-gallery .g-thumbs img:hover { opacity: 0.82; }
+.hotel-card .tag {
+  position: absolute; top: 16px; right: 16px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 9px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+  padding: 3px 8px; color: var(--aged-cream);
+}
+.hotel-card .tag.best { background: var(--sage); }
+.hotel-card .tag.warn { background: var(--rust); }
+.hotel-card .tag.plan { background: var(--ocean); }
+.hotel-card h4 {
+  font-family: 'Fraunces', serif; font-weight: 600;
+  font-size: 21px; color: var(--ink); line-height: 1.05; padding-right: 90px;
+}
+.hotel-card .price {
+  font-family: 'JetBrains Mono', monospace; font-weight: 700;
+  font-size: 23px; color: var(--rust-dark); letter-spacing: -0.01em; margin-top: 2px;
+}
+.hotel-card .price small {
+  display: block; font-weight: 400; font-size: 11px; color: var(--ink-soft);
+  letter-spacing: 0.04em; margin-top: 3px;
+}
+.hotel-card .rating {
+  font-family: 'JetBrains Mono', monospace; font-size: 11px; color: var(--ink-soft); letter-spacing: 0.04em;
+}
+.hotel-card .desc {
+  font-family: 'Newsreader', serif; font-style: italic; font-size: 14.5px;
+  color: var(--ink); line-height: 1.45; margin-top: 2px;
+}
+.hotel-card .beds {
+  font-family: 'JetBrains Mono', monospace; font-size: 11px; line-height: 1.55;
+  color: var(--ink); background: var(--aged-cream);
+  border: 1px solid var(--hairline); border-left: 3px solid var(--ocean);
+  padding: 7px 10px; margin-top: 9px; border-radius: 2px;
+}
+.hotel-card .beds.fits { border-left-color: var(--sage); }
+.hotel-card .beds.tight { border-left-color: var(--rust); }
+.hotel-card .beds strong { font-weight: 600; letter-spacing: 0.02em; }
+.hotel-card .beds .ok5 { color: var(--sage); font-weight: 600; }
+.hotel-card .beds .no5 { color: var(--rust); font-weight: 600; }
+.hotel-card .beds .bedrow { padding: 5px 0; border-bottom: 1px dotted var(--hairline); }
+.hotel-card .beds .bedrow:last-of-type { border-bottom: none; }
+.hotel-card .beds .bopt {
+  display: inline-block; font-weight: 600; background: var(--rust); color: #fff;
+  padding: 1px 6px; border-radius: 2px; margin-right: 5px; font-size: 10px; letter-spacing: 0.03em;
+}
+.hotel-card .beds .bopt.ok { background: var(--sage); }
+.hotel-card .beds .bedrow small { color: var(--ink-soft); }
+.hotel-card .beds .bednote { margin-top: 6px; font-style: italic; color: var(--ink-soft); font-size: 10.5px; }
+.hotel-card .promo {
+  font-family: 'JetBrains Mono', monospace; font-size: 10.5px; line-height: 1.5;
+  margin-top: 8px; padding: 7px 10px; border-radius: 2px;
+  background: rgba(150,93,18,0.13); border-left: 3px solid var(--gold); color: var(--ink);
+}
+.hotel-card .promo b { color: var(--rust-dark); font-weight: 700; }
+.hotel-card .price-opts { margin: 4px 0 2px; }
+.hotel-card .price-opts .po {
+  display: flex; justify-content: space-between; align-items: baseline; gap: 10px;
+  font-family: 'JetBrains Mono', monospace; font-size: 11px;
+  padding: 4px 0; border-bottom: 1px dotted var(--hairline);
+}
+.hotel-card .price-opts .po:last-child { border-bottom: none; }
+.hotel-card .price-opts .po span { color: var(--ink-soft); }
+.hotel-card .price-opts .po b { font-size: 15px; color: var(--rust-dark); white-space: nowrap; font-family: 'Fraunces', serif; }
+.hotel-card .price-opts .po.deal span { color: var(--sage); font-weight: 600; }
+.hotel-card .price-opts .po.deal b { color: var(--sage); }
+.hotel-card .po-note { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--ink-soft); letter-spacing: 0.03em; margin: 3px 0 0; }
+.promos-box {
+  margin-top: 22px; border: 1.5px solid var(--hairline-strong); border-top: 3px solid var(--gold);
+  background: var(--aged-cream); padding: 16px 20px;
+}
+.promos-box h4 { font-family: 'Fraunces', serif; font-size: 19px; font-weight: 500; margin: 0 0 3px; color: var(--ink); }
+.promos-box .sub { font-family: 'JetBrains Mono', monospace; font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--ink-soft); margin-bottom: 11px; }
+.promos-box ul { margin: 0; padding-left: 18px; }
+.promos-box li { font-family: 'Newsreader', serif; font-size: 14px; line-height: 1.5; margin-bottom: 9px; color: var(--ink); }
+.promos-box .fineprint { margin-top: 12px; font-size: 11px; color: var(--ink-soft); font-style: italic; line-height: 1.45; border-top: 1px dotted var(--hairline-strong); padding-top: 10px; }
+.amen-cols { display:grid; grid-template-columns:1fr 1fr; gap:2px 24px; margin-top:2px; }
+.amen-cols .amen-h { font-family:'Fraunces',serif; font-weight:600; font-size:14px; color:var(--ink); margin:4px 0 5px; }
+.amen-cols ul { margin:0 0 6px; padding-left:18px; }
+.amen-cols li { font-size:13px; margin-bottom:6px; line-height:1.4; }
+@media (max-width:600px){ .amen-cols { grid-template-columns:1fr; } }
+.lodging-note {
+  margin-top: 16px; font-style: italic; font-size: 13.5px; color: var(--ink-soft);
+  border-left: 2px solid var(--rust); padding-left: 14px;
+}
+@media (max-width: 760px) { .lodging-cards { grid-template-columns: 1fr; } }
+/* Orden de estancia: Oʻahu / Honolulu como base única */
+.lodging { display: flex; flex-direction: column; }
+.lodging > .lodging-note:first-child { order: -2; }      /* el aviso de arriba se queda arriba */
+.lodging .lodging-island:last-of-type { order: -1; }     /* Oʻahu (último en el DOM) se muestra primero */
+
+/* ============ ACORDEÓN (secciones colapsables) ============ */
+.acc { border-top: 1.5px solid var(--ink); }
+.acc:last-of-type { border-bottom: 1.5px solid var(--ink); }
+.acc > summary {
+  list-style: none;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: auto 1fr auto auto;
+  gap: 20px;
+  align-items: center;
+  padding: 30px 0 26px;
+}
+.acc > summary::-webkit-details-marker { display: none; }
+.acc > summary:hover .acc-title { color: var(--rust-dark); }
+.acc-num {
+  font-family: 'JetBrains Mono', monospace; font-size: 13px; font-weight: 700;
+  color: var(--rust); letter-spacing: 0.1em;
+}
+.acc-title {
+  font-family: 'Fraunces', serif;
+  font-variation-settings: 'opsz' 60, 'WONK' 0;
+  font-weight: 500; font-size: 34px; color: var(--ink); letter-spacing: -0.01em;
+  transition: color 0.2s;
+}
+.acc-hint {
+  font-family: 'JetBrains Mono', monospace; font-size: 10px; letter-spacing: 0.15em;
+  text-transform: uppercase; color: var(--ink-soft); justify-self: end;
+}
+.acc-chev {
+  font-family: 'JetBrains Mono', monospace; font-size: 22px; color: var(--rust);
+  transition: transform 0.25s ease;
+}
+.acc[open] .acc-chev { transform: rotate(90deg); }
+.acc-body { padding-bottom: 56px; }
+@media (max-width: 700px) {
+  .acc > summary { grid-template-columns: auto 1fr auto; gap: 12px; }
+  .acc-hint { display: none; }
+  .acc-title { font-size: 25px; }
+}
+
+/* ============ ITINERARIO ============ */
+.itin-intro { font-size: 16px; line-height: 1.55; margin-bottom: 24px; font-style: italic; color: var(--ink); }
+.flights {
+  margin-bottom: 32px;
+  border: 1px solid var(--hairline-strong); background: var(--aged-cream);
+}
+.flight {
+  display: grid; grid-template-columns: 230px 1fr auto; gap: 16px; align-items: center;
+  padding: 13px 18px; border-bottom: 1px dotted var(--hairline);
+}
+.flight:last-child { border-bottom: none; }
+.flight.pend { background: rgba(168,72,43,0.06); }
+.flight .leg { font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700; color: var(--ink); letter-spacing: 0.02em; }
+.flight .when { font-size: 13.5px; color: var(--ink-soft); font-style: italic; }
+.flight .st { font-family: 'JetBrains Mono', monospace; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 3px 8px; white-space: nowrap; }
+.flight .st.ok { color: var(--sage); border: 1px solid var(--sage); }
+.flight .st.pend { background: var(--rust); color: var(--aged-cream); }
+.itin { list-style: none; }
+.itin-day {
+  display: grid; grid-template-columns: 155px 1fr; gap: 24px;
+  padding: 16px 0; border-bottom: 1px solid var(--hairline);
+}
+.itin-day:last-child { border-bottom: none; }
+.itin-day .date {
+  font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700;
+  letter-spacing: 0.05em; color: var(--ink); text-transform: uppercase;
+}
+.itin-day .date small {
+  display: block; color: var(--rust-dark); font-weight: 400; text-transform: none;
+  margin-top: 4px; font-style: italic; font-family: 'Newsreader', serif; font-size: 13px;
+}
+.itin-day .what { font-size: 15px; line-height: 1.55; color: var(--ink); }
+.itin-day .what strong { font-family: 'Fraunces', serif; font-weight: 600; }
+.flag-pending {
+  display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 9.5px;
+  font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase;
+  background: var(--rust); color: var(--aged-cream); padding: 2px 7px; margin: 0 2px;
+}
+.itin-note { margin-top: 24px; font-style: italic; font-size: 14px; color: var(--ink-soft); border-left: 2px solid var(--rust); padding-left: 14px; }
+@media (max-width: 700px) {
+  .flight { grid-template-columns: 1fr auto; }
+  .flight .when { grid-column: 1 / -1; }
+  .itin-day { grid-template-columns: 105px 1fr; gap: 14px; }
+}
+
+/* ============ FLIGHT PICK (vuelo pendiente) ============ */
+.flight-pick { margin: 0 0 32px; border: 1px solid var(--rust); background: rgba(168,72,43,0.06); padding: 20px 22px; }
+.flight-pick h4 { font-family: 'Fraunces', serif; font-weight: 600; font-style: italic; font-size: 19px; color: var(--rust-dark); margin-bottom: 4px; }
+.flight-pick > p { font-size: 13.5px; font-style: italic; color: var(--ink-soft); margin-bottom: 14px; }
+.fopt-list { display: grid; gap: 8px; margin-bottom: 16px; }
+.fopt {
+  display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: baseline;
+  padding: 10px 14px; background: var(--aged-cream); border: 1px solid var(--hairline);
+  font-family: 'JetBrains Mono', monospace; font-size: 12px;
+}
+.fopt .t { font-weight: 700; color: var(--ink); min-width: 62px; }
+.fopt .air { color: var(--ink-soft); min-width: 70px; }
+.fopt .d { color: var(--ink-soft); }
+.fopt .pr { font-weight: 700; color: var(--rust-dark); }
+.fopt .ok { color: var(--sage); margin-left: auto; }
+.fopt.rec { border-color: var(--sage); }
+.fopt.rec2 { border: 2px solid var(--sage); background: rgba(63,111,84,0.10); }
+.fopt-link {
+  display: inline-block; font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700;
+  letter-spacing: 0.04em; color: var(--aged-cream); background: var(--rust); padding: 10px 16px; text-decoration: none;
+}
+.fopt-link:hover { background: var(--rust-dark); }
+
+/* ============ HOJITAS TROPICALES EN LAS ESQUINAS ============ */
+.corner-leaves { position: fixed; inset: 0; pointer-events: none; z-index: 0; }
+.container { position: relative; z-index: 1; }
+/* Velo semi-transparente en la zona de lectura: atenúa las flores/plantas detrás del texto */
+.container::before {
+  content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: rgba(239, 228, 201, 0.82);
+}
+.corner-leaves .leaf {
+  position: fixed; width: clamp(95px, 13vw, 175px); height: auto;
+  color: var(--sage); opacity: 0.42;
+  filter: drop-shadow(0 3px 5px rgba(60,50,30,0.10));
+  animation: leaf-sway 7s ease-in-out infinite;
+}
+.corner-leaves .tl { top: -10px;  left: -14px;  transform: rotate(8deg);              transform-origin: top left; }
+.corner-leaves .tr { top: -12px;  right: -16px; transform: scaleX(-1) rotate(4deg);   transform-origin: top right; color: var(--ocean); opacity: 0.36; animation-delay: -2.4s; }
+.corner-leaves .bl { bottom: -16px; left: -18px; transform: scaleY(-1) rotate(6deg);  transform-origin: bottom left; color: var(--ocean); opacity: 0.34; animation-delay: -3.6s; }
+.corner-leaves .br { bottom: -12px; right: -14px; transform: scale(-1,-1) rotate(8deg);transform-origin: bottom right; animation-delay: -1.2s; }
+@keyframes leaf-sway {
+  0%, 100% { rotate: 0deg; }
+  50%      { rotate: 2.2deg; }
+}
+@media (prefers-reduced-motion: reduce) { .corner-leaves .leaf { animation: none; } }
+@media (max-width: 640px) {
+  .corner-leaves .leaf { width: clamp(64px, 22vw, 96px); opacity: 0.3; }
+  .corner-leaves .bl, .corner-leaves .br { opacity: 0.22; }
+}
+
+/* ============ BOTÓN DE MÚSICA (Lilo & Stitch) ============ */
+.music-btn {
+  position: fixed; bottom: 18px; right: 18px; z-index: 60;
+  display: inline-flex; align-items: center; gap: 9px;
+  font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 700;
+  letter-spacing: 0.05em; text-transform: uppercase;
+  color: var(--aged-cream); background: var(--rust);
+  border: 2px solid var(--rust-dark); border-radius: 999px;
+  padding: 9px 15px 9px 12px; cursor: pointer;
+  box-shadow: 0 4px 14px rgba(60,40,20,0.28);
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+.music-btn:hover { background: var(--rust-dark); transform: translateY(-1px); }
+.music-btn .mb-ico { font-size: 16px; line-height: 1; }
+/* pulso para invitar a tocar (solo cuando NO está sonando) */
+.music-btn:not(.playing) { animation: mb-pulse 2.2s ease-in-out infinite; }
+@keyframes mb-pulse {
+  0%, 100% { box-shadow: 0 4px 14px rgba(60,40,20,0.28); }
+  50%      { box-shadow: 0 4px 22px rgba(200,90,40,0.55); }
+}
+.music-btn.playing { background: var(--sage); border-color: #4f6a4c; }
+/* barritas de ecualizador cuando está sonando */
+.music-btn .mb-eq { display: none; align-items: flex-end; gap: 2px; height: 14px; }
+.music-btn.playing .mb-eq { display: inline-flex; }
+.music-btn.playing .mb-ico { display: none; }
+.music-btn .mb-eq span { width: 3px; background: var(--aged-cream); border-radius: 1px; animation: mb-eq 0.9s ease-in-out infinite; }
+.music-btn .mb-eq span:nth-child(1) { height: 40%; animation-delay: -0.2s; }
+.music-btn .mb-eq span:nth-child(2) { height: 90%; animation-delay: -0.5s; }
+.music-btn .mb-eq span:nth-child(3) { height: 60%; animation-delay: -0.1s; }
+.music-btn .mb-eq span:nth-child(4) { height: 100%; animation-delay: -0.35s; }
+@keyframes mb-eq { 0%, 100% { transform: scaleY(0.4); } 50% { transform: scaleY(1); } }
+@media (prefers-reduced-motion: reduce) {
+  .music-btn, .music-btn .mb-eq span { animation: none !important; }
+}
+@media (max-width: 640px) { .music-btn { font-size: 11px; padding: 8px 13px 8px 10px; } }
+
+/* ============ PLANTAS EN LOS BORDES (izq/der) ============ */
+.plant-strip { position: absolute; top: 0; bottom: 0; width: 0; z-index: -2; pointer-events: none; }
+.plant-strip.left  { left: 0; }
+.plant-strip.right { right: 0; }
+.plant-strip .plant {
+  position: absolute; display: block;
+  filter: drop-shadow(0 4px 6px rgba(50,40,20,0.12));
+  animation: leaf-sway 7.5s ease-in-out infinite;
+}
+.plant-strip .plant:nth-child(2n) { animation-duration: 8.6s; animation-delay: -1.6s; }
+.plant-strip .plant:nth-child(3n) { animation-duration: 9.6s; animation-delay: -3.1s; }
+.plant-strip .plant:nth-child(4n) { animation-duration: 7.9s; animation-delay: -2.3s; }
+.p-sm { width: clamp(58px, 7vw, 108px); }
+.p-md { width: clamp(78px, 9.5vw, 142px); }
+.p-lg { width: clamp(98px, 12vw, 178px); }
+@media (prefers-reduced-motion: reduce) { .plant-strip .plant { animation: none; } }
+@media (max-width: 760px) {
+  .plant-strip .plant { opacity: 0.42 !important; }
+  .p-sm { width: 48px; } .p-md { width: 64px; } .p-lg { width: 82px; }
+}
+
+/* ============ ACTIVIDADES · lista vertical tipo tabla ============ */
+.acts { margin-top: 2px; }
+.act-cat-title {
+  font-family: 'Fraunces', serif; font-weight: 600; font-size: 18px; color: var(--ink);
+  margin: 18px 0 4px; display: flex; align-items: center; gap: 7px;
+}
+.act-cat-title:first-child { margin-top: 0; }
+.act-grid { display: grid; grid-template-columns: 1fr; }
+.act {
+  display: grid; grid-template-columns: 76px minmax(0,1fr) 118px 96px 156px;
+  gap: 3px 14px; align-items: center; padding: 6px 8px; border-radius: 9px;
+  transition: background 0.15s ease;
+}
+.act:hover { background: rgba(63,111,84,0.09); }
+.act.hl { background: rgba(150,93,18,0.13); }
+.act .ico { width: 76px; height: 56px; border-radius: 8px; overflow: hidden; display: grid; place-items: center; font-size: 28px; background: var(--aged-cream); }
+.act .ico img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.act.t-hike  .ico { background: rgba(63,111,84,0.20); }
+.act.t-beach .ico { background: rgba(35,104,134,0.16); }
+.act.t-sea   .ico { background: rgba(35,104,134,0.11); }
+.act.t-hist  .ico { background: rgba(168,72,43,0.15); }
+.act.t-adv   .ico { background: rgba(150,93,18,0.20); }
+.act.t-food  .ico { background: rgba(150,93,18,0.15); }
+.act.t-night .ico { background: rgba(178,58,106,0.13); }
+.act .name { font-family: 'Newsreader', serif; font-weight: 600; font-size: 14px; color: var(--ink); line-height: 1.15; }
+.act .name .rsv { font-family: 'JetBrains Mono', monospace; font-size: 8.5px; font-weight: 700; color: var(--rust-dark); margin-left: 6px; text-transform: uppercase; letter-spacing: 0.04em; }
+.act .name .bk { font-family: 'JetBrains Mono', monospace; font-size: 8.5px; font-weight: 700; color: #965d12; margin-left: 6px; text-transform: uppercase; letter-spacing: 0.04em; }
+.act-legend { font-family: 'Newsreader', serif; font-style: italic; font-size: 12px; color: var(--ink-soft); margin: 0 0 12px; display: flex; gap: 6px 18px; flex-wrap: wrap; }
+.act-legend b { font-family: 'JetBrains Mono', monospace; font-style: normal; font-size: 8.5px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; margin-right: 5px; }
+.act-legend .l-rsv b { color: var(--rust-dark); }
+.act-legend .l-bk b { color: #965d12; }
+.act .desc { font-family: 'Newsreader', serif; font-style: italic; font-size: 11.5px; color: var(--ink-soft); line-height: 1.25; }
+.act .ax-rate, .act .ax-dist, .act .ax-loc { font-family: 'JetBrains Mono', monospace; font-size: 10px; color: var(--ink-soft); letter-spacing: 0.02em; }
+.act .ax-rate .st { color: #965d12; font-weight: 700; }
+.acts-note { margin-top: 16px; font-family: 'Newsreader', serif; font-style: italic; font-size: 13px; color: var(--ink-soft); }
+.resv-box { margin-top: 18px; background: var(--aged-cream); border-top: 3px solid var(--rust); padding: 14px 16px; }
+.resv-box h4 { font-family: 'Fraunces', serif; font-size: 17px; font-weight: 600; margin: 0 0 9px; color: var(--ink); }
+.resv-box .rr { display: grid; grid-template-columns: 156px 1fr; gap: 3px 12px; padding: 6px 0; align-items: start; }
+.resv-box .rr + .rr { border-top: 1px dotted var(--hairline); }
+.resv-box .rr b { font-family: 'Newsreader', serif; font-size: 14px; color: var(--ink); }
+.resv-box .rr .w { font-family: 'JetBrains Mono', monospace; font-size: 10.5px; color: var(--ink-soft); line-height: 1.6; }
+.resv-box .rr .mx { color: var(--sage); font-weight: 700; }
+.resv-box .rr .mn { color: var(--rust-dark); font-weight: 700; }
+.resv-box .also { margin: 10px 0 0; font-family: 'Newsreader', serif; font-style: italic; font-size: 12.5px; color: var(--ink-soft); line-height: 1.45; }
+@media (max-width: 640px) { .resv-box .rr { grid-template-columns: 1fr; } }
+@media (max-width: 820px) {
+  .act { grid-template-columns: 76px 1fr; column-gap: 12px; row-gap: 1px; align-items: start; }
+  .act .ico { grid-column: 1; grid-row: 1 / span 4; }
+  .act .ax-main, .act .ax-rate, .act .ax-dist, .act .ax-loc { grid-column: 2; }
+}
+/* ====== Calendario (tipo agenda) ====== */
+.cal-lead { font-family:'Newsreader',serif; font-size:13.5px; color:var(--ink-soft); margin:14px 0 2px; }
+.cal-lead strong { font-family:'Fraunces',serif; color:var(--ink); font-size:19px; }
+.cal { display:grid; grid-template-columns:repeat(2,1fr); gap:12px; margin:12px 0 4px; }
+.cal-day { background:var(--aged-cream); border:1px solid var(--hairline-strong); border-radius:10px; overflow:hidden; display:flex; flex-direction:column; gap:7px; padding:0 0 11px; box-shadow:0 1px 0 rgba(35,104,134,0.05); }
+.cal-head { display:flex; align-items:center; gap:7px; padding:7px 11px; border-bottom:1px solid var(--hairline-strong); }
+.cal-head:has(.cal-tag.arr)  { background:rgba(35,104,134,0.14); }
+.cal-head:has(.cal-tag.full) { background:rgba(63,111,84,0.16); }
+.cal-head:has(.cal-tag.out)  { background:rgba(168,72,43,0.13); }
+.cal-dow { font-family:'JetBrains Mono',monospace; font-size:10px; font-weight:700; letter-spacing:0.1em; color:var(--ink); }
+.cal-dnum { font-family:'Fraunces',serif; font-size:27px; font-weight:700; color:var(--ink); line-height:0.9; }
+.cal-mon { font-family:'Newsreader',serif; font-size:11px; color:var(--ink-soft); }
+.cal-tag { margin-left:auto; font-family:'JetBrains Mono',monospace; font-size:8px; font-weight:700; text-transform:uppercase; letter-spacing:0.04em; padding:3px 8px; border-radius:20px; white-space:nowrap; background:rgba(255,252,244,0.6); }
+.cal-tag.arr { color:var(--ocean); }
+.cal-tag.full { color:var(--sage); }
+.cal-tag.out { color:var(--rust-dark); }
+.cal-plan { font-family:'Newsreader',serif; font-size:12.5px; color:var(--ink); line-height:1.4; margin:0 11px; }
+.cal-plan b { font-family:'Fraunces',serif; font-weight:600; }
+.cal-evs { display:flex; flex-direction:column; margin:auto 11px 0; }
+.cal-ev { display:grid; grid-template-columns:64px 1fr; gap:9px; align-items:baseline; font-family:'JetBrains Mono',monospace; font-size:12px; line-height:1.55; padding:7px 0; }
+.cal-ev + .cal-ev { border-top:1px dotted var(--hairline); }
+.cal-ev-link { text-decoration:none; cursor:pointer; transition:background .15s; border-radius:5px; }
+.cal-ev-link:hover { background:rgba(168,72,43,0.11); }
+.cal-ev-link .ce-x { text-decoration:underline; text-decoration-color:rgba(134,56,31,0.35); text-underline-offset:2px; }
+.cal-ev-link .ce-go { font-family:'JetBrains Mono',monospace; font-size:11px; color:var(--rust-dark); font-weight:700; margin-left:5px; }
+.cal-ev .ce-t { font-size:10.5px; font-weight:700; color:var(--rust-dark); white-space:nowrap; letter-spacing:0.02em; }
+.cal-ev.day .ce-t { color:var(--sage); }
+.cal-ev .ce-x { color:var(--ink); font-weight:500; }
+.cal-rsv { font-family:'JetBrains Mono',monospace; font-size:9px; font-weight:700; color:var(--rust-dark); line-height:1.4; background:rgba(168,72,43,0.09); padding:5px 7px; border-radius:6px; margin:0 11px; }
+.cal-rsv.book { color:#965d12; background:rgba(150,93,18,0.11); }
+@media (max-width:820px){ .cal { grid-template-columns:1fr 1fr; } }
+@media (max-width:560px){ .cal { grid-template-columns:1fr; } }
+/* ====== Eventos ====== */
+.evs-box { margin:0 0 18px; background:rgba(35,104,134,0.06); border-top:3px solid var(--ocean); padding:13px 15px; }
+.evs-title { font-family:'Fraunces',serif; font-size:17px; font-weight:600; margin:0 0 8px; color:var(--ink); display:flex; align-items:baseline; gap:8px; flex-wrap:wrap; }
+.evs-title span { font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--ink-soft); font-weight:700; }
+.ev { display:grid; grid-template-columns:24px minmax(0,1fr) auto; gap:1px 10px; padding:6px 0; align-items:baseline; }
+.ev + .ev { border-top:1px dotted var(--hairline); }
+.ev-i { font-size:16px; }
+.ev-main { font-family:'Newsreader',serif; font-size:13.5px; color:var(--ink); line-height:1.3; }
+.ev-main b { font-weight:600; }
+.ev-when { display:block; font-family:'JetBrains Mono',monospace; font-size:10px; color:var(--ink-soft); margin-top:1px; }
+.ev-tag { font-family:'JetBrains Mono',monospace; font-size:8.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.04em; padding:2px 8px; border-radius:20px; white-space:nowrap; align-self:center; background:rgba(35,104,134,0.07); color:var(--ink-soft); }
+.ev-tag.free { background:rgba(63,111,84,0.18); color:var(--sage); }
+.ev-tag.tix { background:rgba(150,93,18,0.16); color:#965d12; }
+@media (max-width:560px){ .ev { grid-template-columns:24px 1fr; } .ev-tag { grid-column:2; justify-self:start; margin-top:2px; } }
+/* ====== Legibilidad en celular ====== */
+@media (max-width: 600px) {
+  .container { padding-left: 16px; padding-right: 16px; }
+  .cal { gap: 8px; }
+  .cal-dnum { font-size: 30px; }
+  .cal-plan { font-size: 13.5px; }
+  .cal-ev { font-size: 12.5px; }
+  .cal-rsv { font-size: 10.5px; }
+  .act .name { font-size: 15px; }
+  .act .desc { font-size: 12.5px; }
+  .act .ax-rate, .act .ax-dist, .act .ax-loc { font-size: 11px; }
+  .act .name .rsv, .act .name .bk { font-size: 9.5px; }
+  .act-legend { font-size: 12.5px; }
+  .resv-box .rr .w { font-size: 11px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ===== Hojitas tropicales decorativas (definición reutilizable) ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="leaf-monstera" viewBox="0 0 120 200">
+      <g fill="none" stroke="currentColor" stroke-width="3.4" stroke-linejoin="round" stroke-linecap="round">
+        <path d="M60 6 C 27 50, 13 95, 20 128 C 26 160, 42 185, 60 196 C 78 185, 94 160, 100 128 C 107 95, 93 50, 60 6 Z"/>
+        <path d="M60 18 L60 188" stroke-width="2.6"/>
+        <path d="M60 56 L34 44 M60 56 L86 44 M60 96 L28 86 M60 96 L92 86 M60 138 L34 134 M60 138 L86 134" stroke-width="2"/>
+        <ellipse cx="41" cy="74"  rx="5.5" ry="13" transform="rotate(-24 41 74)"  stroke-width="2.4"/>
+        <ellipse cx="79" cy="74"  rx="5.5" ry="13" transform="rotate(24 79 74)"   stroke-width="2.4"/>
+        <ellipse cx="36" cy="116" rx="6"   ry="15" transform="rotate(-16 36 116)" stroke-width="2.4"/>
+        <ellipse cx="84" cy="116" rx="6"   ry="15" transform="rotate(16 84 116)"  stroke-width="2.4"/>
+        <ellipse cx="44" cy="156" rx="5"   ry="11" transform="rotate(-12 44 156)" stroke-width="2.4"/>
+        <ellipse cx="76" cy="156" rx="5"   ry="11" transform="rotate(12 76 156)"  stroke-width="2.4"/>
+      </g>
+    </symbol>
+    <symbol id="leaf-palm" viewBox="0 0 120 200">
+      <g fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M62 196 C 56 150, 56 90, 60 14" stroke-width="3.4"/>
+        <path d="M59 168 C 38 162, 22 150, 12 130"/>
+        <path d="M59 142 C 36 136, 20 122, 12 100"/>
+        <path d="M59 116 C 38 110, 24 96, 18 74"/>
+        <path d="M59 92  C 42 86,  30 74, 26 56"/>
+        <path d="M59 70  C 46 64,  38 54, 35 40"/>
+        <path d="M61 168 C 82 162, 98 150, 108 130"/>
+        <path d="M61 142 C 84 136, 100 122, 108 100"/>
+        <path d="M61 116 C 82 110, 96 96, 102 74"/>
+        <path d="M61 92  C 78 86,  90 74, 94 56"/>
+        <path d="M61 70  C 74 64,  82 54, 85 40"/>
+        <path d="M60 46  C 58 36,  59 26, 60 14"/>
+      </g>
+    </symbol>
+  </defs>
+</svg>
+<div class="corner-leaves" aria-hidden="true">
+  <svg class="leaf tl" viewBox="0 0 120 200"><use href="#leaf-monstera"/></svg>
+  <svg class="leaf tr" viewBox="0 0 120 200"><use href="#leaf-palm"/></svg>
+  <svg class="leaf bl" viewBox="0 0 120 200"><use href="#leaf-palm"/></svg>
+  <svg class="leaf br" viewBox="0 0 120 200"><use href="#leaf-monstera"/></svg>
+</div>
+
+<!-- ===== Música de fondo (Hawaiian Roller Coaster Ride · Lilo & Stitch) ===== -->
+<audio id="bg-music" loop preload="auto" playsinline>
+  <source src="audio/hawaiian-roller-coaster-ride.mp3" type="audio/mpeg">
+</audio>
+<button id="music-btn" class="music-btn" type="button" aria-label="Prender o apagar la música" title="🎶 ¡Pon la música hawaiana!">
+  <span class="mb-ico" aria-hidden="true">🌺</span>
+  <span class="mb-eq" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+  <span class="mb-txt">Música</span>
+</button>
+
+<div class="container">
+
+  <!-- ===== Plantas decorativas en los bordes (detrás del contenido) ===== -->
+  <div class="plant-strip left" aria-hidden="true">
+    <img class="plant p-md" src="img/plants/fern.png"          alt="" style="top:2%;  left:-22px; transform:rotate(-8deg);             opacity:.68">
+    <img class="plant p-lg" src="img/plants/monstera.png"      alt="" style="top:13%; left:-30px; transform:rotate(10deg);             opacity:.60">
+    <img class="plant p-sm" src="img/plants/hibiscus-pink.png" alt="" style="top:24%; left:6px;   transform:rotate(0deg);              opacity:.85">
+    <img class="plant p-md" src="img/plants/palm-frond.png"    alt="" style="top:34%; left:-22px; transform:rotate(-13deg);            opacity:.64">
+    <img class="plant p-md" src="img/plants/banana-leaf.png"   alt="" style="top:45%; left:-26px; transform:rotate(8deg) scaleX(-1);   opacity:.58">
+    <img class="plant p-sm" src="img/plants/hibiscus-blue.png" alt="" style="top:56%; left:2px;   transform:rotate(0deg);              opacity:.85">
+    <img class="plant p-md" src="img/plants/fan-palm.png"      alt="" style="top:66%; left:-20px; transform:rotate(-6deg);             opacity:.64">
+    <img class="plant p-lg" src="img/plants/fern.png"          alt="" style="top:77%; left:-28px; transform:rotate(12deg) scaleX(-1);  opacity:.60">
+    <img class="plant p-sm" src="img/plants/monstera.png"      alt="" style="top:89%; left:-16px; transform:rotate(-8deg);             opacity:.68">
+  </div>
+  <div class="plant-strip right" aria-hidden="true">
+    <img class="plant p-md" src="img/plants/banana-big.png"    alt="" style="top:5%;  right:-22px; transform:rotate(8deg) scaleX(-1);  opacity:.64">
+    <img class="plant p-lg" src="img/plants/palm-frond.png"    alt="" style="top:16%; right:-30px; transform:rotate(-10deg);           opacity:.58">
+    <img class="plant p-sm" src="img/plants/hibiscus-blue.png" alt="" style="top:27%; right:4px;   transform:rotate(0deg);             opacity:.85">
+    <img class="plant p-md" src="img/plants/monstera.png"      alt="" style="top:38%; right:-24px; transform:rotate(12deg) scaleX(-1); opacity:.62">
+    <img class="plant p-md" src="img/plants/fern.png"          alt="" style="top:49%; right:-26px; transform:rotate(-8deg);            opacity:.58">
+    <img class="plant p-sm" src="img/plants/hibiscus-pink.png" alt="" style="top:60%; right:2px;   transform:rotate(0deg);             opacity:.85">
+    <img class="plant p-md" src="img/plants/fan-palm.png"      alt="" style="top:70%; right:-20px; transform:rotate(6deg) scaleX(-1);  opacity:.64">
+    <img class="plant p-lg" src="img/plants/banana-leaf.png"   alt="" style="top:81%; right:-28px; transform:rotate(-10deg);           opacity:.58">
+    <img class="plant p-sm" src="img/plants/palm-frond.png"    alt="" style="top:92%; right:-16px; transform:rotate(8deg) scaleX(-1);  opacity:.68">
+  </div>
+
+  <!-- ============ MASTHEAD ============ -->
+  <header class="masthead">
+    <div class="top-row">
+      <span>Vol. I · Edición de Viaje</span>
+      <span>Agosto MMXXVI</span>
+      <span>Plan de Viaje</span>
+    </div>
+    <h1 class="trip-title"><span style="color:#e23e87">V</span><span style="color:#e0a017">i</span><span style="color:#2f9e5b">a</span><span style="color:#1d8fb0">j</span><span style="color:#ef6c2e">e</span> <span style="color:#e23e87">a</span> <span style="color:#e0a017">H</span><span style="color:#2f9e5b">a</span><span style="color:#1d8fb0">w</span><span style="color:#ef6c2e">á</span><span style="color:#e23e87">i</span><span style="color:#e0a017">!</span></h1>
+    <div class="subtitle">
+      <div><strong>Punto de entrada</strong>Honolulu, isla de Oʻahu — HNL 13:34</div>
+      <div><strong>Ventana operativa</strong>17 al 22 de agosto, 2026</div>
+      <div><strong>Decidido</strong>Oʻahu solamente · Waikiki 5 noches</div>
+    </div>
+  </header>
+
+  <!-- ============ MAP ============ -->
+  <section class="map-section">
+    <div class="map-frame">
+      <div class="map-header">
+        <h2>Plancha I · Disposición del archipiélago</h2>
+        <span class="meta">19°N — 22°N · 155°W — 160°W</span>
+      </div>
+
+      <svg class="archipelago" viewBox="0 0 1200 460" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <pattern id="ocean-pattern" patternUnits="userSpaceOnUse" width="6" height="6">
+            <path d="M 0 3 Q 1.5 1.5, 3 3 T 6 3" stroke="rgba(35,104,134,0.18)" stroke-width="0.4" fill="none"/>
+          </pattern>
+        </defs>
+
+        <!-- Ocean texture background -->
+        <rect width="1200" height="460" fill="url(#ocean-pattern)" opacity="0.5"/>
+
+        <!-- Latitude reference lines -->
+        <line class="lat-line" x1="40" y1="140" x2="1160" y2="140"/>
+        <line class="lat-line" x1="40" y1="260" x2="1160" y2="260"/>
+        <line class="lat-line" x1="40" y1="380" x2="1160" y2="380"/>
+        <text class="compass-text" x="48" y="135">22°N</text>
+        <text class="compass-text" x="48" y="255">21°N</text>
+        <text class="compass-text" x="48" y="375">20°N</text>
+
+        <!-- Compass rose -->
+        <g transform="translate(1090, 70)">
+          <circle cx="0" cy="0" r="24" fill="var(--aged-cream)" stroke="var(--ink)" stroke-width="0.8"/>
+          <path d="M 0,-22 L 4,0 L 0,22 L -4,0 Z" fill="var(--ink)"/>
+          <path d="M -22,0 L 0,-4 L 22,0 L 0,4 Z" fill="var(--ink-soft)" opacity="0.7"/>
+          <text class="compass-text" x="0" y="-30" text-anchor="middle">N</text>
+          <text class="compass-text" x="32" y="3" text-anchor="middle">E</text>
+          <text class="compass-text" x="0" y="40" text-anchor="middle">S</text>
+          <text class="compass-text" x="-32" y="3" text-anchor="middle">O</text>
+        </g>
+
+        <!-- Scale bar -->
+        <g transform="translate(60, 420)">
+          <line x1="0" y1="0" x2="120" y2="0" stroke="var(--ink)" stroke-width="1.5"/>
+          <line x1="0" y1="-4" x2="0" y2="4" stroke="var(--ink)" stroke-width="1.5"/>
+          <line x1="60" y1="-3" x2="60" y2="3" stroke="var(--ink)" stroke-width="1"/>
+          <line x1="120" y1="-4" x2="120" y2="4" stroke="var(--ink)" stroke-width="1.5"/>
+          <text class="scale-text" x="0" y="18">0</text>
+          <text class="scale-text" x="60" y="18" text-anchor="middle">50</text>
+          <text class="scale-text" x="120" y="18" text-anchor="end">100 km</text>
+        </g>
+
+        <!-- ====================== ISLANDS (NW to SE) ====================== -->
+
+        <!-- ===== Otras islas · contexto atenuado (gris claro) ===== -->
+        <!-- Niʻihau -->
+        <g>
+          <path class="island-shape ghost"
+                d="M 130,165 Q 122,150 132,138 Q 148,128 165,135 Q 178,148 174,165 Q 168,180 152,184 Q 138,184 130,175 Z"/>
+          <text class="island-label-mono ghost" x="150" y="200" text-anchor="middle">Niʻihau</text>
+        </g>
+        <!-- Molokaʻi -->
+        <g>
+          <path class="island-shape ghost"
+                d="M 620,205 Q 615,192 635,188 Q 670,184 720,186 Q 760,189 778,196 Q 788,205 780,215 Q 760,222 720,222 Q 670,222 640,218 Q 620,214 620,205 Z"/>
+          <text class="island-label-mono ghost" x="700" y="248" text-anchor="middle">Molokaʻi</text>
+        </g>
+        <!-- Lānaʻi -->
+        <g>
+          <path class="island-shape ghost"
+                d="M 750,275 Q 745,262 762,256 Q 782,253 798,262 Q 808,275 802,290 Q 790,302 770,300 Q 752,295 750,275 Z"/>
+          <text class="island-label-mono ghost" x="775" y="322" text-anchor="middle">Lānaʻi</text>
+        </g>
+        <!-- Kahoʻolawe -->
+        <g>
+          <path class="island-shape ghost"
+                d="M 855,318 Q 852,310 868,308 Q 888,308 898,315 Q 902,323 892,328 Q 875,330 862,326 Q 854,322 855,318 Z"/>
+          <text class="island-label-mono ghost" x="878" y="350" text-anchor="middle">Kahoʻolawe</text>
+        </g>
+
+        <!-- Kauaʻi (descartada → contexto atenuado) -->
+        <g>
+          <path class="island-shape ghost"
+                d="M 220,130 Q 215,108 235,98 Q 260,90 285,98 Q 310,108 318,130 Q 322,150 312,170 Q 295,185 270,188 Q 245,186 228,172 Q 215,155 220,130 Z"/>
+          <text class="island-label-mono ghost" x="270" y="210" text-anchor="middle">Kauaʻi</text>
+        </g>
+
+        <!-- Oʻahu (entry point) -->
+        <g>
+          <path class="island-shape entry"
+                d="M 420,200 Q 415,178 432,168 Q 455,158 482,162 Q 510,165 528,178 Q 545,192 548,212 Q 545,232 525,242 Q 500,250 472,248 Q 445,244 428,232 Q 416,220 420,200 Z"/>
+          <text class="island-label" x="484" y="276" text-anchor="middle" font-weight="700">Oʻahu</text>
+          <text class="island-label-mono" x="484" y="290" text-anchor="middle">I · Punto de entrada</text>
+
+          <!-- HNL callout -->
+          <circle class="entry-marker" cx="468" cy="232" r="4"/>
+          <path class="callout-line" d="M 472,234 Q 510,260 560,280"/>
+          <text class="entry-callout" x="568" y="285">HNL · Honolulu</text>
+          <text class="island-label-mono" x="568" y="298">21°19′N 157°55′W</text>
+        </g>
+
+        <!-- Isla vecina fuera del plan actual -->
+        <g>
+          <path class="island-shape ghost"
+                d="M 830,260 Q 822,242 842,232 Q 862,228 880,238 Q 890,250 888,262 Q 900,260 920,265 Q 950,272 970,288 Q 985,305 980,322 Q 970,338 945,342 Q 915,342 892,332 Q 880,322 882,308 Q 868,308 852,302 Q 832,294 826,278 Q 822,268 830,260 Z"/>
+          <text class="island-label-mono ghost" x="905" y="372" text-anchor="middle">isla vecina</text>
+          <text class="island-label-mono ghost" x="905" y="386" text-anchor="middle">contexto · no incluida</text>
+        </g>
+
+        <!-- Hawaiʻi / Big Island (descartada → contexto atenuado) -->
+        <g>
+          <path class="island-shape ghost"
+                d="M 1010,310 Q 1000,290 1018,272 Q 1042,258 1075,260 Q 1108,265 1128,285 Q 1145,308 1148,338 Q 1148,372 1132,395 Q 1112,415 1080,420 Q 1048,420 1022,408 Q 1000,392 992,365 Q 988,338 1010,310 Z"/>
+          <text class="island-label-mono ghost" x="1070" y="350" text-anchor="middle">Hawaiʻi</text>
+        </g>
+
+      </svg>
+    </div>
+  </section>
+
+  <!-- ============ ACORDEÓN 1 · ITINERARIO ============ -->
+  <details class="acc" open>
+    <summary>
+      <span class="acc-num">1</span>
+      <span class="acc-title">Vuelos</span>
+      <span class="acc-hint">✈️ MEX ⇄ HNL</span>
+      <span class="acc-chev">›</span>
+    </summary>
+    <div class="acc-body">
+      <p class="itin-intro"><strong>Oʻahu solamente</strong> · 17 → 22 ago 2026 · 5 noches. Entramos y salimos por <strong>Honolulu (HNL)</strong>; una sola base en <strong>Waikiki</strong>, sin vuelos internos ni cambio de hotel.</p>
+
+      <div class="flights">
+        <div class="flight"><span class="leg">✈ MEX → HNL</span><span class="when">Lun 17 ago · llega 13:34 · United (XXXXXX)</span><span class="st ok">confirmado</span></div>
+        <div class="flight"><span class="leg">✈ HNL → MEX</span><span class="when">Sáb 22 ago · sale 21:40 · United · vuelo nocturno</span><span class="st ok">confirmado</span></div>
+      </div>
+
+      <p class="itin-note">Distribución: <strong>5 noches Oʻahu / Waikiki</strong>. Más simple: una sola reserva, sin vuelos internos y sin cambio de hotel.</p>
+    </div>
+  </details>
+
+  <!-- ============ ACORDEÓN 2 · CALENDARIO ============ -->
+  <details class="acc" open>
+    <summary>
+      <span class="acc-num">2</span>
+      <span class="acc-title">Itinerario</span>
+      <span class="acc-hint">📅 día a día · agosto</span>
+      <span class="acc-chev">›</span>
+    </summary>
+    <div class="acc-body">
+      <p class="cal-lead">📅 <strong>Agosto 2026</strong> · semana del 17 al 22 — el plan de cada día + lo que está pasando en la isla.</p>
+      <div class="cal">
+
+        <div class="cal-day">
+          <div class="cal-head"><span class="cal-dow">LUN</span><span class="cal-dnum">17</span><span class="cal-mon">ago</span><span class="cal-tag arr">llegada</span></div>
+          <div class="cal-plan"><b>Plan:</b> llegan a <strong>HNL 13:34</strong> → check-in Waikiki → playa tranquila. <em>Viaje largo.</em></div>
+          <div class="cal-evs">
+            <div class="cal-ev day"><span class="ce-t">todo el día</span><span class="ce-x">🌊 Duke's OceanFest · playa</span></div>
+          </div>
+          <div class="cal-rsv">⏰ Hanauma del miér: reservar HOY 7am HI</div>
+        </div>
+
+        <div class="cal-day">
+          <div class="cal-head"><span class="cal-dow">MAR</span><span class="cal-dnum">18</span><span class="cal-mon">ago</span><span class="cal-tag full">día completo</span></div>
+          <div class="cal-plan"><b>Plan:</b> <strong>Pearl Harbor</strong> temprano + <strong>Waimea Valley</strong> (jardín + cascada, 3pm) → <strong>Toa Lūʻau</strong> 5pm.</div>
+          <div class="cal-evs">
+            <div class="cal-ev day"><span class="ce-t">todo el día</span><span class="ce-x">🌊 OceanFest</span></div>
+            <a class="cal-ev cal-ev-link" href="atracciones.html#a7" title="Ver esta actividad en la página de atracciones"><span class="ce-t">3:00pm</span><span class="ce-x">🌺 Waimea Valley · jardín y cascada</span><span class="ce-go">→</span></a>
+            <a class="cal-ev cal-ev-link" href="atracciones.html#t33" title="Ver esta actividad en la página de atracciones"><span class="ce-t">5:00pm</span><span class="ce-x">🔥 Toa Lūʻau · Silver Seating</span><span class="ce-go">→</span></a>
+          </div>
+          <div class="cal-rsv book">⚠ Pearl Harbor: aún falta reservar · ✓ Toa Lūʻau confirmado y pagado (#BXXXXXXXXXXX)</div>
+        </div>
+
+        <div class="cal-day">
+          <div class="cal-head"><span class="cal-dow">MIÉ</span><span class="cal-dnum">19</span><span class="cal-mon">ago</span><span class="cal-tag full">día completo</span></div>
+          <div class="cal-plan"><b>Plan:</b> día completo en <strong>Kualoa Ranch</strong> — UTV Raptor 🦖 + Secret Island Beach.</div>
+          <div class="cal-evs">
+            <div class="cal-ev day"><span class="ce-t">todo el día</span><span class="ce-x">🌊 OceanFest</span></div>
+            <div class="cal-ev"><span class="ce-t">7:30am</span><span class="ce-x">📋 check-in Kualoa (45 min antes)</span></div>
+            <a class="cal-ev cal-ev-link" href="atracciones.html#t21" title="Ver esta actividad en la página de atracciones"><span class="ce-t">8:15am</span><span class="ce-x">🦖 UTV Raptor Tour · 2h · Hijo 2 maneja</span><span class="ce-go">→</span></a>
+            <div class="cal-ev"><span class="ce-t">11:45am</span><span class="ce-x">📋 check-in Secret Island Beach</span></div>
+            <a class="cal-ev cal-ev-link" href="atracciones.html#t60" title="Ver esta actividad en la página de atracciones"><span class="ce-t">12:30pm</span><span class="ce-x">🏝️ Secret Island Beach · 3h30 · kayak y paddleboard</span><span class="ce-go">→</span></a>
+          </div>
+          <div class="cal-rsv book">✓ UTV (#XXXXXXXX) y Secret Island (#XXXXXXXX) pagados · ⚠ ESCANEAR EL PASE GO CITY en el check-in de 11:45 = reembolso de $315 · firmar waiver + ID con foto</div>
+        </div>
+
+        <div class="cal-day">
+          <div class="cal-head"><span class="cal-dow">JUE</span><span class="cal-dnum">20</span><span class="cal-mon">ago</span><span class="cal-tag full">día completo</span></div>
+          <div class="cal-plan"><b>Plan:</b> <strong>Circle Island Tour</strong> con Byodo-In — vuelta completa a la isla, todo el día. 🚐</div>
+          <div class="cal-evs">
+            <div class="cal-ev day"><span class="ce-t">todo el día</span><span class="ce-x">🌊 OceanFest</span></div>
+            <div class="cal-ev"><span class="ce-t">7:10am</span><span class="ce-x">📍 estar en la parada del trolley del Twin Fin</span></div>
+            <a class="cal-ev cal-ev-link" href="atracciones.html#t76" title="Ver esta actividad en la página de atracciones"><span class="ce-t">7:20am</span><span class="ce-x">🚐 pickup · Diamond Head, Makapuʻu, tortugas, Byodo-In</span><span class="ce-go">→</span></a>
+            <div class="cal-ev"><span class="ce-t">4-4:30pm</span><span class="ce-x">🏨 regreso a Waikiki (hora no garantizada)</span></div>
+          </div>
+          <div class="cal-rsv book">✓ Reservado con el pase (#XXXXXXXXX) · ⚠ desayunar antes · llevar efectivo · nada con hora fija esa noche</div>
+        </div>
+
+        <div class="cal-day">
+          <div class="cal-head"><span class="cal-dow">VIE</span><span class="cal-dnum">21</span><span class="cal-mon">ago</span><span class="cal-tag full">día completo</span></div>
+          <div class="cal-plan"><b>Plan:</b> ligero — compras, playa, cena bonita o <strong>luau</strong> para cerrar.</div>
+          <div class="cal-evs">
+            <div class="cal-ev day"><span class="ce-t">todo el día</span><span class="ce-x">🌊 OceanFest · 🏛️ Statehood Day (feriado)</span></div>
+            <div class="cal-ev"><span class="ce-t">6:30pm</span><span class="ce-x">🛍️ Made in Hawaii</span></div>
+            <div class="cal-ev"><span class="ce-t">7:45pm</span><span class="ce-x">🎆 Fuegos del Hilton</span></div>
+          </div>
+        </div>
+
+        <div class="cal-day">
+          <div class="cal-head"><span class="cal-dow">SÁB</span><span class="cal-dnum">22</span><span class="cal-mon">ago</span><span class="cal-tag out">regreso</span></div>
+          <div class="cal-plan"><b>Plan:</b> mañana en Waikiki → maletas → <strong>HNL ~18:30</strong> → <strong>vuelo 21:40</strong>.</div>
+          <div class="cal-evs">
+            <div class="cal-ev day"><span class="ce-t">todo el día</span><span class="ce-x">🌊 OceanFest (clausura) · 🛍️ Made in Hawaii</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </details>
+
+  <!-- ============ ACORDEÓN 2 · ATRACCIONES ============ -->
+  <details class="acc">
+    <summary>
+      <span class="acc-num">3</span>
+      <span class="acc-title">Atracciones y eventos</span>
+      <span class="acc-hint">qué hacer + qué pasa</span>
+      <span class="acc-chev">›</span>
+    </summary>
+    <div class="acc-body">
+
+    <div class="acts">
+    <p style="font-family:'Newsreader',serif; font-size:15px; color:var(--ink); line-height:1.6; margin-bottom:14px;">
+      Armamos una página aparte con <strong>38 lugares clasificados</strong> para ver/hacer y <strong>48 tours reservables</strong> (con foto, calificación y precio real de Viator) — eventos de su semana incluidos. 🌺
+    </p>
+    <a href="atracciones.html" style="display:inline-flex; align-items:center; gap:8px; font-family:'Fraunces',serif; font-weight:600; font-size:16px; color:#fff; background:var(--rust); padding:13px 24px; border-radius:30px; text-decoration:none;">
+      🎉 Ver atracciones y tours completos →
+    </a>
+  </div>
+    </div>
+  </details>
+
+  <!-- ============ ACORDEÓN 3 · ALOJAMIENTO ============ -->
+  <details class="acc">
+    <summary>
+      <span class="acc-num">4</span>
+      <span class="acc-title">Alojamiento</span>
+      <span class="acc-hint">reserva confirmada ✓</span>
+      <span class="acc-chev">›</span>
+    </summary>
+    <div class="acc-body">
+
+  <!--
+    FUENTES DE PRECIOS Y DECISIONES DE ALOJAMIENTO:
+    ver itinerario_hawai_2026.yaml → bloque "alojamiento_investigacion" (investigado 2026-06-07).
+    Ahí están las config de camas, capacidad para 5, links para reservar y de dónde salió cada precio.
+    Precios revisados 15 jun 2026, FX ≈ MX$17.21/USD (Banxico FIX), todo incl. (impuestos ~18.7% + resort fee; parking aparte). ESTADO ACTUAL — Twin Fin confirmado.
+      Plan actualizado: Oʻahu solamente, 5 noches en Waikiki.
+      Oʻahu opciones → Twin Fin 2BR Ocean View Suite with Lanai US$4,111 visto en checkout; backups ya no son necesarios salvo cambio.
+  -->
+  <div class="lodging">
+
+    <p class="lodging-note" style="margin-top:0;border-left-color:var(--sage)">
+      <strong>Estado actual:</strong> Plan Oʻahu solamente. Reserva confirmada por <strong>The Twin Fin Hotel</strong>
+      para <strong>17 → 22 ago 2026</strong>, <strong>5 adultos</strong>, <strong>Two Bedroom Ocean View Suite with Lanai</strong>,
+      promo <strong>ACCESS</strong>. Total mostrado: <strong>US$4,111</strong>; pago mostrado: <strong>US$1,644</strong>.
+      El hotel confirmo que no se cobrara hasta aprox. 2 semanas antes del check-in, alrededor de <strong>3 ago 2026</strong>.
+    </p>
+
+    <!-- OAHU -->
+    <div class="lodging-island">
+      <h3>Oʻahu · Waikiki</h3>
+      <div class="meta">17 → 22 ago · 5 noches · corazón Kalākaua</div>
+      <div class="lodging-cards">
+        <article class="hotel-card">
+          <div class="hotel-gallery">
+            <img class="g-main" src="img/hotel-twin-fin-1.jpg" alt="Twin Fin — vista a Waikiki Beach" loading="lazy">
+            <div class="g-thumbs">
+              <img src="img/hotel-twin-fin.jpg" alt="balcones del hotel" loading="lazy">
+              <img src="img/hotel-twin-fin-3.jpg" alt="habitación con vista al mar" loading="lazy">
+              <img src="img/hotel-twin-fin-4.jpg" alt="Tiki's Grill & Bar" loading="lazy">
+            </div>
+          </div>
+          <span class="tag best">✓ Reservado</span>
+          <h4>Twin Fin Waikiki</h4>
+          <div class="price-opts">
+            <div class="po"><span>Total visto en checkout</span><b>US$4,111</b></div>
+            <div class="po deal"><span>Cobro aprox.</span><b>3 ago</b></div>
+          </div>
+          <div class="po-note">5 noches · 2BR Ocean View Suite with Lanai · 5 adultos</div>
+          <div class="rating">★ aprox. 8.0–8.4/10 · ubicacion top · playa cruzando la calle</div>
+          <p class="desc">Frente a Kuhio Beach, en el mismo bloque practico de Park Shore. Es la eleccion activa confirmada aunque quede US$111 arriba del techo original.</p>
+          <div class="beds fits">
+            <div class="bedrow">
+              <span class="bopt ok">2 recamaras</span> suite 2BR + lanai · <span class="ok5">cabe 5 ✓</span><br>
+              <strong>US$4,111</strong> <small>5 noches · tarifa Celebrate with 30% Off · promo ACCESS · pago mostrado US$1,644</small>
+            </div>
+            <div class="bednote">El hotel confirmo la reserva. No esperar cargo inmediato; revisar tarjeta alrededor del 3 ago 2026.</div>
+          </div>
+          <div class="promo"><b>Contacto:</b> reservations@twinfinwaikiki.com · desde Mexico marcar +1 808 922 2511.</div>
+        </article>
+      </div>
+      <p class="lodging-note"><strong>Backups (solo referencia, ya no activos):</strong> <strong>Park Shore Waikiki</strong> (misma zona, cruzando la calle de Kūhiō Beach) · <strong>Ilikai / Aqua-Aston</strong> (más espacioso, menos arena directa) · <strong>Aston Waikiki Sunset</strong> (mejor valor/espacio) · <strong>Castle Waikiki Shore</strong> (en la arena, pero sin 2BR disponible cuando revisamos).</p>
+    </div>
+
+    <!-- QUÉ INCLUYE / AMENIDADES -->
+    <div class="promos-box" style="border-top-color:var(--ocean)">
+      <h4>🏨 Qué incluye y qué hay en el hotel</h4>
+      <div class="sub">The Twin Fin (antes Aston Waikīkī Beach) · 2570 Kalākaua Ave</div>
+      <div class="amen-cols">
+        <div>
+          <div class="amen-h">✅ Incluido · resort fee $45/día</div>
+          <ul>
+            <li>🏄 <strong>3 créditos diarios</strong> de renta de playa (Beach Candy): body board, SUP, silla, sombrilla, bocina Bluetooth…</li>
+            <li>📶 WiFi (hasta 4 dispositivos)</li>
+            <li>🏊 Alberca al aire libre + toallas de playa</li>
+            <li>🏋️ Gimnasio</li>
+            <li>💧 2 botellas de agua + estaciones de recarga</li>
+            <li>☕ Café en el cuarto · caja fuerte · llamadas locales</li>
+          </ul>
+        </div>
+        <div>
+          <div class="amen-h">🌺 En el hotel · aparte</div>
+          <ul>
+            <li>🍤 <strong>Tiki's Grill & Bar</strong> — restaurante y bar en sitio</li>
+            <li>🌴 Pool deck renovado + actividades del hotel</li>
+            <li>🚗 Valet parking <strong>$48/día</strong> (+ imp.) — opcional</li>
+            <li>🏖️ <strong>Kuhio Beach</strong> cruzando la calle</li>
+            <li>🛏️ Cuartos renovados (nueva re-marca)</li>
+          </ul>
+        </div>
+      </div>
+      <p class="fineprint">El <strong>resort fee ($45 + imp./día)</strong> y el <strong>valet ($48 + imp./día)</strong> son por cuarto, por noche, aparte del total. Tarifa por noche (del correo): <strong>$665</strong> (17–19 ago) y <strong>$672</strong> (20–21 ago) · impuestos <strong>18.712%</strong> (GET 4.712% + TAT 14%).</p>
+    </div>
+
+    <!-- EXPERIENCIAS DEL HOTEL -->
+    <div class="promos-box" style="border-top-color:var(--gold)">
+      <h4>🏄 Experiencias y actividades del hotel</h4>
+      <div class="sub">programa del hotel · pedir horario semanal en recepción</div>
+      <div class="amen-cols">
+        <div>
+          <div class="amen-h">🆓 Gratis para huéspedes (diario)</div>
+          <ul>
+            <li>🌸 Clases de lei (collares de flores)</li>
+            <li>🧘 Yoga en la playa</li>
+            <li>🎸 Ukulele · 💃 hula</li>
+            <li>🌊 Parley for the Oceans (conservación del mar)</li>
+          </ul>
+        </div>
+        <div>
+          <div class="amen-h">🏄 Surf y comida (aparte)</div>
+          <ul>
+            <li>🏄 <strong>Jamie O'Brien School of Surf</strong> — grupal desde <strong>$99</strong> (90 min) · privada $209 · grupos <strong>11:15am y 12:30pm</strong> (en Publics, lado Diamond Head)</li>
+            <li>🍤 Tiki's Grill (música en vivo) · 🥥 Coconut Club (desayuno piso 21) · 🥤 Sunrise Shack · 🍧 shave ice</li>
+          </ul>
+        </div>
+      </div>
+      <p class="fineprint">Las clases gratis (lei, yoga, ukulele, hula) y <strong>Parley</strong> son del programa del hotel — <strong>pedir el horario semanal al hacer check-in</strong>. La escuela de surf y los restaurantes se pagan aparte.</p>
+    </div>
+
+    <!-- RESERVA CONFIRMADA -->
+    <div class="promos-box" style="border-top-color:var(--sage)">
+      <h4>✅ Reserva confirmada — The Twin Fin</h4>
+      <div class="sub">confirmada por el hotel · vigilar cargo ~3 ago 2026</div>
+      <ul>
+        <li><strong>Booking #:</strong> XXXXXXXX · <strong>The Twin Fin</strong> (antes Aston Waikīkī Beach)</li>
+        <li><strong>Habitación:</strong> Two Bedroom Ocean View Suite with Lanai · <strong>5 adultos</strong></li>
+        <li><strong>Fechas:</strong> 17 → 22 ago 2026 · 5 noches</li>
+        <li><strong>Tarifa:</strong> Celebrate with 30% Off · promo <strong>ACCESS</strong></li>
+        <li><strong>Total:</strong> US$4,111 · <strong>pago/depósito mostrado:</strong> US$1,644</li>
+        <li><strong>Titular:</strong> Papá · correo@ejemplo.com</li>
+        <li><strong>Contacto hotel:</strong> reservations@twinfinwaikiki.com · +1 808 922 2511</li>
+      </ul>
+      <p class="fineprint">
+        <strong>⏰ Lo que falta:</strong> el hotel <strong>no cobra hasta ~2 semanas antes</strong> del check-in — vigilar el cargo de <strong>US$1,644 alrededor del 3 ago 2026</strong> y <strong>guardar el correo de confirmación</strong>. Después: cerrar actividades en Oʻahu (Pearl Harbor / USS Arizona, Diamond Head, Hanauma Bay, North Shore, Kualoa).</p>
+    </div>
+
+    <!-- AUTO RENTADO -->
+    <div class="promos-box" style="border-top-color:var(--rust)">
+      <h4>🚗 Auto rentado — Sixt</h4>
+      <div class="sub">reserva confirmada · pagar en counter</div>
+      <ul>
+        <li><strong>Reserva #:</strong> 9736931118 · <strong>Sixt Rent a Car</strong></li>
+        <li><strong>Auto:</strong> Standard Elite (BMW X3) o similar</li>
+        <li><strong>Recoger:</strong> 17 ago, 2:30pm · <strong>Entregar:</strong> 22 ago, 5:30pm · 6 días</li>
+        <li><strong>Lugar:</strong> Oahu Honolulu Aeropuerto (mismo edificio, 300 Rodgers Blvd)</li>
+        <li><strong>Total en counter:</strong> US$827.60 · <strong>depósito:</strong> US$200 (se libera al devolver)</li>
+        <li><strong>Incluye:</strong> Protección Completa, conductor adicional, GPS, asistencia 24/7, km ilimitados</li>
+        <li><strong>Conductor:</strong> Papá</li>
+      </ul>
+      <p class="fineprint">
+        <strong>⏱ Colchón ajustado:</strong> aterrizan 1:34pm y recogen el auto a las 2:30pm (~56 min) — no hay aduana en HNL (ya se hizo en Houston), así que alcanza. <strong>Entrega tarde:</strong> ~58 min de tolerancia; después cobran <strong>un día completo</strong> (no por hora) — si van a llegar tarde, avisar antes por la app/teléfono.</p>
+    </div>
+
+  </div>
+    </div>
+  </details>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div>
+      <h4>Reservas anticipadas críticas</h4>
+      <ul>
+        <li>Pearl Harbor — boletos liberan a 8 semanas vista</li>
+        <li>Hanauma Bay — reserva en línea 48 h antes</li>
+        <li>Diamond Head — obligatoria para no-residentes</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Decisión — Oʻahu ✓</h4>
+      <p style="font-style: italic; line-height: 1.55; font-size: 14px;">
+        <strong>¡Decidido! La familia se queda en Oʻahu.</strong> El itinerario queda con <strong>Waikiki como base única</strong> durante las 5 noches.
+      </p>
+      <p style="margin-top: 12px; font-family: 'JetBrains Mono', monospace; font-size: 12px; letter-spacing: 0.08em;">
+        ✓ Oʻahu · Waikiki 5 noches
+      </p>
+      <p style="margin-top: 16px; font-style: italic; line-height: 1.55; font-size: 14px;">
+        Esto reduce estrés, elimina vuelos internos, evita doble check-in/check-out y deja más tiempo real para playa, Pearl Harbor, North Shore, Kualoa, Hanauma Bay y descanso.
+      </p>
+      <p class="colophon" style="margin-top: 16px;">— Decisión registrada · Oʻahu · MMXXVI —</p>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  (function () {
+    var audio = document.getElementById('bg-music');
+    var btn = document.getElementById('music-btn');
+    if (!audio || !btn) return;
+    var txt = btn.querySelector('.mb-txt');
+    var LOW = 0.18;                 // volumen bajito
+    var started = false;            // ya suena con sonido
+    var justUnlocked = false;
+    // solo gestos que SÍ habilitan autoplay en Chrome (scroll/wheel NO cuentan)
+    var unlockEvents = ['pointerdown', 'pointerup', 'click', 'keydown', 'touchstart', 'touchend'];
+
+    function setUI(playing) {
+      btn.classList.toggle('playing', playing);
+      txt.textContent = playing ? 'Sonando' : 'Música';
+      btn.title = playing ? 'Pausar la música 🎶' : '🎶 ¡Pon la música hawaiana!';
+    }
+    function cleanup() {
+      unlockEvents.forEach(function (ev) { window.removeEventListener(ev, unlock, true); });
+    }
+    function startAudible() {
+      audio.muted = false;
+      audio.volume = LOW;
+      var pr = audio.play();
+      if (pr && pr.then) {
+        pr.then(function () { started = true; setUI(true); cleanup(); })
+          .catch(function () { /* gesto no válido aún: mantener escuchando el siguiente */ });
+      } else { started = true; setUI(true); cleanup(); }
+    }
+    function unlock() {
+      if (started) { cleanup(); return; }
+      startAudible();
+      justUnlocked = true;
+      setTimeout(function () { justUnlocked = false; }, 600);
+    }
+    function addUnlock() {
+      unlockEvents.forEach(function (ev) { window.addEventListener(ev, unlock, { capture: true, passive: true }); });
+    }
+
+    // 1) intento de autoplay con sonido bajito (algunos navegadores lo permiten)
+    audio.volume = LOW;
+    var p0 = audio.play();
+    if (p0 && p0.then) {
+      p0.then(function () { started = true; setUI(true); })
+        .catch(function () {
+          // 2) bloqueado → autoplay en silencio y des-silenciar al primer gesto
+          audio.muted = true;
+          audio.play().catch(function () {});
+          addUnlock();
+        });
+    }
+
+    // botón manual (prender/pausar)
+    btn.addEventListener('click', function () {
+      if (justUnlocked) return;                 // el gesto ya lo arrancó
+      if (audio.paused || audio.muted) { cleanup(); startAudible(); }
+      else { audio.pause(); setUI(false); }
+    });
+    audio.addEventListener('play',  function () { if (!audio.muted) setUI(true); });
+    audio.addEventListener('pause', function () { setUI(false); });
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+# OS
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Tooling
+.claude/
+.vscode/
+
+# Scratch
+*.tmp
+~$*
