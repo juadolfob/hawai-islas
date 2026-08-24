@@ -1,214 +1,217 @@
 # =============================================================
-# ISLAS DE HAWÁI — TEMÁTICA Y TOP 5 ACTIVIDADES
+# HAWAIIAN ISLANDS — THEME AND TOP 5 ACTIVITIES
 # =============================================================
-# 8 islas principales. 6 turísticamente accesibles; 2 restringidas.
-# Ventana de viaje: 17–22 ago 2026 (verano boreal).
+# 8 main islands. 6 tourist-accessible; 2 restricted.
+# Travel window: Aug 17-22, 2026 (northern summer).
 # =============================================================
 
-islas_accesibles:
+accessible_islands:
 
-  - nombre: Oʻahu
-    apodo: "The Gathering Place"
+  - name: Oʻahu
+    nickname: "The Gathering Place"
     capital: Honolulu
-    tema: "Capital urbana del estado con Waikiki, Pearl Harbor y vida nocturna; mezcla de historia militar, cultura polinesia y playa accesible."
-    top_5_actividades:
-      - "Pearl Harbor / USS Arizona Memorial — sitio histórico de la Segunda Guerra Mundial (reserva con antelación; entrada al memorial gratuita)."
-      - "Diamond Head (Lēʻahi) — caminata de ~1.3 km al borde del cráter volcánico con vistas a Waikiki (requiere reserva online para no-residentes)."
-      - "Hanauma Bay — snorkel en reserva marina protegida (cerrada lunes y martes; cupo limitado)."
-      - "North Shore (Haleʻiwa, Waimea, Sunset Beach) — cultura surf, camarones de food truck, tortugas en Laniakea Beach."
-      - "Polynesian Cultural Center (Lāʻie) — recorrido por aldeas de seis culturas polinesias + luau nocturno."
+    theme: "The state's urban capital, home to Waikiki, Pearl Harbor and nightlife; a mix of military history, Polynesian culture and accessible beach."
+    top_5_activities:
+      - "Pearl Harbor / USS Arizona Memorial — WWII historic site (book ahead; memorial entry is free)."
+      - "Diamond Head (Lēʻahi) — ~1.3 km hike to the rim of the volcanic crater with views of Waikiki (online reservation required for non-residents)."
+      - "Hanauma Bay — snorkeling in a protected marine reserve (closed Mondays and Tuesdays; limited daily capacity)."
+      - "North Shore (Haleʻiwa, Waimea, Sunset Beach) — surf culture, food-truck shrimp, turtles at Laniakea Beach."
+      - "Polynesian Cultural Center (Lāʻie) — tour through six Polynesian-culture villages + evening luau."
 
-  - nombre: Maui
-    apodo: "The Valley Isle"
-    estado: DESCARTADA
-    tema: "Carretera escénica a Hāna, cráter Haleakalā al amanecer, playas de clase mundial y avistamiento de ballenas (sólo nov–abr)."
-    top_5_actividades:
-      - "Road to Hāna — 100 km de cascadas, miradores y playas (un día completo; requiere conductor descansado)."
-      - "Amanecer en Haleakalā — cima a 3 055 m sobre nivel de nubes (reserva obligatoria del National Park; temperatura cercana a 0 °C)."
-      - "Snorkel en Molokini — cráter volcánico semi-sumergido con visibilidad de ~30 m (sólo por tour en barco)."
-      - "ʻĪao Valley State Monument — valle tropical con la aguja basáltica ʻĪao Needle (320 m)."
-      - "Playas de Wailea/Kāʻanapali — aguas calmas, snorkel desde la orilla, atardeceres."
-    nota_estacional: "Avistamiento de ballenas jorobadas NO disponible en agosto (temporada nov–abr)."
-    razones_de_descarte:
-      score_ponderado: 6.95   # tercer lugar; gap de 1.10 puntos vs. Kauaʻi
-      atractivo_iconic_fuera_de_temporada: >
-        El atractivo de clase mundial de Maui — avistamiento de
-        ballenas jorobadas — está fuera de temporada en agosto
-        (sólo disponible nov–abr). Esto neutraliza ~40% del valor
-        diferencial de la isla en la ventana de viaje.
-      sustituibilidad_parcial: >
-        Road to Hāna tiene análogos parciales en otras islas
-        (Hamakua Coast en Big Island, costa norte de Kauaʻi).
-        Snorkel Molokini sustituido por Hanauma Bay (Oʻahu) y
-        manta rays nocturno en Kona (Big Island).
-      atractivo_unico_remanente: >
-        Sólo Haleakalā permanece como atractivo verdaderamente
-        único de Maui, pero requiere madrugón extremo (salida
-        ~02:30 al cráter) — mismo perfil de fatiga que la
-        astronomía en Mauna Kea, sin el plus de los observatorios.
-      costo_post_lahaina: >
-        Estructura tarifaria de la más alta del archipiélago
-        tras incendios de Lahaina 2023 (zona principal de
-        alojamiento dañada, oferta reducida, demanda turística
-        de recuperación elevada).
-      gap_respecto_a_finalistas: >
-        En modelo recalibrado, Maui (6.95) queda 1.10 puntos
-        debajo de Kauaʻi (8.05) y 1.60 debajo de Big Island
-        (8.55). Diferencia significativa, no de margen.
+  - name: Maui
+    nickname: "The Valley Isle"
+    status: DROPPED
+    theme: "The scenic Road to Hāna, sunrise at Haleakalā crater, world-class beaches and whale watching (Nov-Apr only)."
+    top_5_activities:
+      - "Road to Hāna — 100 km of waterfalls, lookouts and beaches (a full day; needs a well-rested driver)."
+      - "Sunrise at Haleakalā — a 3,055 m summit above the cloud line (National Park reservation required; near-freezing temperatures)."
+      - "Molokini snorkel — a partly submerged volcanic crater with ~30 m visibility (boat tour only)."
+      - "ʻĪao Valley State Monument — tropical valley with the basalt ʻĪao Needle (320 m)."
+      - "Wailea/Kāʻanapali beaches — calm waters, shore snorkeling, sunsets."
+    seasonal_note: "Humpback whale watching NOT available in August (season is Nov-Apr)."
+    reasons_dropped:
+      weighted_score: 6.95   # third place; 1.10-point gap vs. Kauaʻi
+      iconic_draw_out_of_season: >
+        Maui's world-class draw — humpback whale watching —
+        is out of season in August (only available Nov-Apr).
+        This neutralizes ~40% of the island's differential value
+        within the travel window.
+      partial_substitutability: >
+        Road to Hāna has partial equivalents on other islands
+        (Hamakua Coast on Big Island, Kauaʻi's north shore).
+        Molokini snorkel is substituted by Hanauma Bay (Oʻahu) and
+        the night manta ray swim in Kona (Big Island).
+      remaining_unique_draw: >
+        Only Haleakalā remains as a truly unique Maui draw, but it
+        requires an extreme early start (~02:30 departure to the
+        crater) — the same fatigue profile as Mauna Kea astronomy,
+        without the observatory payoff.
+      cost_post_lahaina: >
+        The highest rate structure in the archipelago following the
+        2023 Lahaina fires (main lodging area damaged, reduced
+        supply, elevated recovery-driven tourist demand).
+      gap_vs_finalists: >
+        In the recalibrated model, Maui (6.95) sits 1.10 points
+        below Kauaʻi (8.05) and 1.60 below Big Island (8.55). A
+        meaningful gap, not a marginal one.
 
-  - nombre: Hawaiʻi (Big Island)
-    apodo: "The Orange Island"
-    tema: "Volcanes activos (Kīlauea, Mauna Loa) en el Hawaiʻi Volcanoes National Park y observatorios astronómicos en Mauna Kea; única isla con 11 de las 13 zonas climáticas del mundo."
-    top_5_actividades:
-      - "Hawaiʻi Volcanoes National Park — cráter Kīlauea, Chain of Craters Road, tubos de lava (verificar actividad volcánica vigente con NPS)."
-      - "Mauna Kea Summit / Visitor Station — observatorios a 4 207 m y estrellas en el cielo más oscuro de EE.UU. (vehículo 4×4 requerido para la cima)."
-      - "Manta Ray Night Snorkel (costa de Kona) — nado nocturno con mantarrayas atraídas por luces, ~3–4 m de envergadura."
-      - "Playas de arena negra (Punaluʻu) y arena verde (Papakōlea) — formaciones de olivino y basalto; tortugas marinas frecuentes."
-      - "Granjas de café Kona — recorridos de cultivo y cata en la única región productora de café arábica de EE.UU."
+  - name: Hawaiʻi (Big Island)
+    nickname: "The Orange Island"
+    theme: "Active volcanoes (Kīlauea, Mauna Loa) inside Hawaiʻi Volcanoes National Park and astronomical observatories on Mauna Kea; the only island with 11 of the world's 13 climate zones."
+    top_5_activities:
+      - "Hawaiʻi Volcanoes National Park — Kīlauea crater, Chain of Craters Road, lava tubes (check current volcanic activity with NPS)."
+      - "Mauna Kea Summit / Visitor Station — observatories at 4,207 m and stargazing under the darkest sky in the US (4x4 required for the summit)."
+      - "Manta Ray Night Snorkel (Kona coast) — a night swim with manta rays drawn in by lights, ~3-4 m wingspan."
+      - "Black sand (Punaluʻu) and green sand (Papakōlea) beaches — olivine and basalt formations; sea turtles common."
+      - "Kona coffee farms — tours and tastings in the only Arabica-coffee-growing region in the US."
 
-  - nombre: Kauaʻi
-    apodo: "The Garden Isle"
-    estado: DESCARTADA
-    tema: "Naturaleza salvaje y verde: acantilados de Nā Pali Coast, Waimea Canyon (el 'Gran Cañón del Pacífico') y selva tropical densa; la más antigua y menos desarrollada de las grandes."
-    top_5_actividades:
-      - "Nā Pali Coast — acantilados de 1 200 m accesibles sólo por barco, helicóptero o el Kalalau Trail (caminata exigente)."
-      - "Waimea Canyon y Kōkeʻe State Park — barranco de 16 km de largo y 900 m de profundidad; múltiples miradores."
-      - "Tour en helicóptero de la isla — única forma de ver el ~70% interior inaccesible por tierra."
-      - "Hanalei Bay y costa norte — bahía en herradura, playas tropicales clásicas, pueblo histórico."
-      - "Río Wailua / Fern Grotto — único río navegable de Hawái; kayak o barco hasta gruta cubierta de helechos."
-    razones_de_descarte:
-      score_ponderado: 8.05   # segundo lugar — finalista de alto valor
-      naturaleza_del_descarte: "Por preferencia, NO por inferioridad. Es una isla magnífica (Σ 8.05, finalista)."
-      criterio_no_satisfecho: >
-        Los viajeros priorizaron explícitamente astronomía y volcán
-        activo. Kauaʻi no tiene ninguno: es la isla más antigua del
-        archipiélago, con volcanes extintos y erosionados, y sin
-        observatorios astronómicos. Falla 2 de los 3 criterios duros
-        nombrados.
-      atributo_unico_perdido: >
-        Nā Pali Coast y Waimea Canyon son paisajes sin equivalente,
-        pero ceden ante la prioridad declarada de los viajeros.
+  - name: Kauaʻi
+    nickname: "The Garden Isle"
+    status: DROPPED
+    theme: "Wild, green nature: the Nā Pali Coast cliffs, Waimea Canyon (the 'Grand Canyon of the Pacific') and dense rainforest; the oldest and least developed of the major islands."
+    top_5_activities:
+      - "Nā Pali Coast — 1,200 m cliffs reachable only by boat, helicopter or the Kalalau Trail (a demanding hike)."
+      - "Waimea Canyon and Kōkeʻe State Park — a canyon 16 km long and 900 m deep; multiple overlooks."
+      - "Island helicopter tour — the only way to see the ~70% of the interior that's inaccessible by land."
+      - "Hanalei Bay and the north shore — a horseshoe bay, classic tropical beaches, a historic town."
+      - "Wailua River / Fern Grotto — Hawaii's only navigable river; kayak or boat to a fern-covered grotto."
+    reasons_dropped:
+      weighted_score: 8.05   # second place — a high-value finalist
+      nature_of_the_drop: "Dropped by preference, NOT by inferiority. This is a magnificent island (Σ 8.05, a finalist)."
+      unmet_criterion: >
+        The travelers explicitly prioritized astronomy and an active
+        volcano. Kauaʻi has neither: it's the oldest island in the
+        archipelago, with extinct and eroded volcanoes and no
+        astronomical observatories. It fails 2 of the 3 hard criteria
+        the travelers named.
+      unique_attribute_lost: >
+        Nā Pali Coast and Waimea Canyon are landscapes with no
+        equivalent, but they lose out to the travelers' stated
+        priority.
 
-  - nombre: Molokaʻi
-    apodo: "The Friendly Isle"
-    estado: DESCARTADA
-    tema: "Hawái rural y tradicional sin grandes resorts; cultura nativa intacta y el histórico asentamiento de leprosos de Kalaupapa."
-    top_5_actividades:
-      - "Kalaupapa National Historical Park — antigua colonia de leprosos del Padre Damián (acceso por mula, avión o caminata; verificar reapertura)."
-      - "Hālawa Valley — caminata cultural guiada por residente nativo hasta cascadas Moaʻula."
-      - "Papōhaku Beach — playa de arena blanca de 5 km, la más larga del estado; generalmente vacía."
-      - "Acantilados marinos del norte — los más altos del mundo (~1 000 m), visibles desde mar o aire."
-      - "Pueblo de Kaunakakai — vida local sin franquicias ni semáforos; pan dulce nocturno en Kanemitsu Bakery."
-    razones_de_descarte:
-      score_ponderado: 5.60   # penúltimo lugar
-      atractivo_principal_comprometido: >
-        Kalaupapa (motivo histórico nº 1) tiene acceso operacionalmente
-        cerrado desde 2018: mule trail suspendido indefinidamente tras
-        deslizamiento + retiro de Damien Tours. Acceso restante por
-        vuelo charter requiere permiso del Hawaii Department of Health
-        gestionado con semanas de antelación, sin garantía.
-      sustituibilidad_del_resto: >
-        Sin Kalaupapa, los atractivos remanentes (Hālawa Valley, Papōhaku
-        Beach, acantilados, pueblo rural) tienen sustitutos en Oʻahu o
-        Big Island sin pérdida material de experiencia.
-      friccion_operativa: >
-        Único vuelo desde HNL es Mokulele Airlines (Cessna 9 plazas) con
-        2–4 frecuencias diarias; restricción de peso 70 lbs/pasajero;
-        riesgo de separación del grupo si no hay 4 asientos contiguos.
-      infraestructura_minima: >
-        Un único hotel operativo; 0 semáforos en toda la isla; 0
-        franquicias internacionales; restaurantes cierran antes de
-        las 21:00. Sin redundancia ante cancelaciones.
-      mismatch_cultural: >
-        Molokaʻi mantiene postura documentada anti-turismo de masas;
-        target receptor es el viajero experimentado con interés
-        antropológico, no la familia en su primera visita al archipiélago.
+  - name: Molokaʻi
+    nickname: "The Friendly Isle"
+    status: DROPPED
+    theme: "Rural, traditional Hawaii with no large resorts; intact native culture and the historic Kalaupapa leprosy settlement."
+    top_5_activities:
+      - "Kalaupapa National Historical Park — Father Damien's former leprosy colony (access by mule, plane or hike; check reopening status)."
+      - "Hālawa Valley — a cultural hike guided by a native resident up to Moaʻula Falls."
+      - "Papōhaku Beach — a 5 km white-sand beach, the longest in the state; usually empty."
+      - "North shore sea cliffs — the tallest in the world (~1,000 m), visible from sea or air."
+      - "Kaunakakai town — local life with no chains or traffic lights; night-time sweet bread at Kanemitsu Bakery."
+    reasons_dropped:
+      weighted_score: 5.60   # second-to-last place
+      main_draw_compromised: >
+        Kalaupapa (the #1 historical draw) has been operationally
+        closed since 2018: the mule trail has been suspended
+        indefinitely following a landslide + the withdrawal of Damien
+        Tours. The remaining charter-flight access requires a permit
+        from the Hawaii Department of Health arranged weeks in
+        advance, with no guarantee.
+      substitutability_of_the_rest: >
+        Without Kalaupapa, the remaining draws (Hālawa Valley,
+        Papōhaku Beach, sea cliffs, the rural town) have substitutes
+        on Oʻahu or Big Island with no material loss of experience.
+      operational_friction: >
+        The only flight from HNL is Mokulele Airlines (9-seat Cessna)
+        with 2-4 daily frequencies; a 70 lbs/passenger weight
+        restriction; risk of the group getting split if 4 adjoining
+        seats aren't available.
+      minimal_infrastructure: >
+        A single operating hotel; 0 traffic lights on the entire
+        island; 0 international chains; restaurants close before
+        9:00 pm. No redundancy against cancellations.
+      cultural_mismatch: >
+        Molokaʻi maintains a documented anti-mass-tourism stance;
+        its intended visitor is the experienced traveler with an
+        anthropological interest, not a family on their first visit
+        to the archipelago.
 
-  - nombre: Lānaʻi
-    apodo: "The Pineapple Isle"
-    estado: DESCARTADA
-    tema: "Isla pequeña y privada con sólo dos resorts de lujo (ambos Four Seasons), playas remotas y rutas off-road; antigua plantación de piña de Dole."
-    top_5_actividades:
-      - "Hulopoʻe Bay — santuario marino protegido; snorkel con delfines y peces tropicales desde la orilla."
-      - "Keahiakawelo (Garden of the Gods) — paisaje rocoso lunar con formaciones erosionadas color rojizo."
-      - "Shipwreck Beach (Kaiolohia) — restos oxidados de buque petrolero de la Segunda Guerra Mundial visibles desde la playa."
-      - "Munro Trail — sendero de 20 km por la cresta de la isla; vistas a otras cinco islas en día despejado (requiere 4×4)."
-      - "Puʻu Pehe (Sweetheart Rock) — formación rocosa icónica frente a la costa sur con leyenda hawaiana."
-    razones_de_descarte:
-      score_ponderado: 5.05   # último lugar del universo de opciones
-      dominancia_estricta: >
-        Los 5 atractivos tienen sustitutos superiores en otras islas
-        del mismo viaje (Hanauma/Molokini > Hulopoʻe; Waimea Canyon
-        > Garden of the Gods; Nā Pali > Puʻu Pehe). Ninguno es único
-        o de clase mundial.
+  - name: Lānaʻi
+    nickname: "The Pineapple Isle"
+    status: DROPPED
+    theme: "A small, private island with only two luxury resorts (both Four Seasons), remote beaches and off-road routes; a former Dole pineapple plantation."
+    top_5_activities:
+      - "Hulopoʻe Bay — a protected marine sanctuary; shore snorkeling with dolphins and tropical fish."
+      - "Keahiakawelo (Garden of the Gods) — a lunar rocky landscape with reddish eroded formations."
+      - "Shipwreck Beach (Kaiolohia) — the rusted remains of a WWII oil tanker visible from the beach."
+      - "Munro Trail — a 20 km ridge trail across the island; views of five other islands on a clear day (4x4 required)."
+      - "Puʻu Pehe (Sweetheart Rock) — an iconic rock formation off the south coast with a Hawaiian legend attached."
+    reasons_dropped:
+      weighted_score: 5.05   # last place among all options
+      strict_dominance: >
+        All 5 draws have superior substitutes on other islands in
+        the same trip (Hanauma/Molokini > Hulopoʻe; Waimea Canyon >
+        Garden of the Gods; Nā Pali > Puʻu Pehe). None is unique or
+        world-class.
       category_mismatch: >
-        Producto orientado a luna de miel, retiro de bienestar o
-        escapada corporativa. No alinea con perfil de viaje familiar
-        inaugural de 4 adultos buscando variedad.
-      costo_prohibitivo: >
-        Sólo 2 hoteles operan (ambos Four Seasons); tarifa mínima
-        USD 1100–1800/noche. Sin segmento medio ni bajo. 2 noches
-        para 4 personas: USD 4400–7200 mínimo en alojamiento.
-      vulnerabilidad_logistica: >
-        Sin renta de auto convencional; sólo Jeep 4×4 (~USD 200/día)
-        por carreteras no pavimentadas. Dependencia operacional del
-        shuttle del resort elimina autonomía exploratoria.
-      costo_oportunidad: >
-        Mismo presupuesto en Big Island cubre hotel + 4×4 + tour de
-        mantarrayas + entrada al National Park con margen sobrante.
+        A product built for honeymoons, wellness retreats or
+        corporate getaways. Doesn't fit a first-time family trip of
+        4 adults looking for variety.
+      prohibitive_cost: >
+        Only 2 hotels operate (both Four Seasons); minimum rate
+        USD 1,100-1,800/night. No mid- or low-tier segment. 2 nights
+        for 4 people: USD 4,400-7,200 minimum in lodging alone.
+      logistical_vulnerability: >
+        No conventional car rental; only 4x4 Jeeps (~USD 200/day) on
+        unpaved roads. Operational dependence on the resort shuttle
+        removes exploratory freedom.
+      opportunity_cost: >
+        The same budget on Big Island covers a hotel + 4x4 + manta
+        ray tour + National Park entry with money to spare.
 
-islas_restringidas:
+restricted_islands:
 
-  - nombre: Niʻihau
-    apodo: "The Forbidden Isle"
-    tema: "Propiedad privada desde 1864, habitada por ~70 nativos hawaianos; acceso sólo mediante tours limitados de cacería o helicóptero."
+  - name: Niʻihau
+    nickname: "The Forbidden Isle"
+    theme: "Privately owned since 1864, home to ~70 native Hawaiians; access only via limited hunting or helicopter tours."
 
-  - nombre: Kahoʻolawe
-    tema: "Deshabitada, antiguo campo de tiro militar en proceso de restauración ecológica; acceso prohibido al público general."
-
-# =============================================================
-# NOTAS LOGÍSTICAS
-# =============================================================
-notas:
-  conectividad: "Vuelos interisla operados principalmente por Hawaiian Airlines y Southwest; ~40 min de duración típica."
-  punto_de_entrada_actual: "Oʻahu (HNL) — base ya fijada por reserva United."
-  costo_island_hop: "Vuelo interisla añade traslados adicionales aeropuerto↔hotel y consume medio día por trayecto; evaluar contra noches disponibles (5)."
-  reservas_anticipadas_criticas:
-    - "Pearl Harbor (USS Arizona): boletos liberan a 8 semanas vista; agotan rápido."
-    - "Hanauma Bay: reserva en línea 48 h antes; cupo diario limitado."
-    - "Diamond Head: reserva obligatoria para no-residentes."
-    - "Haleakalā sunrise (Maui): reserva del National Park requerida con 60 días de anticipación."
-    - "Molokini snorkel: tours suelen llenarse 1–2 semanas antes en verano."
+  - name: Kahoʻolawe
+    theme: "Uninhabited, a former military firing range under ecological restoration; off-limits to the general public."
 
 # =============================================================
-# DECISIÓN ACTIVA — UNIVERSO FINAL DE 2 OPCIONES
+# LOGISTICS NOTES
 # =============================================================
-decision_segunda_isla:
-  restriccion_clave: "Primera y posiblemente única visita al archipiélago — modelo recalibrado prioriza diferenciación e iconicity sobre simplicidad operativa."
+notes:
+  connectivity: "Interisland flights mainly run by Hawaiian Airlines and Southwest; ~40 min typical duration."
+  current_entry_point: "Oʻahu (HNL) — base already fixed by the United booking."
+  island_hop_cost: "An interisland flight adds extra airport-hotel transfers and eats up half a day per leg; weigh this against the nights available (5)."
+  critical_advance_bookings:
+    - "Pearl Harbor (USS Arizona): tickets release 8 weeks out; sell out fast."
+    - "Hanauma Bay: book online 48h ahead; limited daily capacity."
+    - "Diamond Head: reservation required for non-residents."
+    - "Haleakalā sunrise (Maui): National Park reservation required 60 days ahead."
+    - "Molokini snorkel: tours often sell out 1-2 weeks ahead in summer."
 
-  RESUELTA: "Oʻahu + Big Island"
-  criterio_decisivo: "Conjunto de preferencias {astronomía, volcán activo, naturaleza} tiene solución única: Big Island es la ÚNICA isla con astronomía (Mauna Kea) Y volcán activo (Kīlauea). Kauaʻi falla 2 de 3 criterios duros nombrados por los viajeros."
-  fecha_decision: 2026-05-18
+# =============================================================
+# ACTIVE DECISION — FINAL SET OF 2 OPTIONS
+# =============================================================
+second_island_decision:
+  key_constraint: "First and possibly only visit to the archipelago — the recalibrated model weighs differentiation and iconicity over operational simplicity."
 
-  seleccion_final:
-    nombre: "Oʻahu + Big Island"
-    score_recalibrado: 8.55
+  RESOLVED: "Oʻahu + Big Island"
+  deciding_criterion: "The set of stated preferences {astronomy, active volcano, nature} has a unique solution: Big Island is the ONLY island with astronomy (Mauna Kea) AND an active volcano (Kīlauea). Kauaʻi fails 2 of the 3 hard criteria the travelers named."
+  decision_date: 2026-05-18
+
+  final_selection:
+    name: "Oʻahu + Big Island"
+    recalibrated_score: 8.55
     rank: 1
-    estado: SELECCIONADA
+    status: SELECTED
 
-  opciones_descartadas:
-    - nombre: "Oʻahu + Kauaʻi"
+  dropped_options:
+    - name: "Oʻahu + Kauaʻi"
       score: 8.05
-      motivo: "Finalista de alto valor, pero sin astronomía ni volcán activo — los dos atributos exclusivos que los viajeros priorizaron explícitamente. Descartada por preferencia, no por inferioridad."
-    - nombre: "Oʻahu + Maui"
+      reason: "A high-value finalist, but no astronomy or active volcano — the two exclusive attributes the travelers explicitly prioritized. Dropped by preference, not by inferiority."
+    - name: "Oʻahu + Maui"
       score: 6.95
-      motivo: "Atractivo iconic principal (ballenas) fuera de temporada; costo elevado post-Lahaina; gap de 1.10 puntos vs. finalistas."
-    - nombre: "Sólo Oʻahu"
+      reason: "Main iconic draw (whales) out of season; elevated post-Lahaina cost; 1.10-point gap vs. the finalists."
+    - name: "Oʻahu only"
       score: 6.80
-      motivo: "Bajo restricción 'primera y posiblemente única visita', renunciar a volcanes activos / Mauna Kea / Nā Pali / mantarrayas representa pérdida permanente no compensable."
-    - nombre: "Oʻahu + Molokaʻi"
+      reason: "Under the 'first and possibly only visit' constraint, giving up active volcanoes / Mauna Kea / Nā Pali / manta rays represents a permanent, uncompensated loss."
+    - name: "Oʻahu + Molokaʻi"
       score: 5.85
-      motivo: "Atractivo nº 1 (Kalaupapa) operacionalmente cerrado; infraestructura mínima; mismatch cultural."
-    - nombre: "Oʻahu + Lānaʻi"
+      reason: "Draw #1 (Kalaupapa) is operationally closed; minimal infrastructure; cultural mismatch."
+    - name: "Oʻahu + Lānaʻi"
       score: 5.00
-      motivo: "Dominancia estricta por finalistas; costo prohibitivo; category mismatch con perfil familiar."
+      reason: "Strictly dominated by the finalists; prohibitive cost; category mismatch with a family profile."

@@ -1,1220 +1,1223 @@
 # =============================================================
-# ITINERARIO FAMILIAR — HAWÁI 2026
-# Generado: 2026-05-17
+# FAMILY ITINERARY — HAWAII 2026
+# Generated: 2026-05-17
 # =============================================================
 
-viaje:
-  origen: Ciudad Obregón, Sonora (CEN)
-  destino_principal: Honolulu, Hawái, EE.UU. (HNL)
-  fechas: 2026-08-16 a 2026-08-24
-  duracion_total: 8 días / 8 noches
+trip:
+  origin: Ciudad Obregón, Sonora (CEN)
+  main_destination: Honolulu, Hawaii, USA (HNL)
+  dates: 2026-08-16 to 2026-08-24
+  total_duration: 8 days / 8 nights
+
+twin_fin_notes:
+  valet_parking_total_5_nights_usd: 314.15
+  check_in_time: "16:00"
+  check_in_note: "Official check-in 4:00 PM. They land at 13:34 and reach the hotel ~15:30, so expect a 20-30 min wait."
 
 # =============================================================
-# SEGMENTOS
+# SEGMENTS
 # =============================================================
-    valet_parking_total_5_noches_usd: 314.15
-    check_in_hora: "16:00"
-    check_in_nota: Check-in oficial 4:00 PM. Aterrizan 13:34 y llegan al hotel ~15:30, así que pueden esperar 20-30 min.
-segmentos:
+segments:
 
 - id: 1
-  fecha: 2026-08-16
-  tipo: vuelo
-  aerolinea: Viva Aerobus
-  vuelo: con escala express en MTY
-  origen: Ciudad Obregón (CEN)
-  destino: AIFA, Ciudad de México (NLU)
-  salida_local: "09:40"
-  llegada_local: "14:40"
-  duracion: 4h 00m
-  tarifa: Combo Switch (Flex-Sí-bilidad)
-  equipaje_por_pasajero:
-    mano: 1 artículo personal
-    documentado: 1 pieza de 15 kg
+  date: 2026-08-16
+  type: flight
+  airline: Viva Aerobus
+  flight: with an express layover in MTY
+  origin: Ciudad Obregón (CEN)
+  destination: AIFA, Mexico City (NLU)
+  local_departure: "09:40"
+  local_arrival: "14:40"
+  duration: 4h 00m
+  fare: Combo Switch (Flex-Si-bility)
+  baggage_per_passenger:
+    carry_on: 1 personal item
+    checked: 1 piece, 15 kg
 - id: 2
-  fecha: 2026-08-16 a 2026-08-17
-  tipo: hotel
-  nombre: Fiesta Inn Aeropuerto Ciudad de México
-  ubicacion: aeropuerto MEX (Benito Juárez) — NO AIFA
+  date: 2026-08-16 to 2026-08-17
+  type: hotel
+  name: Fiesta Inn Aeropuerto Ciudad de México
+  location: MEX airport (Benito Juárez) — NOT AIFA
   check_in: 2026-08-16
   check_out: 2026-08-17
-  tipo_habitacion: XD
-  programa_lealtad: Fiesta Rewards
-  - no modificar la reserva
-  - pagar consumos la noche previa para minimizar fricción al check-out
-  - check-out estimado: 02:30 del 17 ago
+  room_type: XD
+  loyalty_program: Fiesta Rewards
+  private_notes:
+  - do not modify the booking
+  - pay incidentals the night before to minimize checkout friction
+  - estimated checkout: 02:30 on Aug 17
 
 - id: 3
-  fecha: 2026-08-17
-  tipo: vuelo
-  aerolinea: United Airlines
-  vuelo: UA1085
-  aeronave: Airbus A319
-  origen: Ciudad de México (MEX)
-  destino: Houston (IAH)
-  salida_local: "04:40"
-  llegada_local: "08:01"
-  duracion: 2h 21m
-  clase: Economy (L)
+  date: 2026-08-17
+  type: flight
+  airline: United Airlines
+  flight: UA1085
+  aircraft: Airbus A319
+  origin: Mexico City (MEX)
+  destination: Houston (IAH)
+  local_departure: "04:40"
+  local_arrival: "08:01"
+  duration: 2h 21m
+  class: Economy (L)
 
 - id: 4
-  tipo: conexion
-  aeropuerto: IAH (Houston)
-  duracion: 2h 14m
-  nota: incluye inmigración y aduana de EE.UU.; margen ajustado
+  type: layover
+  airport: IAH (Houston)
+  duration: 2h 14m
+  note: includes US immigration and customs; tight margin
 
 - id: 5
-  fecha: 2026-08-17
-  tipo: vuelo
-  aerolinea: United Airlines
-  vuelo: UA253
-  aeronave: Boeing 777-200
-  origen: Houston (IAH)
-  destino: Honolulu (HNL)
-  salida_local: "10:15"
-  llegada_local: "13:34"
-  duracion: 8h 19m
-  clase: Economy (L)
+  date: 2026-08-17
+  type: flight
+  airline: United Airlines
+  flight: UA253
+  aircraft: Boeing 777-200
+  origin: Houston (IAH)
+  destination: Honolulu (HNL)
+  local_departure: "10:15"
+  local_arrival: "13:34"
+  duration: 8h 19m
+  class: Economy (L)
 
 - id: 6
-  fecha: 2026-08-17 a 2026-08-22
-  tipo: estancia
-  ciudad: Honolulu, Hawái
-  duracion: ~5 días
-  alojamiento: "The Twin Fin Hotel — reserva confirmada"
-  detalles_alojamiento: "Two Bedroom Ocean View Suite with Lanai; 5 adultos; total mostrado US$4,111; pago mostrado US$1,644; promo ACCESS; cobro aprox. 2026-08-03"
+  date: 2026-08-17 to 2026-08-22
+  type: stay
+  city: Honolulu, Hawaii
+  duration: ~5 days
+  lodging: "The Twin Fin Hotel — booking confirmed"
+  lodging_details: "Two Bedroom Ocean View Suite with Lanai; 5 adults; total shown US$4,111; payment shown US$1,644; promo ACCESS; charge approx. 2026-08-03"
 
 - id: 7
-  fecha: 2026-08-22 a 2026-08-23
-  tipo: vuelo
-  aerolinea: United Airlines
-  vuelo: UA1806
-  aeronave: Boeing 777-200
-  origen: Honolulu (HNL)
-  destino: Denver (DEN)
-  salida_local: "2026-08-22 21:40"
-  llegada_local: "2026-08-23 08:19"
-  duracion: 6h 39m
-  clase: Economy (L)
-  nota: vuelo nocturno, llega al día siguiente
+  date: 2026-08-22 to 2026-08-23
+  type: flight
+  airline: United Airlines
+  flight: UA1806
+  aircraft: Boeing 777-200
+  origin: Honolulu (HNL)
+  destination: Denver (DEN)
+  local_departure: "2026-08-22 21:40"
+  local_arrival: "2026-08-23 08:19"
+  duration: 6h 39m
+  class: Economy (L)
+  note: overnight flight, arrives the next day
 
 - id: 8
-  tipo: conexion
-  aeropuerto: DEN (Denver)
-  duracion: 9h 12m
+  type: layover
+  airport: DEN (Denver)
+  duration: 9h 12m
 
 - id: 9
-  fecha: 2026-08-23
-  tipo: vuelo
-  aerolinea: United Airlines
-  vuelo: UA783
-  aeronave: Boeing 737 MAX 8
-  origen: Denver (DEN)
-  destino: Ciudad de México (MEX)
-  salida_local: "17:31"
-  llegada_local: "21:10"
-  duracion: 3h 39m
-  clase: Economy (L)
+  date: 2026-08-23
+  type: flight
+  airline: United Airlines
+  flight: UA783
+  aircraft: Boeing 737 MAX 8
+  origin: Denver (DEN)
+  destination: Mexico City (MEX)
+  local_departure: "17:31"
+  local_arrival: "21:10"
+  duration: 3h 39m
+  class: Economy (L)
 
 - id: 10
-  fecha: 2026-08-23 a 2026-08-24
-  tipo: pernocta_transito
-  estado: SIN RESERVA — PENDIENTE DE DECISION
-  nota: requiere traslado MEX → NLU antes de las 04:30 del 24 ago
+  date: 2026-08-23 to 2026-08-24
+  type: overnight_transit
+  status: NO BOOKING — DECISION PENDING
+  note: requires MEX → NLU transfer before 04:30 on Aug 24
 
 - id: 11
-  fecha: 2026-08-24
-  tipo: vuelo
-  aerolinea: Viva Aerobus
-  vuelo: directo
-  origen: AIFA, Ciudad de México (NLU)
-  destino: Ciudad Obregón (CEN)
-  salida_local: "06:40"
-  llegada_local: "07:55"
-  duracion: 2h 15m
-  tarifa: Combo Switch (Flex-Sí-bilidad)
-  equipaje_por_pasajero:
-    mano: 1 artículo personal
-    documentado: 1 pieza de 15 kg
+  date: 2026-08-24
+  type: flight
+  airline: Viva Aerobus
+  flight: direct
+  origin: AIFA, Mexico City (NLU)
+  destination: Ciudad Obregón (CEN)
+  local_departure: "06:40"
+  local_arrival: "07:55"
+  duration: 2h 15m
+  fare: Combo Switch (Flex-Si-bility)
+  baggage_per_passenger:
+    carry_on: 1 personal item
+    checked: 1 piece, 15 kg
 # =============================================================
-# EQUIPAJE (resumen por aerolínea — para que quede claro)
+# BAGGAGE (summary by airline — for clarity)
 # =============================================================
-equipaje:
-  viva_aerobus_papas:
-    pasajeros: [Dad, Mom]
-    ruta: "CEN <-> CDMX"
-    de_mano: "1 artículo personal (~10 kg, bajo el asiento)"
-    documentado: "1 maleta de 15 kg — INCLUIDA"
-    estado: confirmado
-  united_hawai:
-    reserva: XXXXXX
-    pasajeros: "4 (todos · tarifa United Economy L)"
-    ruta: "MEX <-> HNL"
-    de_mano: "1 carry-on de cabina (máx 56x35x22 cm) + 1 artículo personal — INCLUIDOS; United NO limita el PESO del carry-on, solo el tamaño"
-    documentado: "NO incluida en la tarifa L — se paga aparte; máx 23 kg (50 lb) por pieza, hasta 32 kg con sobrecargo"
-    estado: confirmado
-  volaris_juan_manuel:
-    reserva: XXXXXX
-    pasajero: Kid 2
-    ruta: "GDL -> CDMX"
-    de_mano: "artículo personal (por confirmar)"
-    documentado: "POR VERIFICAR — la tarifa básica de Volaris suele traer SOLO artículo personal; la maleta de 15 kg puede ser extra"
-    estado: por_verificar
-  nota_empaque: "El límite MÁS restrictivo manda: en los tramos mexicanos la maleta documentada es de 15 kg (Viva); esos 15 kg caben sin problema en los 23 kg de United."
+baggage:
+  viva_aerobus_parents:
+    passengers: [Dad, Mom]
+    route: "CEN <-> CDMX"
+    carry_on: "1 personal item (~10 kg, under the seat)"
+    checked: "1 bag, 15 kg — INCLUDED"
+    status: confirmed
+  united_hawaii:
+    booking: XXXXXX
+    passengers: "4 (everyone · United Economy L fare)"
+    route: "MEX <-> HNL"
+    carry_on: "1 cabin carry-on (max 56x35x22 cm) + 1 personal item — INCLUDED; United does NOT limit carry-on WEIGHT, only size"
+    checked: "NOT included in the L fare — paid separately; max 23 kg (50 lb) per piece, up to 32 kg with an overweight fee"
+    status: confirmed
+  volaris_kid2:
+    booking: XXXXXX
+    passenger: Kid 2
+    route: "GDL -> CDMX"
+    carry_on: "personal item (to confirm)"
+    checked: "TO VERIFY — Volaris' basic fare usually includes ONLY a personal item; the 15 kg bag may be extra"
+    status: to_verify
+  packing_note: "The MOST restrictive limit governs: on the Mexican legs the checked bag is 15 kg (Viva); those 15 kg fit easily within United's 23 kg."
 
 # =============================================================
-# RENTA DE AUTO — Sixt (Oʻahu)
+# CAR RENTAL — Sixt (Oʻahu)
 # =============================================================
-renta_auto:
-  confirmada:
-    reserva: 9736931118
-    empresa: "Sixt Rent a Car"
-    conductor_principal: "Dad"
-    vehiculo: "Standard Elite (BMW X3) o similar — grupo RFAR"
-    lugar: "Oahu Honolulu Aeropuerto, 300 Rodgers Blvd, Honolulu 96819 (mismo edificio del aeropuerto)"
-    recoger: "2026-08-17 14:30"
-    entregar: "2026-08-22 17:30"
-    dias_renta: 6
-    total_a_pagar_en_counter_usd: 827.60
-    deposito_seguridad_usd: 200   # se bloquea al recoger, se libera días después
-    incluye:
-    - "Protección Completa (sin deducible)"
-    - "Conductor adicional"
-    - "Sistema de navegación (GPS)"
-    - "Asistencia en carretera 24/7"
-    - "Kilómetros ilimitados"
-    pago: "pagar en counter (no prepagada) — cancelación/cambio GRATIS en cualquier momento antes de recoger"
-    notas:
-    - "Historial: esta misma reserva #9736931118 originalmente era 5 días (recoger 16:00, entregar 16:00, US$743.79); se modificó a recoger 14:30 / entregar 17:30, lo que sumó un 6º día de cobro (24h+3h de la ventana original) — de ahí el salto a US$827.60."
-    - "Aterrizan en HNL 13:34; recoger auto a las 14:30 deja solo ~56 min de colchón (maletas + caminar al mostrador) — ajustado pero viable, no hay aduana en HNL (ya se hizo en Houston)."
-    - "Entregar a las 17:30 del 22 ago da ~4 h de colchón antes del vuelo de las 21:40 — cómodo."
-    - "Política de entrega tarde: ~58 min de tolerancia; después de eso cobran UN DÍA COMPLETO (no por hora), avisando antes se evita el cargo de servicio extra pero no el día completo."
+car_rental:
+  confirmed:
+    booking: 9736931118
+    company: "Sixt Rent a Car"
+    primary_driver: "Dad"
+    vehicle: "Standard Elite (BMW X3) or similar — group RFAR"
+    place: "Oahu Honolulu Airport, 300 Rodgers Blvd, Honolulu 96819 (same building as the airport)"
+    pickup: "2026-08-17 14:30"
+    dropoff: "2026-08-22 17:30"
+    rental_days: 6
+    total_due_at_counter_usd: 827.60
+    security_deposit_usd: 200   # held at pickup, released a few days later
+    includes:
+    - "Full Protection (no deductible)"
+    - "Additional driver"
+    - "Navigation system (GPS)"
+    - "24/7 roadside assistance"
+    - "Unlimited mileage"
+    payment: "pay at the counter (not prepaid) — FREE cancellation/change any time before pickup"
+    notes:
+    - "History: this same booking #9736931118 was originally 5 days (pickup 16:00, dropoff 16:00, US$743.79); changed to pickup 14:30 / dropoff 17:30, which added a 6th billed day (24h+3h beyond the original window) — hence the jump to US$827.60."
+    - "Landing at HNL 13:34; picking up the car at 14:30 leaves only ~56 min of buffer (bags + walk to the counter) — tight but doable, no customs at HNL (already cleared in Houston)."
+    - "Returning at 17:30 on Aug 22 leaves ~4 h of buffer before the 21:40 flight — comfortable."
+    - "Late-return policy: ~58 min grace period; after that they charge A FULL DAY (not hourly) — calling ahead avoids the extra service fee but not the full-day charge."
 
 # =============================================================
-# PENDIENTES Y RIESGOS
+# PENDING ITEMS AND RISKS
 # =============================================================
-pendientes:
-- id: vuelo_juan_manuel
-  estado: IDA COMPRADA — regreso pendiente
-  pasajero: Kid 2     # hermano, vuela desde Guadalajara
-  aerolinea: Volaris
-  ida:
-    vuelo: "Y4 149 (directo, operado por Volaris México)"
-    fecha: 2026-08-16     # domingo
-    origen: Guadalajara (GDL)
-    destino: Ciudad de México (MEX / AICM)
-    salida_local: "06:02"
-    llegada_local: "07:25"
-    duracion: 1h 23m
-  regreso:
-    estado: PENDIENTE DE COMPRA
-    nota: "MEX/NLU -> GDL el 24 ago; alinear con el grupo; pernocta del 16 en CDMX"
+pending:
+- id: kid2_flight
+  status: OUTBOUND BOUGHT — return pending
+  passenger: Kid 2     # sibling, flying from Guadalajara
+  airline: Volaris
+  outbound:
+    flight: "Y4 149 (direct, operated by Volaris México)"
+    date: 2026-08-16     # Sunday
+    origin: Guadalajara (GDL)
+    destination: Mexico City (MEX / AICM)
+    local_departure: "06:02"
+    local_arrival: "07:25"
+    duration: 1h 23m
+  return:
+    status: PURCHASE PENDING
+    note: "MEX/NLU -> GDL on Aug 24; align with the group; overnight in CDMX on the 16th"
 
-- id: pernocta_23_24_ago
-  estado: NO RESUELTA
-  opciones:
-    a: hotel cerca de NLU (Zumpango/Tecámac) — preferido
-    b: hotel en MEX + traslado nocturno 03:00–04:00
-    c: pernocta en aeropuerto NLU
-  recomendacion: opcion_a
+- id: overnight_23_24_aug
+  status: UNRESOLVED
+  options:
+    a: hotel near NLU (Zumpango/Tecámac) — preferred
+    b: hotel in MEX + overnight transfer 03:00–04:00
+    c: overnight at NLU airport
+  recommendation: option_a
 
-- id: documentos_eeuu
-  estado: "PAPÁS VERIFICADOS (2026-07-15) — faltan Kid 1 y Kid 2"
-  regla: >
-    México está EXENTO de la "regla de 6 meses" (CBP Six-Month Club): el pasaporte
-    solo debe estar VIGENTE DURANTE la estancia, no 6 meses extra. La tarjeta
-    B1/B2 (BCC) funciona como visa completa presentada con pasaporte vigente,
-    aunque el pasaporte sea más nuevo que la tarjeta.
-  verificados:
-    juan_bustillos_lucas:
-      pasaporte: "N20455071 · vence 2035-08-28 · OK"
-    rosalba_alatorre_luna:
-      pasaporte: "G23609259 · vence 2027-01-20 · OK (cubre todo el viaje; exención México aplica)"
-      nota: "renovar pasaporte con calma DESPUÉS del viaje; la visa BCC sigue válida con pasaporte nuevo"
-  pendiente_verificar:
+- id: us_documents
+  status: "PARENTS VERIFIED (2026-07-15) — Kid 1 and Kid 2 still needed"
+  rule: >
+    Mexico is EXEMPT from the "six-month rule" (CBP Six-Month Club): the passport
+    only needs to be VALID FOR THE DURATION of the stay, not 6 extra months. The
+    B1/B2 card (BCC) works as a full visa when presented with a valid passport,
+    even if the passport is newer than the card.
+  verified:
+    dad:
+      passport: "N20455071 · expires 2035-08-28 · OK"
+    mom:
+      passport: "G23609259 · expires 2027-01-20 · OK (covers the whole trip; Mexico exemption applies)"
+      note: "renew the passport at leisure AFTER the trip; the BCC visa stays valid with the new passport"
+  still_to_verify:
   - Kid 1
   - Kid 2
 
-- id: equipaje_volaris_juan_manuel
-  estado: POR VERIFICAR
-  accion: "Revisar en Volaris (XXXXXX) si el vuelo de Kid 2 incluye maleta documentada de 15 kg o solo artículo personal; comprar maleta si falta."
+- id: kid2_volaris_baggage
+  status: TO VERIFY
+  action: "Check with Volaris (XXXXXX) whether Kid 2's flight includes a 15 kg checked bag or just a personal item; buy a bag if not."
 
-- id: confirmar_twin_fin
-  estado: COMPLETADO
-  accion: "Reserva confirmada por The Twin Fin. Revisar cargo de aprox. US$1,644 alrededor de 2026-08-03."
-  datos_busqueda: "Dad / correo@ejemplo.com / Aug 17-22 2026 / Two Bedroom Ocean View Suite with Lanai / total US$4,111"
+- id: confirm_twin_fin
+  status: DONE
+  action: "Booking confirmed by The Twin Fin. Watch for a charge of approx. US$1,644 around 2026-08-03."
+  lookup_info: "Dad / placeholder@example.com / Aug 17-22 2026 / Two Bedroom Ocean View Suite with Lanai / total US$4,111"
 
-riesgos:
-- conexion_iah_apretada: 2h 14m incluye inmigración EE.UU.; vulnerable a retraso de UA1085
-- traslado_nlu_mex_16_ago: 45–55 km; tráfico CDMX puede consumir 60–120 min
-- descanso_minimo_noche_16: ~4–5 h reales antes de UA1085
-- tarifa_creciente_juan_manuel: comprar pronto reduce costo esperado
+risks:
+- tight_iah_layover: 2h 14m includes US immigration; vulnerable to UA1085 delays
+- nlu_mex_transfer_aug16: 45-55 km; CDMX traffic can eat 60-120 min
+- minimal_rest_night16: ~4-5 real hours before UA1085
+- rising_fare_kid2: buying soon reduces the expected cost
 
 # =============================================================
-# CALENDARIO HAWÁI (Oʻahu)
-# Llegada HNL: 2026-08-17 13:34
-# Salida  HNL: 2026-08-22 21:40
-# Zona horaria local: UTC−10 (HST, sin horario de verano)
+# HAWAII CALENDAR (Oʻahu)
+# Arrival HNL: 2026-08-17 13:34
+# Departure HNL: 2026-08-22 21:40
+# Local time zone: UTC-10 (HST, no daylight saving)
 # =============================================================
-hawai_calendario:
+hawaii_calendar:
 
-  # Plan actualizado 2026-06-15: Oʻahu solamente para reducir estrés/logística.
-  alojamiento:
-    oahu_waikiki_orden: 1
+  # Plan updated 2026-06-15: Oʻahu only, to reduce stress/logistics.
+  lodging:
+    oahu_waikiki_order: 1
     oahu_waikiki:
-      isla: Oʻahu
-      zona: "Waikiki — corazón Kalākaua (icónico + céntrico)"
+      island: Oʻahu
+      area: "Waikiki — the Kalākaua heart (iconic + central)"
       check_in: 2026-08-17
       check_out: 2026-08-22
-      noches: 5
-      plan: "Hotel (Airbnb legal limitado en Oʻahu)"
-      opciones_hotel:
-      - nombre: Aston Waikiki Sunset
-        tipo: condo-hotel
-        ubicacion: "Waikiki, caminable a playa"
-        notas: "2 recámaras + cocina; mejor valor si no tiene que ser beachfront"
-        estado: reemplazo_recomendado
-      - nombre: Twin Fin Waikiki
-        tipo: hotel
-        ubicacion: "Kalākaua, frente a Kūhiō Beach (lado Kapiʻolani)"
-        notas: "para 5 requiere 2 cuartos; revisar 30% off Beachfront Bliss"
-        estado: backup_playa
-      - nombre: Embassy Suites by Hilton Waikiki Beach Walk
-        tipo: all-suite
-        ubicacion: "Beach Walk, a pasos de Kalākaua"
-        notas: "aceptable: 1 recámara + sala con sofá-cama; desayuno incluido"
-        estado: backup_comodo
-    notas:
-    - "5 personas: requiere suite / 1–2 recámaras / condo (un cuarto normal duerme 4)"
-    - "PLAN ELEGIDO: Oʻahu / Waikiki las 5 noches (17→22 ago)"
-    - "ventaja: una sola base, sin vuelos internos, sin doble check-in/check-out y con menos riesgo el día de regreso"
+      nights: 5
+      plan: "Hotel (legal Airbnb is limited on Oʻahu)"
+      hotel_options:
+      - name: Aston Waikiki Sunset
+        type: condo-hotel
+        location: "Waikiki, walkable to the beach"
+        notes: "2 bedrooms + kitchen; better value if it doesn't need to be beachfront"
+        status: recommended_replacement
+      - name: Twin Fin Waikiki
+        type: hotel
+        location: "Kalākaua, across from Kūhiō Beach (Kapiʻolani side)"
+        notes: "needs 2 rooms for 5; check the 30% off Beachfront Bliss deal"
+        status: beach_backup
+      - name: Embassy Suites by Hilton Waikiki Beach Walk
+        type: all-suite
+        location: "Beach Walk, steps from Kalākaua"
+        notes: "acceptable: 1 bedroom + living room with sofa bed; breakfast included"
+        status: comfortable_backup
+    notes:
+    - "5 people: needs a suite / 1-2 bedrooms / condo (a standard room sleeps 4)"
+    - "CHOSEN PLAN: Oʻahu / Waikiki all 5 nights (Aug 17-22)"
+    - "advantage: a single base, no internal flights, no double check-in/checkout, and less risk on the return day"
 
-  dia_1:
-    fecha: 2026-08-17
-    dia_semana: lunes
-    tipo: llegada
-    ventana_efectiva: "16:45 - 21:00 (listos para salir después de check-in)"
-    actividades:
-      manana: "en vuelo — aterrizan 13:34"
-      tarde:
-      - 13:34  aterrizan en HNL
-      - 14:20  equipaje (vuelo doméstico desde IAH — sin aduana en Honolulu)
-      - 14:35  al CONRAC (se camina desde baggage claim de Terminal 2, o shuttle)
-      - 15:05  sale el carro · Sixt, 300 Rodgers Blvd, reserva 9736931118
-      - 15:30  llegan al Twin Fin (17 min / 10 mi por la H-1) · dejan carro con valet
-      - 16:00  check-in (hora oficial)
-      - 16:20  suben y dejan maletas
-      noche:
-      - 16:45  Waikiki Beach — cruzando la calle del hotel
-      - 18:30  caminar Kalākaua Ave
-      - 19:00  atardecer
-      - '       cena ligera cerca · dormir temprano por el jet lag'
-    notas:
-    - mantener primera noche ligera; acostarse temprano hora local
-    - NO mover el carro el lunes — todo es caminando. El jueves el tour los recoge en el hotel.
-    - Duke's OceanFest está corriendo en la playa toda la semana
-  dia_2:
-    fecha: 2026-08-18
-    dia_semana: martes
-    ventana_efectiva: "día completo"
-    actividades:
-      manana:
-      - 08:30  salir del hotel
-      - '09:00  Lanikai / Kailua Beach (~30 min) — #14 mejor playa del mundo, vista a las islas Mokulua'
-      tarde:
-      - 12:30  comer en Kailua town
-      - 13:30  manejar a Waimea Valley (~1h 3min, 45 mi)
-      - 15:00  Waimea Valley — jardín botánico y cascada (incluido en el boleto del lūʻau)
-      - 16:50  check-in del lūʻau
-      noche:
-      - '17:00  Toa Luau at Waimea Valley (Silver Seating) — lūʻau + jardín/cascada, confirmación #BXXXXXXXXXXX'
-  dia_3:
-    fecha: 2026-08-19
-    dia_semana: miércoles
-    ventana_efectiva: "día completo"
-    actividades:
-      manana:
-      - 07:30  check-in en Kualoa Ranch (45 min antes, obligatorio)
-      - 08:15  UTV Raptor Tour — 2h, Kid 2 conduce · ref XXXXXXXX
-      tarde:
-      - 11:45  check-in Secret Island Beach en la Ticket Office (45 min antes, obligatorio)
-      - 12:30  Half Day Secret Island Beach — 3h30, kayak/paddleboard/canoa · ref XXXXXXXX
-      noche:
-      - ""
-
-  dia_4:
-    fecha: 2026-08-20
-    dia_semana: jueves
-    ventana_efectiva: "día completo"
-    actividades:
-      manana:
-      - 07:10  estar en la parada del trolley del Twin Fin (10 min antes)
-      - 07:20  pickup — Circle Island Tour con Byodo-In · conf XXXXXXXXX
-      tarde:
-      - tour continúa — regreso a Waikiki entre 16:00 y 16:30
-      noche:
-      - libre — no agendar nada con hora fija, el regreso no está garantizado
-  dia_5:
-    fecha: 2026-08-21
-    dia_semana: viernes
-    ventana_efectiva: "día completo"
-    actividades:
-      manana:
-      - ""
-      tarde:
-      - ""
-      noche:
+  day_1:
+    date: 2026-08-17
+    weekday: Monday
+    type: arrival
+    effective_window: "16:45 - 21:00 (ready to head out after check-in)"
+    activities:
+      morning: "in flight — lands 13:34"
+      afternoon:
+      - 13:34  land at HNL
+      - 14:20  baggage (domestic flight from IAH — no customs in Honolulu)
+      - 14:35  to CONRAC (walk from Terminal 2 baggage claim, or shuttle)
+      - 15:05  car pickup · Sixt, 300 Rodgers Blvd, booking 9736931118
+      - 15:30  arrive at the Twin Fin (17 min / 10 mi via H-1) · leave car with valet
+      - 16:00  check-in (official time)
+      - 16:20  up to the room, drop bags
+      evening:
+      - 16:45  Waikiki Beach — across the street from the hotel
+      - 18:30  walk Kalākaua Ave
+      - 19:00  sunset
+      - '       light dinner nearby · sleep early for the jet lag'
+    notes:
+    - keep the first night light; go to bed early local time
+    - do NOT move the car on Monday — everything's walkable. Thursday's tour picks up at the hotel.
+    - Duke's OceanFest is running on the beach all week
+  day_2:
+    date: 2026-08-18
+    weekday: Tuesday
+    effective_window: "full day"
+    activities:
+      morning:
+      - 08:30  leave the hotel
+      - '09:00  Lanikai / Kailua Beach (~30 min) — #14 best beach in the world, view of the Mokulua islands'
+      afternoon:
+      - 12:30  eat in Kailua town
+      - 13:30  drive to Waimea Valley (~1h 3min, 45 mi)
+      - 15:00  Waimea Valley — botanical garden and waterfall (included in the lūʻau ticket)
+      - 16:50  lūʻau check-in
+      evening:
+      - '17:00  Toa Luau at Waimea Valley (Silver Seating) — lūʻau + garden/waterfall, confirmation #BXXXXXXXXXXX'
+  day_3:
+    date: 2026-08-19
+    weekday: Wednesday
+    effective_window: "full day"
+    activities:
+      morning:
+      - 07:30  check-in at Kualoa Ranch (45 min ahead, mandatory)
+      - 08:15  UTV Raptor Tour — 2h, Kid 2 drives · ref XXXXXXXX
+      afternoon:
+      - 11:45  Secret Island Beach check-in at the Ticket Office (45 min ahead, mandatory)
+      - 12:30  Half Day Secret Island Beach — 3h30, kayak/paddleboard/canoe · ref XXXXXXXX
+      evening:
       - ""
 
-  dia_6:
-    fecha: 2026-08-22
-    dia_semana: sábado
-    tipo: salida
-    ventana_efectiva: "hasta 18:00 (vuelo 21:40)"
-    actividades:
-      manana:
+  day_4:
+    date: 2026-08-20
+    weekday: Thursday
+    effective_window: "full day"
+    activities:
+      morning:
+      - 07:10  at the Twin Fin trolley stop (10 min ahead)
+      - 07:20  pickup — Circle Island Tour with Byodo-In · conf XXXXXXXXX
+      afternoon:
+      - tour continues — return to Waikiki between 16:00 and 16:30
+      evening:
+      - free — don't schedule anything with a fixed time, the return isn't guaranteed
+  day_5:
+    date: 2026-08-21
+    weekday: Friday
+    effective_window: "full day"
+    activities:
+      morning:
       - ""
-      tarde:
+      afternoon:
       - ""
-      noche:
-      - "18:30  llegada a HNL (3 h antes para vuelo internacional)"
-      - "21:40  despegue UA1806 → DEN"
-    notas:
-    - check-out hotel temprano; considerar guardar equipaje si actividad final
+      evening:
+      - ""
 
-  categorias_sugeridas:   # para clasificar al llenar
-  - playa
-  - senderismo
-  - cultura_historia
-  - gastronomia
-  - compras
-  - tour_organizado
-  - descanso
+  day_6:
+    date: 2026-08-22
+    weekday: Saturday
+    type: departure
+    effective_window: "until 18:00 (flight 21:40)"
+    activities:
+      morning:
+      - ""
+      afternoon:
+      - ""
+      evening:
+      - "18:30  arrival at HNL (3 h ahead for the international flight)"
+      - "21:40  UA1806 departs → DEN"
+    notes:
+    - early hotel checkout; consider bag storage if there's a final activity
 
-  decisiones_pendientes:
-  - vigilar cargo de The Twin Fin alrededor de 2026-08-03
-  - "RESUELTO: auto rentado — Sixt BMW X3, reserva 9736931118 (ver bloque renta_auto)"
-  - reservar actividades de alta demanda con antelación (Pearl Harbor / USS Arizona, luaus, tours guiados)
+  suggested_categories:   # for classification while filling in
+  - beach
+  - hiking
+  - culture_history
+  - food
+  - shopping
+  - guided_tour
+  - rest
+
+  pending_decisions:
+  - watch for The Twin Fin charge around 2026-08-03
+  - "RESOLVED: rental car — Sixt BMW X3, booking 9736931118 (see the car_rental block)"
+  - book high-demand activities ahead of time (Pearl Harbor / USS Arizona, luaus, guided tours)
 
 # =============================================================
-# ALOJAMIENTO — INVESTIGACIÓN, DECISIONES Y FUENTES DE PRECIOS
-# Investigado: 2026-06-07  (para elegir / reservar hotel)
-# Esta sección alimenta la página web (island-comparison.html → sección "Alojamiento")
+# LODGING — RESEARCH, DECISIONS AND PRICE SOURCES
+# Researched: 2026-06-07 (to choose / book the hotel)
+# This section feeds the website (island-comparison.html → "Lodging" section)
 # =============================================================
-alojamiento_investigacion:
+lodging_research:
 
-  fecha: 2026-06-07
-  actualizacion: "2026-06-15: plan actualizado a Oʻahu solamente (Waikiki 17→22 ago, 5 noches)."
-  fuente_fotos: "Google Hotels (16 fotos descargadas a /img, 4 por hotel)"
+  date: 2026-06-07
+  update: "2026-06-15: plan updated to Oʻahu only (Waikiki Aug 17-22, 5 nights)."
+  photo_source: "Google Hotels (16 photos downloaded to /img, 4 per hotel)"
 
-  # ---- REGLA QUE DEFINE TODO ----
-  requisito_familia:
-    personas: 5
-    regla: "Los papás NO quieren a los 5 en una sola recámara → mínimo 2 espacios para dormir"
-    implicacion: "Un cuarto de hotel normal aguanta máx. 4 → se DESCARTAN las opciones de 1 solo cuarto"
-    espacios_validos:
-    - "recámara aparte + sala con sofá-cama (suite/condo)"
-    - "2 recámaras (condo)"
-    - "2 cuartos separados (2 reservas)"
+  # ---- THE RULE THAT DEFINES EVERYTHING ----
+  family_requirement:
+    people: 5
+    rule: "The parents do NOT want all 5 in a single bedroom → minimum 2 sleeping spaces"
+    implication: "A standard hotel room fits max. 4 → single-room options are RULED OUT"
+    valid_sleeping_arrangements:
+    - "separate bedroom + living room with sofa bed (suite/condo)"
+    - "2 bedrooms (condo)"
+    - "2 separate rooms (2 bookings)"
 
-  # ---- SUPUESTOS DE PRECIO (LEER ANTES DE RESERVAR) ----
-  supuestos_precio:
-    fecha_revision: "2026-06-15 (precios re-investigados a hoy)"
-    tipo_cambio: "≈ MX$17.21 por USD 1 (Banxico FIX, 15 jun 2026)"
-    incluye: "TODO INCLUIDO: impuestos Hawái ~18.7% (TAT subió a 11% en ene 2026) + resort fee ya sumados; estacionamiento NO incluido (Embassy solo valet ~$71/noche)"
-    naturaleza: "ESTIMADOS triangulados de varias fuentes — los motores de reserva no dieron precio exacto a 2 meses (403/dinámico)"
-    advertencia: >
-      Los montos MXN son aproximados para comparar, NO cotizaciones cerradas.
-      Confirmar precio EN VIVO (con las fechas exactas) en el link de cada hotel
-      antes de pagar. Tarifas de agosto = temporada alta. Los "hasta X%" son topes, no garantía.
+  # ---- PRICE ASSUMPTIONS (READ BEFORE BOOKING) ----
+  price_assumptions:
+    review_date: "2026-06-15 (prices re-researched as of today)"
+    exchange_rate: "≈ MX$17.21 per USD 1 (Banxico FIX, Jun 15, 2026)"
+    includes: "ALL-INCLUSIVE: Hawaii taxes ~18.7% (TAT rose to 11% in Jan 2026) + resort fee already added; parking NOT included (Embassy is valet-only ~$71/night)"
+    nature: "ESTIMATES triangulated from several sources — booking engines didn't give an exact price 2 months out (403/dynamic)"
+    warning: >
+      The MXN amounts are approximate for comparison, NOT locked-in quotes.
+      Confirm the LIVE price (with exact dates) on each hotel's link before
+      paying. August rates = high season. The "up to X%" figures are caps, not guarantees.
 
-  # =====================  OʻAHU · WAIKIKI  (toda la estancia)  =====================
+  # =====================  OʻAHU · WAIKIKI  (entire stay)  =====================
   oahu_waikiki:
-    fechas: "2026-08-17 → 2026-08-22 (5 noches) — toda la estancia en Oʻahu"
-    zona: "Waikiki — corazón Kalākaua, la zona más icónica y céntrica de Oʻahu"
+    dates: "2026-08-17 → 2026-08-22 (5 nights) — the entire Oʻahu stay"
+    area: "Waikiki — the Kalākaua heart, the most iconic and central area of Oʻahu"
 
-    elegido_recomendado:
-      nombre: "Twin Fin Waikiki — 2 cuartos"
-      estado_reserva: "RESERVA CONFIRMADA — cobro aprox. 2 semanas antes del check-in"
-      por_que: "Mejor primer intento porque cumple la nueva prioridad: playa cruzando la calle / frente a Waikiki, y con promo puede quedar por debajo de resorts beachfront"
-      camas: "2 cuartos de hotel; cada cuarto puede ser 2 dobles o 1 king"
-      capacidad_5: "SÍ ✓ (requiere 2 cuartos; un cuarto sencillo máx 4)"
-      precio_usd_noche: "estimado ~$640–720 all-in/noche para 2 cuartos con descuento; rack puede subir"
-      precio_mxn_total_estimado: "checkout mostrado: US$4,111 total (≈ MX$70,800 a FX 17.21); pago mostrado US$1,644; cobro aprox. 2026-08-03"
-      promo: "'Beachfront Bliss' / PrePay: hasta -30% directo en twinfinwaikiki.com/offers"
-      incluye: "ubicación muy playera, cruzando de Kūhiō/Waikiki Beach; sin cocina/desayuno salvo paquete"
-      fuentes:
-      - "https://www.twinfinwaikiki.com/  (oceanfront in Waikiki, cuartos hasta 4)"
-      - "https://www.twinfinwaikiki.com/offers/  (ofertas hasta 30%)"
-      reservar_en:
-      - "Twin Fin directo; comparar Costco si agrega desayuno/beneficios"
+    recommended_choice:
+      name: "Twin Fin Waikiki — 2 rooms"
+      booking_status: "BOOKING CONFIRMED — charged approx. 2 weeks before check-in"
+      why: "Best first attempt because it meets the new priority: beach across the street / facing Waikiki, and with the promo can come in below beachfront resorts"
+      beds: "2 hotel rooms; each room can be 2 doubles or 1 king"
+      fits_5: "YES ✓ (needs 2 rooms; a single room maxes out at 4)"
+      price_usd_night: "estimated ~$640-720 all-in/night for 2 rooms with the discount; rack rate can be higher"
+      est_total_price_mxn: "checkout total shown: US$4,111 (≈ MX$70,800 at FX 17.21); payment shown US$1,644; charge approx. 2026-08-03"
+      promo: "'Beachfront Bliss' / PrePay: up to -30% direct on twinfinwaikiki.com/offers"
+      includes: "very beach-forward location, across from Kūhiō/Waikiki Beach; no kitchen/breakfast except as a package"
+      sources:
+      - "https://www.twinfinwaikiki.com/  (oceanfront in Waikiki, rooms up to 4)"
+      - "https://www.twinfinwaikiki.com/offers/  (deals up to 30%)"
+      book_at:
+      - "Twin Fin direct; compare Costco if it adds breakfast/perks"
 
-    alternativa_ilikai:
-      nombre: "Ilikai Hotel & Luxury Suites — 2 recámaras"
-      camas_para_5: "2 recámaras + 2 baños + cocina + sala con sofá-cama queen"
-      capacidad_5: "SÍ ✓ (2 recámaras reales)"
-      precio_mxn_total_estimado: "≈ 47,000–63,000 (5 noches, todo incl.; confirmar en vivo)"
-      promo: "Reservar directo / Aqua-Aston; comparar con OTA si aparece una unidad específica"
-      ubicacion_playa: "cerca de lagoon/marina/playa; no es centro Waikiki pero sí muy playero"
-      fuentes:
+    alt_ilikai:
+      name: "Ilikai Hotel & Luxury Suites — 2 bedrooms"
+      beds_for_5: "2 bedrooms + 2 bathrooms + kitchen + living room with queen sofa bed"
+      fits_5: "YES ✓ (2 real bedrooms)"
+      est_total_price_mxn: "≈ 47,000-63,000 (5 nights, all incl.; confirm live)"
+      promo: "Book direct / Aqua-Aston; compare with an OTA if a specific unit shows up"
+      beach_location: "near the lagoon/marina/beach; not central Waikiki but very beach-adjacent"
+      sources:
       - "https://www.ilikaihotel.com/two-bedroom-suites-in-waikiki-honolulu/"
       - "https://www.aquaaston.com/hotels/ilikai-hotel-luxury-suites/suites/luxury-2-bedroom-city-view-with-kitchen"
 
-    alternativa_hilton:
-      nombre: "Hilton Hawaiian Village — 2 cuartos"
-      camas_para_5: "probablemente 2 cuartos; suites para 5 pueden ser caras"
-      capacidad_5: "SÍ, si se reservan 2 cuartos o una suite que confirme ocupación 5"
-      precio_mxn_total_estimado: "≈ 70,000–95,000+ (5 noches; depende torre/oferta)"
-      promo: "Hilton offers / Costco Travel; revisar resort credit y posible resort fee waiver en paquetes"
-      ubicacion_playa: "beachfront real; la opción más resort/playa"
-      fuentes:
+    alt_hilton:
+      name: "Hilton Hawaiian Village — 2 rooms"
+      beds_for_5: "likely 2 rooms; suites for 5 can be pricey"
+      fits_5: "YES, if 2 rooms are booked or a suite confirmed for 5 occupants"
+      est_total_price_mxn: "≈ 70,000-95,000+ (5 nights; depends on tower/deal)"
+      promo: "Hilton offers / Costco Travel; check resort credit and a possible resort fee waiver in packages"
+      beach_location: "true beachfront; the most resort/beach option"
+      sources:
       - "https://hiltonhawaiianvillage.com/offers/"
 
-    alternativa_marriott:
-      nombre: "Waikiki Beach Marriott — 2 cuartos o suite + connecting room"
-      camas_para_5: "2 cuartos o suite con connecting room; confirmar conexión"
-      capacidad_5: "SÍ, si se reserva configuración para 5"
-      precio_mxn_total_estimado: "≈ 60,000–85,000 (5 noches; confirmar en vivo)"
-      promo: "Marriott directo / Bonvoy offers"
-      ubicacion_playa: "cruzando la calle de Waikiki shoreline / Queens surf break"
-      fuentes:
+    alt_marriott:
+      name: "Waikiki Beach Marriott — 2 rooms or suite + connecting room"
+      beds_for_5: "2 rooms or a suite with a connecting room; confirm the connection"
+      fits_5: "YES, if a configuration for 5 is booked"
+      est_total_price_mxn: "≈ 60,000-85,000 (5 nights; confirm live)"
+      promo: "Marriott direct / Bonvoy offers"
+      beach_location: "across the street from the Waikiki shoreline / Queens surf break"
+      sources:
       - "https://www.marriott.com/en-us/hotels/hnlmc-waikiki-beach-marriott-resort-and-spa/overview/"
       - "https://www.marriott.com/en-us/hotels/hnlmc-waikiki-beach-marriott-resort-and-spa/rooms/"
 
-    alternativa_aston_sunset:
-      nombre: "Aston Waikiki Sunset — suite 2 recámaras"
-      camas_para_5: "2 recámaras + sala + cocina → duerme hasta 6"
-      capacidad_5: "SÍ ✓ (2 cuartos reales)"
-      precio_mxn_total_estimado: "≈ 42,000–48,000 (5 noches, todo incl.); ≈ 38,000–43,000 si aplica ADVANCE/oferta directa"
-      promo: "Aqua-Aston directo; probar código ADVANCE / ofertas directas"
-      ubicacion_playa: "backup de ahorro: caminable a playa, pero no está en la playa ni cruzando la calle"
-      fuentes:
+    alt_aston_sunset:
+      name: "Aston Waikiki Sunset — 2-bedroom suite"
+      beds_for_5: "2 bedrooms + living room + kitchen → sleeps up to 6"
+      fits_5: "YES ✓ (2 real rooms)"
+      est_total_price_mxn: "≈ 42,000-48,000 (5 nights, all incl.); ≈ 38,000-43,000 with the ADVANCE/direct deal"
+      promo: "Aqua-Aston direct; try the ADVANCE code / direct offers"
+      beach_location: "savings backup: walkable to the beach, but not on the beach or across the street"
+      sources:
       - "https://www.aquaaston.com/hotels/aston-waikiki-sunset"
       - "https://www.aquaaston.com/hotels/aston-waikiki-sunset/suites"
 
-    alternativa_embassy:
-      nombre: "Embassy Suites by Hilton Waikiki Beach Walk — suite 1 recámara"
-      camas_para_5: "recámara aparte (2 queens o 1 king) + sala con sofá-cama → duerme 5 (oficial)"
-      capacidad_5: "SÍ ✓ (aceptable: 1 recámara + sala con sofá-cama)"
-      precio_mxn_total_estimado: "≈ 65,000 (5 noches, todo incl.); ≈ 52,000–57,000 si aplica Advance Purchase -25%"
-      promo: "Suite Escape: crédito $50/noche ($150 total), mín. 3 noches; o Advance Purchase -25% prepagando"
-      incluye: "desayuno caliente + recepción nocturna; estacionamiento valet aparte (~$71/noche)"
-      fuentes:
+    alt_embassy:
+      name: "Embassy Suites by Hilton Waikiki Beach Walk — 1-bedroom suite"
+      beds_for_5: "separate bedroom (2 queens or 1 king) + living room with sofa bed → sleeps 5 (official)"
+      fits_5: "YES ✓ (acceptable: 1 bedroom + living room with sofa bed)"
+      est_total_price_mxn: "≈ 65,000 (5 nights, all incl.); ≈ 52,000-57,000 with Advance Purchase -25%"
+      promo: "Suite Escape: $50/night credit ($150 total), 3-night min; or Advance Purchase -25% prepaid"
+      includes: "hot breakfast + evening reception; valet parking separate (~$71/night)"
+      sources:
       - "https://www.embassysuiteswaikiki.com/suites"
       - "https://www.hilton.com/en/hotels/hnleses-embassy-suites-waikiki-beach-walk/"
 
-  # ---- RESUMEN DE LA DECISIÓN ----
-  recomendacion_final:
-    oahu: "Twin Fin 2BR Ocean View Suite with Lanai confirmada por US$4,111 total. Backups ya no son necesarios salvo cambio."
-    total_estancia_oahu: "US$4,111 mostrado en checkout del Twin Fin; techo original US$4,000, excede por US$111."
-    accion: "No reservar otro hotel. Vigilar cargo de aprox. US$1,644 alrededor de 2026-08-03."
+  # ---- DECISION SUMMARY ----
+  final_recommendation:
+    oahu: "Twin Fin 2BR Ocean View Suite with Lanai confirmed for US$4,111 total. Backups are no longer needed unless something changes."
+    oahu_stay_total: "US$4,111 shown at the Twin Fin checkout; original budget cap US$4,000, exceeded by US$111."
+    action: "Don't book another hotel. Watch for a charge of approx. US$1,644 around 2026-08-03."
 
 # =============================================================
-# RESERVACIONES DE ACTIVIDADES (Oʻahu) — ventana mín/máx
+# ACTIVITY RESERVATIONS (Oʻahu) — min/max booking window
 # =============================================================
-reservaciones_actividades:
-  obligatorias:
-  - lugar: "Pearl Harbor / USS Arizona Memorial"
-    donde: "recreation.gov"
-    costo: "$1 USD (entrada al memorial gratis)"
-    max_antelacion: "56 días (8 semanas) antes, 3:00pm hora Hawái"
-    abre_para_nuestras_fechas: "≈ 22–23 jun 2026 (¡muy pronto!)"
-    min_antelacion: "lote pequeño ~1–2 días antes; NO hay walk-up"
-    nota: "se agota en minutos; alternativa: tour guiado con boletos incluidos"
-  - lugar: "Diamond Head (Lēʻahi)"
-    donde: "gostateparks.hawaii.gov"
-    costo: "$5 USD/persona + $10 estacionamiento"
-    max_antelacion: "30 días antes"
-    abre_para_nuestras_fechas: "≈ 18–19 jul 2026"
-    min_antelacion: "mismo día si queda cupo; última entrada 4:00pm"
-  - lugar: "Hanauma Bay"
-    donde: "honolulu.gov (reservación Hanauma Bay)"
-    costo: "$25 USD/persona (13+)"
-    ventana_fija: "exactamente 2 días antes (48 h), 7:00am hora Hawái — máx = mín"
-    nota: "cierra lunes y martes; se llena rapidísimo"
-  reservar_con_antelacion:   # sin ventana de gobierno, pero se llenan / boleto anticipado
-  - "Polynesian Cultural Center (boletos / paquete con luau)"
-  - "Kualoa Ranch (ATV / tirolesa)"
+activity_reservations:
+  mandatory:
+  - place: "Pearl Harbor / USS Arizona Memorial"
+    where: "recreation.gov"
+    cost: "$1 USD (memorial entry is free)"
+    max_lead_time: "56 days (8 weeks) ahead, 3:00pm Hawaii time"
+    opens_for_our_dates: "≈ Jun 22-23, 2026 (very soon!)"
+    min_lead_time: "small daily batch ~1-2 days ahead; NO walk-up"
+    note: "sells out in minutes; alternative: guided tour with tickets included"
+  - place: "Diamond Head (Lēʻahi)"
+    where: "gostateparks.hawaii.gov"
+    cost: "$5 USD/person + $10 parking"
+    max_lead_time: "30 days ahead"
+    opens_for_our_dates: "≈ Jul 18-19, 2026"
+    min_lead_time: "same day if slots remain; last entry 4:00pm"
+  - place: "Hanauma Bay"
+    where: "honolulu.gov (Hanauma Bay reservation)"
+    cost: "$25 USD/person (13+)"
+    fixed_window: "exactly 2 days ahead (48 h), 7:00am Hawaii time — max = min"
+    note: "closed Mondays and Tuesdays; fills up extremely fast"
+  book_ahead:   # no government window, but they fill up / advance ticketing
+  - "Polynesian Cultural Center (tickets / luau package)"
+  - "Kualoa Ranch (ATV / zipline)"
   - "Luau (PCC / Paradise Cove)"
-  - "ʻIolani Palace (solo en línea, sin walk-up)"
-  - "Tour en helicóptero"
-  - "Sea Life Park (nadar con delfines, cupo limitado)"
-  - "Jaula con tiburones (North Shore)"
-  - "Catamarán al atardecer"
-  - "Submarino Atlantis"
-  - "Paracaídas tándem"
-  sin_reserva: "Byodo-In ($5), Waimea Valley ($25), Ko Olina (gratis), Bishop Museum, Halona Blowhole, murales de Kakaʻako, mirador Tantalus, playas, caminatas (Koko, Makapuʻu, Lanikai Pillbox, Mānoa, Nuʻuanu Pali), comida, Ala Moana Center, hula, Kalākaua Ave"
+  - "ʻIolani Palace (online only, no walk-up)"
+  - "Helicopter tour"
+  - "Sea Life Park (swim with dolphins, limited capacity)"
+  - "Shark cage (North Shore)"
+  - "Sunset catamaran"
+  - "Atlantis Submarine"
+  - "Tandem skydiving"
+  no_reservation_needed: "Byodo-In ($5), Waimea Valley ($25), Ko Olina (free), Bishop Museum, Halona Blowhole, Kakaʻako murals, Tantalus lookout, beaches, hikes (Koko, Makapuʻu, Lanikai Pillbox, Mānoa, Nuʻuanu Pali), food, Ala Moana Center, hula, Kalākaua Ave"
 
 # =============================================================
-# TOURS / ACTIVIDADES — investigación en Viator.com (mercado, no reservado)
-# Investigado: 2026-07-29 · fuente: viator.com (búsquedas "Honolulu", "Waikiki" y
-# "Waikiki Beach" — 8+ páginas revisadas; "Hawaii" general se omitió a propósito
-# porque mezcla resultados de Maui/Big Island que no aplican, solo vamos a Oʻahu)
-# · precios en MXN mostrados por Viator para fechas 17-22 ago 2026
-# Filtro aplicado: solo actividades con calificación >= 4.0 estrellas
+# TOURS / ACTIVITIES — Viator.com research (market survey, not booked)
+# Researched: 2026-07-29 · source: viator.com (searches for "Honolulu", "Waikiki"
+# and "Waikiki Beach" — 8+ pages reviewed; general "Hawaii" was deliberately
+# skipped because it mixes in Maui/Big Island results that don't apply, since we're
+# Oʻahu only) · prices in MXN as shown by Viator for the Aug 17-22, 2026 dates
+# Filter applied: only activities rated >= 4.0 stars
 # =============================================================
-  confirmadas:
-  - estado: RESERVA CONFIRMADA Y PAGADA (directo con Toa Luau, reemplaza la de Viator)
-    actividad: Toa Luau at Waimea Valley
-    fecha: "2026-08-18"
-    hora_inicio: "17:00"
-    duracion: 3h (aprox.)
-    paquete: Silver Seating
-    viajeros: 5 adultos
-    proveedor: toaluau.com (directo, no Viator)
-    punto_de_encuentro: Toa Luau, 59-864 Kamehameha Hwy, Haleiwa, Oahu, HI 96712-8411
-    transporte: NO incluye pickup/drop-off — llegar por cuenta propia (auto rentado)
-    incluye:
-    - Entrada a Waimea Valley (jardín botánico + cascada) — válida 7 días desde/antes del lūʻau
-    - Flower lei de bienvenida
-    - Demostraciones de cocina tradicional
-    - Ceremonia de kava
-    - Cena / banquete lūʻau
-    - Show polinesio completo con fire knife dancing
-    - 1 bebida (Mai Tai o Aloha Juice) por persona — nivel Silver
-    nota: Llegar temprano (2h antes del check-in, ~15:00) para conocer Waimea Valley y la cascada — entrada incluida en el boleto del lūʻau. Gates para invitados del lūʻau abren 30 min antes del check-in (~16:30).
+  confirmed_bookings:
+  - status: BOOKED AND PAID (direct with Toa Luau, replaces the Viator one)
+    activity: Toa Luau at Waimea Valley
+    date: "2026-08-18"
+    start_time: "17:00"
+    duration: 3h (approx.)
+    package: Silver Seating
+    travelers: 5 adults
+    provider: toaluau.com (direct, not Viator)
+    meeting_point: Toa Luau, 59-864 Kamehameha Hwy, Haleiwa, Oahu, HI 96712-8411
+    transport: does NOT include pickup/drop-off — get there on your own (rental car)
+    includes:
+    - Waimea Valley entry (botanical garden + waterfall) — valid 7 days before/around the lūʻau
+    - Welcome flower lei
+    - Traditional cooking demonstrations
+    - Kava ceremony
+    - Lūʻau dinner / feast
+    - Full Polynesian show with fire knife dancing
+    - 1 drink (Mai Tai or Aloha Juice) per person — Silver tier
+    note: Arrive early (2h before check-in, ~15:00) to see Waimea Valley and the waterfall — entry is included in the lūʻau ticket. Gates for lūʻau guests open 30 min before check-in (~16:30).
     link: https://www.toaluau.com/
     confirmation_number: "BXXXXXXXXXXX"
-    total_pagado_usd: 637.88
-    pagado_con: tarjeta terminación XXXX
-    pendiente:
-    - 'Opcional: enviar email a sales@toaluau.com si quieren sentarse con otro grupo específico, si alguien necesita silla de ruedas, o si hay infantes 0-4 que necesiten asiento'
-    duplicado_viator: 'CANCELADO ✓ — la reserva duplicada de Viator #XXXXXXXXXX se canceló el 2026-08-15, dentro de la ventana de reembolso completo. Queda vigente solo la directa #BXXXXXXXXXXX ($637.88, con descuento TOALUAUIGFAM -10%).'
-    ahorro_por_reservar_directo_usd: 172
-  - estado: RESERVA CONFIRMADA Y PAGADA
-    actividad: Kualoa Ranch — 2 Hour UTV Raptor Tour
-    fecha: "2026-08-19"
-    hora_inicio: "08:15"
-    duracion: 2h (incluye briefing de seguridad)
-    viajeros: 5 adultos
-    idioma: English
+    total_paid_usd: 637.88
+    paid_with: card ending XXXX
+    pending_item:
+    - 'Optional: email sales@toaluau.com if they want to sit with a specific group, if someone needs a wheelchair, or if there are infants 0-4 who need a seat'
+    viator_duplicate: 'CANCELED ✓ — the duplicate Viator booking #XXXXXXXXXX was canceled on 2026-08-15, within the full-refund window. Only the direct booking #BXXXXXXXXXXX stands ($637.88, with the TOALUAUIGFAM -10% discount).'
+    savings_booking_direct_usd: 172
+  - status: BOOKED AND PAID
+    activity: Kualoa Ranch — 2 Hour UTV Raptor Tour
+    date: "2026-08-19"
+    start_time: "08:15"
+    duration: 2h (includes safety briefing)
+    travelers: 5 adults
+    language: English
     confirmation_number: "XXXXXXXXXX"
-    proveedor: Kualoa Ranch (directo, booking.kualoa.com)
-    punto_de_encuentro: Kualoa Ranch, 49-560 Kamehameha Hwy, Kāneʻohe, HI 96744
-    nota: Llegar 45 min antes (~7:30am) para check-in y seguridad. Kid 2 puede manejar (21+ con licencia). Confirmamos que la ruta sí pasa por el paddock del Indominus Rex.
-  - estado: RESERVA CONFIRMADA Y PAGADA
-    actividad: Kualoa Ranch — Half Day Secret Island Beach Activity
-    fecha: "2026-08-19"
-    dia_semana: miércoles
-    hora_inicio: "12:30"
+    provider: Kualoa Ranch (direct, booking.kualoa.com)
+    meeting_point: Kualoa Ranch, 49-560 Kamehameha Hwy, Kāneʻohe, HI 96744
+    note: Arrive 45 min ahead (~7:30am) for check-in and safety. Kid 2 can drive (21+ with a license). Confirmed the route does pass the Indominus Rex paddock.
+  - status: BOOKED AND PAID
+    activity: Kualoa Ranch — Half Day Secret Island Beach Activity
+    date: "2026-08-19"
+    weekday: Wednesday
+    start_time: "12:30"
     check_in: "11:45"
-    check_in_nota: OBLIGATORIO 45 min antes en la Ticket Office. Si llegan tarde NO hay reembolso ni reprogramación.
-    duracion: 3h30
-    viajeros: 5 adultos
-    total_pagado_usd: 315.35
-    precio_por_persona_usd: 63.07
-    comprado_con_pase_go_city: SÍ — se paga por adelantado a Kualoa y Go City lo reembolsa al escanear el pase
-    comprado_nota: 'IMPORTANTE: los $315.35 pagados son REEMBOLSABLES. Al hacer check-in hay que pedir que escaneen el pase Go City en la Ticket Office (detrás del visitor center, junto al establo). Si no se escanea el pase, NO hay reembolso. Usa 1 de los 4 cupos del Explorer Pass.'
+    check_in_note: MANDATORY 45 min ahead at the Ticket Office. Late arrival means NO refund or rescheduling.
+    duration: 3h30
+    travelers: 5 adults
+    total_paid_usd: 315.35
+    price_per_person_usd: 63.07
+    bought_with_go_city_pass: YES — paid upfront to Kualoa, refunded by Go City when the pass is scanned
+    purchase_note: "IMPORTANT: the $315.35 paid is REFUNDABLE. At check-in, ask them to scan the Go City pass at the Ticket Office (behind the visitor center, next to the stable). No scan, no refund. Uses 1 of the Explorer Pass's 4 slots."
     order_reference: "XXXXXXXX"
     booking_reference: "XXXXXXXX"
     confirmation_number: "XXXXXXXX"
-    boletos_enviados_a: correo@ejemplo.com
-    ubicacion: Kualoa Ranch Ticket Office (detrás del visitor center, junto al establo), 49-560 Kamehameha Hwy, Kaneohe, HI 96744
-    incluye:
-    - 3.5 horas en Secret Island Beach (playa privada)
-    - Uso de kayaks, canoas y paddleboards
-    - Voleibol de playa y natación
-    - Paseo en bus abierto por Molii Gardens
-    - Paseo en canoa por el estanque de peces hawaiano
-    - Regaderas y vestidores disponibles
-    llevar:
-    - Bloqueador solar reef-safe (obligatorio por ley en Hawái)
-    - Traje de baño y toalla propios
-    - Zapatos de agua
-    - Lentes de sol y cámara
-    - Muda de cambio (hay regaderas y vestidores)
-    - Hielera con bebidas/snacks permitida — SIN vidrio, mejor latas que plástico de un solo uso
-    nota: Vistas a Kaneohe Bay y a la isla Mokoliʻi (Chinaman's Hat). Todos los 5 deben estar presentes en el abordaje. Encaja perfecto después del UTV Raptor (termina 10:15am) — hay ~1h30 de holgura antes del check-in de las 11:45am.
-    telefono: "808-237-7321"
-    horario_telefono: 7:00am - 4:30pm HST
-    politica_cancelacion: Cambios/cancelación con reembolso solo por teléfono con 48h+ de anticipación. No-show o llegar tarde al check-in = cargo completo sin reembolso.
-    actividades_disponibles: Kayak, canoa, paddleboard, voleibol de playa, ping pong, cornhole, herraduras, hamacas (por orden de llegada)
-    como_llegar: 'Desde Waikiki: H-1 oeste → Likelike Hwy (63) norte → túnel Wilson hacia Kaneohe → Kahekili Hwy (83) oeste → ~30 min (11 millas), Kualoa Ranch a la izquierda'
-    accion_critica_dia_del_tour: ⚠️ ESCANEAR EL PASE GO CITY en el check-in de las 11:45am — vale $315.35 de reembolso
-  - estado: 'RESERVA CONFIRMADA Y PAGADA (cupo del pase Go City)'
-    actividad: Makani Catamaran — Honolulu Sunset Sail
-    fecha: "2026-08-21"
-    dia_semana: viernes
-    hora_inicio: "17:15"
-    hora_fin: "19:15"
-    llegar_al_punto: "16:45"
-    check_in_nota: Check-in 30 min antes. Cada pasajero debe firmar su PROPIO waiver ANTES de llegar.
-    viajeros: 5 adultos (Go Oahu Card)
+    tickets_sent_to: placeholder@example.com
+    location: Kualoa Ranch Ticket Office (behind the visitor center, next to the stable), 49-560 Kamehameha Hwy, Kaneohe, HI 96744
+    includes:
+    - 3.5 hours at Secret Island Beach (private beach)
+    - Use of kayaks, canoes and paddleboards
+    - Beach volleyball and swimming
+    - Open-air bus ride through Molii Gardens
+    - Canoe ride around the Hawaiian fish pond
+    - Showers and changing rooms available
+    bring:
+    - Reef-safe sunscreen (legally required in Hawaii)
+    - Your own swimsuit and towel
+    - Water shoes
+    - Sunglasses and camera
+    - A change of clothes (showers and changing rooms available)
+    - A cooler with drinks/snacks is allowed — NO glass, cans preferred over single-use plastic
+    note: Views of Kaneohe Bay and Mokoliʻi island (Chinaman's Hat). All 5 must be present to board. Fits perfectly after the UTV Raptor (ends 10:15am) — there's ~1h30 of slack before the 11:45am check-in.
+    phone: "808-237-7321"
+    phone_hours: 7:00am - 4:30pm HST
+    cancellation_policy: Changes/cancellation with refund only by phone, 48h+ ahead. No-show or late check-in = full charge, no refund.
+    available_activities: Kayak, canoe, paddleboard, beach volleyball, ping pong, cornhole, horseshoes, hammocks (first come, first served)
+    how_to_get_there: 'From Waikiki: H-1 west → Likelike Hwy (63) north → Wilson tunnel toward Kaneohe → Kahekili Hwy (83) west → ~30 min (11 miles), Kualoa Ranch on the left'
+    critical_action_tour_day: ⚠️ SCAN THE GO CITY PASS at the 11:45am check-in — worth a $315.35 refund
+  - status: 'BOOKED AND PAID (Go City pass slot)'
+    activity: Makani Catamaran — Honolulu Sunset Sail
+    date: "2026-08-21"
+    weekday: Friday
+    start_time: "17:15"
+    end_time: "19:15"
+    arrive_at: "16:45"
+    check_in_note: Check-in 30 min ahead. Each passenger must sign their OWN waiver BEFORE arriving.
+    travelers: 5 adults (Go Oahu Card)
     confirmation_number: "XXXXXXXXX"
-    proveedor: Makani Catamaran (sailmakani.com)
-    telefono: "808-591-9000"
+    provider: Makani Catamaran (sailmakani.com)
+    phone: "808-591-9000"
     email: rez@sailmakani.com
-    punto_de_encuentro: 1009 Ala Moana Blvd, Slip F-31, Kewalo Harbor
-    pagado_usd: 105.00
-    pagado_nota: Upgrade de sunset sail ($21/persona x 5). El tour base lo cubre el pase Go City.
-    pagado_con: Visa XXXX
-    transporte: Auto propio (estacionamiento $3/hora, MUY limitado — llegar con margen) o bus urbano #20 desde Waikiki
-    llevar:
-    - Bloqueador (NO en aerosol)
-    - Lentes de sol
-    - Calzado cómodo
-    - Chamarra ligera (refresca en el mar)
-    - Snacks o comida propia SÍ se permite
-    prohibido:
-    - Bebidas de fuera — NO se permiten por la licencia de licor. Hay bar a bordo.
-    waiver_advertencia: '⚠️ Sin waiver firmado no completan el check-in. Uno por persona, por separado, antes de llegar.'
-  - estado: 'RESERVA CONFIRMADA (cupo del pase Go City, #1 de 3 restantes)'
-    actividad: Oahu Circle Island Tour with Byodo-In Temple
-    operador: Go Tours Hawaii
-    fecha: "2026-08-20"
-    dia_semana: jueves
-    viajeros: 5 adultos
-    pagado_con: Pase Go City Explorer (usa 1 de los 4 cupos)
-    valor_sin_pase_usd: 178
-    hora_pickup: "07:20"
-    llegar_al_punto: "07:10"
-    punto_de_encuentro: Parada del trolley del Twin Fin Hotel, sobre Paoakalani Ave
-    hora_regreso: entre 16:00 y 16:30 (NO garantizada)
-    duracion: hasta 10h
-    telefono: "808-926-3090"
-    horario_telefono: 6:00am - 9:00pm HST
-    ayuda_pickup: 'Guía de realidad aumentada para encontrar el punto: https://ar.skidattl.com/gotourspickup'
-    numeros_go_city_registrados:
+    meeting_point: 1009 Ala Moana Blvd, Slip F-31, Kewalo Harbor
+    paid_usd: 105.00
+    paid_note: Sunset sail upgrade ($21/person x 5). The base tour is covered by the Go City pass.
+    paid_with: Visa XXXX
+    transport: Own car (parking $3/hour, VERY limited — arrive with buffer time) or city bus #20 from Waikiki
+    bring:
+    - Sunscreen (NOT aerosol)
+    - Sunglasses
+    - Comfortable shoes
+    - Light jacket (it cools off on the water)
+    - Snacks or your own food ARE allowed
+    not_allowed:
+    - Outside drinks — NOT allowed under the liquor license. There's a bar onboard.
+    waiver_warning: '⚠️ No signed waiver, no completed check-in. One per person, separately, before arriving.'
+  - status: 'BOOKED (Go City pass slot, #1 of 3 remaining)'
+    activity: Oahu Circle Island Tour with Byodo-In Temple
+    operator: Go Tours Hawaii
+    date: "2026-08-20"
+    weekday: Thursday
+    travelers: 5 adults
+    paid_with: Go City Explorer Pass (uses 1 of the 4 slots)
+    value_without_pass_usd: 178
+    pickup_time: "07:20"
+    arrive_at: "07:10"
+    meeting_point: Twin Fin Hotel trolley stop, on Paoakalani Ave
+    return_time: between 16:00 and 16:30 (NOT guaranteed)
+    duration: up to 10h
+    phone: "808-926-3090"
+    phone_hours: 6:00am - 9:00pm HST
+    pickup_help: 'Augmented-reality guide to find the meeting point: https://ar.skidattl.com/gotourspickup'
+    registered_go_city_numbers:
     - "XXXXXXXXXXXX"
     - "XXXXXXXXXXXX"
     - "XXXXXXXXXXXX"
     - "XXXXXXXXXXXX"
     - "XXXXXXXXXX"
-    ALERTA: ⚠️ El 5º número registrado (XXXXXXXXXX) es el ORDER NUMBER de Go City, no un número de tarjeta de 12 dígitos como los otros 4 (XXXXXXXXXXXX-003). Si no validan los 5 pases el día del tour, cobran el precio completo a la tarjeta registrada. HAY QUE CORREGIRLO llamando al 808-926-3090 — probablemente el 5º sea XXXXXXXXXXXX.
-    incluye:
-    - Transporte redondo desde el hotel
-    - Miradores de Diamond Head y Makapuʻu Point
-    - Avistamiento de tortugas en la playa
-    - Entrada al Templo Byodo-In
-    no_incluye: Comida ni snacks — llevar efectivo para el almuerzo y propinas
-    pendientes_antes_del_tour:
-    - ⚠️ FIRMAR EL WAIVER — sin él NO los dejan subir al camión (los 5)
-    - ⚠️ CORREGIR el 5º número de pase Go City (llamar al 808-926-3090)
-    - Desayunar antes — la primera parada de comida es ~2h después de arrancar
-    - Llevar efectivo (almuerzo + propinas)
-    - Calzado adecuado — se camina en pasto y arena
-    - Llevar cámara y el celular con batería
-    restricciones:
-    - NO se permiten hieleras (coolers)
-    - Carriolas plegables no recomendadas (terreno irregular, arena y grava)
-    - NO se permiten sillas de ruedas motorizadas ni asientos de bebé
-    politica_cancelacion: '48h de anticipación para reembolso completo o cambio de fecha. No-show o cancelar con menos de 48h = cargo completo. Titulares de Go City: avisar con 48h si no van a asistir o cobran el tour completo.'
-    nota_importante: 'Regresan a Waikiki 16:00-16:30 sin hora exacta garantizada — NO agendar lūʻau, cruceros con cena ni vuelos ese mismo día. (Sin conflicto: el lūʻau es el 18 y el vuelo el 22.)'
-    minimo_operacion: El tour requiere mínimo 2 pasajeros; pueden cancelar por baja participación hasta 1h antes
-    pdf_confirmacion: docs/reservas/2026-08-20_circle-island-byodo-in_XXXXXXXXX.pdf
-    nombre_oficial_operador: Hidden Gems of Oahu with Byodo In and Turtle Spotting
-    nombre_en_go_city: Oahu Circle Island Tour with Byodo In Temple
-    horario_tour: 7:00 am - 4:00 pm
-    opcion_elegida: No Snorkeling
-    total_pagado_usd: 0.0
-    total_nota: $0.00 — cubierto 100% por el pase Go City (5 Go City - Adult)
-    email_operador: reservations@gotourshawaii.com
-    telefono_contacto_registrado: "XXX XXX XXXX"
-    cargo_en_estado_de_cuenta: FH* Go Tours Hawaii
-    waiver_advertencia: '⚠️ CRÍTICO: sin el waiver firmado NO los dejan subir al camión. Todos los 5 deben firmarlo antes de llegar.'
-    nota_chofer: Mantener el celular prendido y a la mano — el chofer puede llamar si no los encuentra
-  pase_go_city:
-    estado: COMPRADO
-    producto: Go City — Oahu Explorer Pass, 4-choice
-    fecha_compra: "2026-08-02"
+    ALERT: ⚠️ The 5th number on file (XXXXXXXXXX) is the Go City ORDER NUMBER, not a 12-digit card number like the other 4 (XXXXXXXXXXXX-003). If all 5 passes aren't validated on tour day, the full price gets charged to the registered card. MUST FIX by calling 808-926-3090 — the 5th is likely XXXXXXXXXXXX.
+    includes:
+    - Round-trip transport from the hotel
+    - Diamond Head and Makapuʻu Point lookouts
+    - Turtle watching from the beach
+    - Byodo-In Temple entry
+    not_included: Food or snacks — bring cash for lunch and tips
+    pending_before_tour:
+    - ⚠️ SIGN THE WAIVER — without it they will NOT let you on the truck (all 5)
+    - ⚠️ FIX the 5th Go City pass number (call 808-926-3090)
+    - Eat breakfast beforehand — the first food stop is ~2h after departure
+    - Bring cash (lunch + tips)
+    - Suitable footwear — walking on grass and sand
+    - Bring a camera and a charged phone
+    restrictions:
+    - Coolers NOT allowed
+    - Folding strollers not recommended (uneven terrain, sand and gravel)
+    - Motorized wheelchairs and infant car seats NOT allowed
+    cancellation_policy: '48h notice for a full refund or date change. No-show or canceling with less than 48h = full charge. Go City pass holders: give 48h notice if not attending or the full tour gets charged.'
+    important_note: 'Returns to Waikiki 16:00-16:30 with no guaranteed exact time — do NOT schedule a lūʻau, dinner cruise or flight the same day. (No conflict here: the lūʻau is the 18th and the flight is the 22nd.)'
+    min_operation: The tour requires a minimum of 2 passengers; can be canceled for low turnout up to 1h ahead
+    confirmation_pdf: removed before publishing (contained personal data)
+    official_operator_name: Hidden Gems of Oahu with Byodo In and Turtle Spotting
+    go_city_listing_name: Oahu Circle Island Tour with Byodo In Temple
+    tour_hours: 7:00 am - 4:00 pm
+    chosen_option: No Snorkeling
+    total_paid_usd: 0.0
+    total_note: $0.00 — 100% covered by the Go City pass (5 Go City - Adult)
+    operator_email: reservations@gotourshawaii.com
+    registered_contact_phone: "XXX XXX XXXX"
+    statement_charge_name: FH* Go Tours Hawaii
+    waiver_warning: '⚠️ CRITICAL: without the signed waiver they will NOT let you on the truck. All 5 must sign before arriving.'
+    driver_note: Keep your phone on and handy — the driver may call if they can't find you
+  go_city_pass:
+    status: PURCHASED
+    product: Go City — Oahu Explorer Pass, 4-choice
+    purchase_date: "2026-08-02"
     order_number: "XXXXXXXXXX"
-    email: correo@ejemplo.com
-    metodo_pago: 'link: XXXX'
-    viajeros: 5 adultos
-    precio_lista_por_adulto_usd: 219.0
-    precio_pagado_por_adulto_usd: 208.05
+    email: placeholder@example.com
+    payment_method: 'link: XXXX'
+    travelers: 5 adults
+    list_price_per_adult_usd: 219.0
+    price_paid_per_adult_usd: 208.05
     subtotal_usd: 1095.0
-    total_pagado_usd: 1040.25
-    ahorro_por_descuento_usd: 54.75
-    validez: 30 días desde la primera visita · se activa al entrar a la primera atracción
-    cancelacion: Reembolso completo dentro de 90 días si NO se ha activado
-    atracciones_disponibles: '4 cupos — usados: Secret Island Beach (19 ago) y Circle Island Tour (20 ago). Quedan 2 libres.'
-    dias_para_usarlas: 2 cupos restantes para el 21 y la mañana del 22 de agosto
-    pendientes:
-    - '⚠️ EL 19 DE AGOSTO: escanear el pase en la Ticket Office de Kualoa para recuperar los $315.35 de Secret Island Beach'
-    - Descargar la app de Go City (iOS / Google Play)
-    - Sincronizar el pase con el order number XXXXXXXXXX en la sección Passes de la app
-    - RESERVAR cupos cuanto antes — Go City advierte que las atracciones populares se agotan con semanas de anticipación
-    contacto: contact@gocity.com · live chat en gocity.com
-tours_viator:
-  fecha_investigacion: 2026-07-29
-  fuente: "viator.com"
-  moneda: MXN
-  nota: "Precios 'from' (desde) — pueden variar por tamaño de grupo/fecha exacta. Confirmar en el link antes de reservar."
+    total_paid_usd: 1040.25
+    discount_savings_usd: 54.75
+    validity: 30 days from first use · activates on entering the first attraction
+    cancellation: Full refund within 90 days if NOT yet activated
+    available_attractions: '4 slots — used: Secret Island Beach (Aug 19) and Circle Island Tour (Aug 20). 2 remain.'
+    days_left_to_use: 2 slots left for the 21st and the morning of the 22nd
+    pending:
+    - '⚠️ AUGUST 19: scan the pass at the Kualoa Ticket Office to recover the $315.35 for Secret Island Beach'
+    - Download the Go City app (iOS / Google Play)
+    - Sync the pass with order number XXXXXXXXXX in the app's Passes section
+    - BOOK slots as soon as possible — Go City warns that popular attractions sell out weeks ahead
+    contact: contact@gocity.com · live chat at gocity.com
+viator_tours:
+  research_date: 2026-07-29
+  source: "viator.com"
+  currency: MXN
+  note: "'From' prices — can vary by group size/exact date. Confirm on the link before booking."
 
   pearl_harbor:
-  - nombre: "Pearl Harbor + USS Arizona + Tour ciudad Honolulu"
-    zona: Oeste (Pearl Harbor / Ford Island)
-    duracion: 4h
+  - name: "Pearl Harbor + USS Arizona + Honolulu City Tour"
+    area: West (Pearl Harbor / Ford Island)
+    duration: 4h
     rating: 4.5
     reviews: 5951
-    precio_mxn: 886
-    fuente: viator.com
+    price_mxn: 886
+    source: viator.com
     link: "https://www.viator.com/tours/Honolulu/Pearl-Harbor-and-Honolulu-City-Tour/d59070-117916P4"
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/0c/1b/7c/25.jpg
-  - nombre: "Pearl Harbor + USS Arizona + Battleship Missouri"
-    zona: Oeste (Pearl Harbor / Ford Island)
-    duracion: "6-7h"
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/0c/1b/7c/25.jpg
+  - name: "Pearl Harbor + USS Arizona + Battleship Missouri"
+    area: West (Pearl Harbor / Ford Island)
+    duration: "6-7h"
     rating: 4.6
     reviews: 2693
-    precio_mxn: 2400
-    fuente: viator.com
+    price_mxn: 2400
+    source: viator.com
     link: "https://www.viator.com/tours/Honolulu/Pearl-Harbor-Arizona-Memorial-and-USS-Missouri/d59070-117916P13"
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/09/c4/0d/09.jpg
-  - nombre: "Pearl Harbor Remembered (Arizona+Missouri+Punchbowl)"
-    zona: Oeste (Pearl Harbor / Ford Island)
-    duracion: 7h
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/09/c4/0d/09.jpg
+  - name: "Pearl Harbor Remembered (Arizona+Missouri+Punchbowl)"
+    area: West (Pearl Harbor / Ford Island)
+    duration: 7h
     rating: 4.9
     reviews: 6017
-    precio_mxn: 2679
-    fuente: viator.com
-    link: https://www.viator.com/tours/Honolulu/Pearl-Harbor-Remembered/d59070-6845P15 # buscar "Pearl Harbor Remembered Tour" en viator.com
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/10/3c/b0/83.jpg
-  - nombre: "Pearl Harbor Complete Experience Passport (Arizona+Bowfin+Missouri+Aviación)"
-    zona: Oeste (Pearl Harbor / Ford Island)
-    duracion: "9-10h"
+    price_mxn: 2679
+    source: viator.com
+    link: https://www.viator.com/tours/Honolulu/Pearl-Harbor-Remembered/d59070-6845P15 # search "Pearl Harbor Remembered Tour" on viator.com
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/10/3c/b0/83.jpg
+  - name: "Pearl Harbor Complete Experience Passport (Arizona+Bowfin+Missouri+Aviation)"
+    area: West (Pearl Harbor / Ford Island)
+    duration: "9-10h"
     rating: 4.7
     reviews: 533
-    precio_mxn: 3623
-    fuente: viator.com
-    link: https://www.viator.com/tours/Honolulu/Pearl-Harbor-Passport-and-Honolulu-City-Tour/d59070-117916P9 # buscar "Pearl Harbor Complete Experience Passport"
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/07/9f/05/52.jpg
-  - nombre: "Pearl Harbor + Dole + Polynesian Cultural Center"
-    zona: Oeste (Pearl Harbor / Ford Island)
-    duracion: "9-10h"
+    price_mxn: 3623
+    source: viator.com
+    link: https://www.viator.com/tours/Honolulu/Pearl-Harbor-Passport-and-Honolulu-City-Tour/d59070-117916P9 # search "Pearl Harbor Complete Experience Passport"
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/07/9f/05/52.jpg
+  - name: "Pearl Harbor + Dole + Polynesian Cultural Center"
+    area: West (Pearl Harbor / Ford Island)
+    duration: "9-10h"
     rating: 4.8
     reviews: 1034
-    precio_mxn: 3579
-    fuente: viator.com
-    link: https://www.viator.com/tours/Honolulu/Polynesian-Cultural-Center-and-Mini-Circle-Island-Including-Pearl-Harbour/d59070-179218P23 # buscar "Pearl Harbor, Dole, and Polynesian Cultural Center from Waikiki"
+    price_mxn: 3579
+    source: viator.com
+    link: https://www.viator.com/tours/Honolulu/Polynesian-Cultural-Center-and-Mini-Circle-Island-Including-Pearl-Harbour/d59070-179218P23 # search "Pearl Harbor, Dole, and Polynesian Cultural Center from Waikiki"
 
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/09/c6/c4/82.jpg
-  helicoptero_submarino:
-  - nombre: "Royal Crown of Oahu — Helicóptero 60 min (puertas on/off)"
-    zona: Waikiki (punto de salida)
-    duracion: 1h
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/09/c6/c4/82.jpg
+  helicopter_submarine:
+  - name: "Royal Crown of Oahu — 60 Min Helicopter (doors on/off)"
+    area: Waikiki (departure point)
+    duration: 1h
     rating: 4.8
     reviews: 798
-    precio_mxn: 9663
-    nota: "precio varía por tamaño de grupo"
-    fuente: viator.com
+    price_mxn: 9663
+    note: "price varies by group size"
+    source: viator.com
     link: "https://www.viator.com/tours/Honolulu/Royal-Crown-of-Oahu-60-Min-Helicopter-Tour/d59070-28456P1"
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/c5/49/63.jpg
-  - nombre: "Oahu Atlantis Submarine Adventure"
-    zona: Waikiki (punto de salida)
-    duracion: 2h
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/c5/49/63.jpg
+  - name: "Oahu Atlantis Submarine Adventure"
+    area: Waikiki (departure point)
+    duration: 2h
     rating: 4.4
     reviews: 1315
-    precio_mxn: 3003
-    fuente: viator.com
+    price_mxn: 3003
+    source: viator.com
     link: "https://www.viator.com/tours/Oahu/Oahu-Atlantis-Submarine-Adventure/d672-3524OSUB"
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/06/71/01/b7.jpg
-  - nombre: "Buceo principiante + video gratis (Honolulu #1)"
-    zona: Waikiki (punto de salida)
-    duracion: 1.5h
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/06/71/01/b7.jpg
+  - name: "Buceo principiante + video gratis (Honolulu #1)"
+    area: Waikiki (departure point)
+    duration: 1.5h
     rating: 4.9
     reviews: 3473
-    precio_mxn: 1401
-    fuente: viator.com
+    price_mxn: 1401
+    source: viator.com
     link: "https://www.viator.com/tours/Honolulu/No-Certification-Required-Guided-Scuba-Diving-Tour/d59070-36559P1"
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/07/01/38/79.jpg
-  - nombre: "Beginner Snorkeling Tour in Honolulu"
-    zona: Waikiki (punto de salida)
-    duracion:
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/07/01/38/79.jpg
+  - name: "Beginner Snorkeling Tour in Honolulu"
+    area: Waikiki (departure point)
+    duration:
     rating:
     reviews:
-    precio_mxn:
-    fuente: viator.com
+    price_mxn:
+    source: viator.com
     link: "https://www.viator.com/tours/Honolulu/Beginner-Snorkeling-Tour-in-Honolulu/d59070-36559P5"
 
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/r/32/79/46/a0/caption.jpg
-  circle_island_dia_completo:
-  - nombre: "Grand Circle Island + Haleiwa (mejor calificado, 19k reviews)"
-    zona: Toda la isla (recorrido circular)
-    duracion: "6.5-9h"
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/r/32/79/46/a0/caption.jpg
+  circle_island_full_day:
+  - name: "Grand Circle Island + Haleiwa (mejor calificado, 19k reviews)"
+    area: Whole island (circle tour)
+    duration: "6.5-9h"
     rating: 5.0
     reviews: 19060
-    precio_mxn: 1610
-    fuente: viator.com
+    price_mxn: 1610
+    source: viator.com
     link: "https://www.viator.com/tours/Honolulu/Oahu-Grand-Circle-Island-and-Haleiwa-Town-Full-Day-Guided-Tour/d59070-3961P37"
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/17/10/ab/11.jpg
-  - nombre: "Grand Circle Island Experience"
-    zona: Toda la isla (recorrido circular)
-    duracion: "10-11h"
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/17/10/ab/11.jpg
+  - name: "Grand Circle Island Experience"
+    area: Whole island (circle tour)
+    duration: "10-11h"
     rating: 4.8
     reviews: 2698
-    precio_mxn: 1520
-    fuente: viator.com
+    price_mxn: 1520
+    source: viator.com
     link: "https://www.viator.com/tours/Honolulu/Tour-GCI-Grand-Circle-Island-Experience/d59070-179218P30"
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/11/84/05/57.jpg
-  - nombre: "Circle Island grupo pequeño + snorkeling"
-    zona: Toda la isla (recorrido circular)
-    duracion: "7-8h"
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/11/84/05/57.jpg
+  - name: "Circle Island grupo pequeño + snorkeling"
+    area: Whole island (circle tour)
+    duration: "7-8h"
     rating: 5.0
     reviews: 105
-    precio_mxn: 1789
-    fuente: viator.com
+    price_mxn: 1789
+    source: viator.com
     link: "https://www.viator.com/tours/Honolulu/Circle-Island-Tour-small-group-setting-snorkeling-included/d59070-5563928P2"
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/15/70/a7/80.jpg
-  - nombre: "Majestic Circle Island (Waimea Falls + Byodo-In)"
-    zona: Toda la isla (recorrido circular)
-    duracion: 9h
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/15/70/a7/80.jpg
+  - name: "Majestic Circle Island (Waimea Falls + Byodo-In)"
+    area: Whole island (circle tour)
+    duration: 9h
     rating: 4.9
     reviews: 8079
-    precio_mxn: 3335
-    fuente: viator.com
+    price_mxn: 3335
+    source: viator.com
     link: "https://www.viator.com/tours/Honolulu/Majestic-Circle-Island/d59070-6845P13"
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/0f/39/9c/20.jpg
-  - nombre: "Grand Tour Around Island — 16 lugares + snorkel"
-    zona: Toda la isla (recorrido circular)
-    duracion: "8-10h"
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/0f/39/9c/20.jpg
+  - name: "Grand Tour Around Island — 16 lugares + snorkel"
+    area: Whole island (circle tour)
+    duration: "8-10h"
     rating: 4.8
     reviews: 10550
-    precio_mxn: 1950
-    fuente: viator.com
+    price_mxn: 1950
+    source: viator.com
     link: "https://www.viator.com/tours/Honolulu/Grand-Tour-Around-Island-with-Snorkeling-16-Locations/d59070-375182P1"
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/0f/ee/15/68.jpg
-  - nombre: "Circle Island económico (grupo grande, 8h)"
-    zona: Toda la isla (recorrido circular)
-    duracion: 8h
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/0f/ee/15/68.jpg
+  - name: "Circle Island económico (grupo grande, 8h)"
+    area: Whole island (circle tour)
+    duration: 8h
     rating: 4.8
     reviews: 1795
-    precio_mxn: 1852
-    fuente: viator.com
+    price_mxn: 1852
+    source: viator.com
     link: "https://www.viator.com/tours/Honolulu/Breathtaking-8-hour-circle-island-tour-for-only-45/d59070-166842P1"
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/0e/5b/f2/54.jpg
-  - nombre: "7 mejores miradores de Honolulu (medio día)"
-    zona: Toda la isla (recorrido circular)
-    duracion: "3-4h"
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/0e/5b/f2/54.jpg
+  - name: "7 best Honolulu lookouts (half day)"
+    area: Whole island (circle tour)
+    duration: "3-4h"
     rating: 4.9
     reviews: 994
-    precio_mxn: 1378
-    fuente: viator.com
+    price_mxn: 1378
+    source: viator.com
     link: "https://www.viator.com/tours/Oahu/The-7-best-lookouts-in-Honolulu-Oahu-HI/d672-406127P1"
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/11/ac/19/b3.jpg
-  - nombre: "Diamond Head — hike autoguiado + transporte"
-    zona: Toda la isla (recorrido circular)
-    duracion: 3h
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/11/ac/19/b3.jpg
+  - name: "Diamond Head — self-guided hike + transport"
+    area: Whole island (circle tour)
+    duration: 3h
     rating: 4.8
     reviews: 992
-    precio_mxn: 716
-    fuente: viator.com
+    price_mxn: 716
+    source: viator.com
     link: "https://www.viator.com/tours/Honolulu/Diamond-Head-Self-Guided-Hiking-Tour/d59070-69524P10"
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/06/73/f0/7b.jpg
-  - nombre: "Roundtrip Shuttle Waikiki → Dole Plantation + Haleiwa"
-    zona: Toda la isla (recorrido circular)
-    duracion: 6h
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/06/73/f0/7b.jpg
+  - name: "Roundtrip Shuttle Waikiki → Dole Plantation + Haleiwa"
+    area: Whole island (circle tour)
+    duration: 6h
     rating: 4.5
     reviews: 826
-    precio_mxn: 501
-    fuente: viator.com
+    price_mxn: 501
+    source: viator.com
     link: "https://www.viator.com/tours/Honolulu/Roundtrip-Shuttle-Waikiki-To-Dole-Plantation-and-Haleiwa-Town/d59070-398757P5"
 
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/11/ad/77/70.jpg
-  mar_snorkel:
-  - nombre: "Hanauma Bay Snorkeling + transporte"
-    zona: Costa SE (Hanauma Bay)
-    duracion: 6h
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/11/ad/77/70.jpg
+  sea_snorkel:
+  - name: "Hanauma Bay Snorkeling + transporte"
+    area: SE coast (Hanauma Bay)
+    duration: 6h
     rating: 4.4
     reviews: 1359
-    precio_mxn: 1002
-    fuente: viator.com
+    price_mxn: 1002
+    source: viator.com
     link: "https://www.viator.com/tours/Oahu/Hanauma-Bay-Snorkeling/d672-69524P5"
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/09/a7/90/8c.jpg
-  - nombre: "Luxury Snorkel Cruise + Dolphin Watch + buffet"
-    zona: Waikiki (punto de salida)
-    duracion: "3.5h"
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/09/a7/90/8c.jpg
+  - name: "Luxury Snorkel Cruise + Dolphin Watch + buffet"
+    area: Waikiki (departure point)
+    duration: "3.5h"
     rating: 4.7
     reviews: 1461
-    precio_mxn: 2802
-    fuente: viator.com
+    price_mxn: 2802
+    source: viator.com
     link: "https://www.viator.com/tours/Oahu/Oahu-Catamaran-Cruise-Wildlife-Snorkeling-and-Hawaiian-Buffet/d672-6837SNORCRUI"
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/r/33/3e/79/ea/caption.jpg
-  - nombre: "Surfing Lessons on Waikiki Beach"
-    zona: Waikiki (punto de salida)
-    duracion: 1.5h
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/r/33/3e/79/ea/caption.jpg
+  - name: "Surfing Lessons on Waikiki Beach"
+    area: Waikiki (departure point)
+    duration: 1.5h
     rating: 4.7
     reviews: 338
-    precio_mxn: 2308
-    fuente: viator.com
+    price_mxn: 2308
+    source: viator.com
     link: "https://www.viator.com/tours/Oahu/Surfing-Lessons-On-Waikiki-Beach/d672-8942P1"
 
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/07/00/1b/4a.jpg
-  delfines_tiburones:
-  - nombre: "Oahu Shark Dive — North Shore (jaula)"
-    zona: North Shore
-    duracion: "1.5h"
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/07/00/1b/4a.jpg
+  dolphins_sharks:
+  - name: "Oahu Shark Dive — North Shore (jaula)"
+    area: North Shore
+    duration: "1.5h"
     rating: 4.8
     reviews: 3112
-    precio_mxn: 1780
-    fuente: viator.com
+    price_mxn: 1780
+    source: viator.com
     link: "https://www.viator.com/tours/Oahu/Oahu-Shark-Dive/d672-3246SHARK"
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/07/71/3c/a5.jpg
-  - nombre: "Swim with Dolphins on the West Coast"
-    zona: Oeste (West Coast / Waianae)
-    duracion: 4h
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/07/71/3c/a5.jpg
+  - name: "Swim with Dolphins on the West Coast"
+    area: West (West Coast / Waianae)
+    duration: 4h
     rating: 4.8
     reviews: 1179
-    precio_mxn: 3354
-    fuente: viator.com
+    price_mxn: 3354
+    source: viator.com
     link: "https://www.viator.com/tours/Oahu/Ao-Hawaii-Tour/d672-301207P1"
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/ae/af/c3.jpg
-  - nombre: "Oahu Dolphin & Snorkel Cruise + almuerzo"
-    zona: Waikiki (punto de salida)
-    duracion: 3h
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/ae/af/c3.jpg
+  - name: "Oahu Dolphin & Snorkel Cruise + almuerzo"
+    area: Waikiki (departure point)
+    duration: 3h
     rating: 4.5
     reviews: 1738
-    precio_mxn: 2947
-    fuente: viator.com
+    price_mxn: 2947
+    source: viator.com
     link: https://www.viator.com/tours/Honolulu/Oahu-Dolphin-Snorkel-Cruise-Including-Lunch-and-Activities/d59070-18676P1 # buscar "Oahu Dolphin and Snorkel Tour with Waikiki Pickup & Lunch"
 
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/11/ac/9f/f9.jpg
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/11/ac/9f/f9.jpg
   polynesian_cultural_center:
-  - nombre: "PCC — Islands of Polynesia (boleto básico admisión)"
-    zona: Norte (Lāʻie)
-    duracion: 6h
+  - name: "PCC — Islands of Polynesia (boleto básico admisión)"
+    area: North (Lāʻie)
+    duration: 6h
     rating: 4.5
     reviews: 263
-    precio_mxn: 1852
-    fuente: viator.com
+    price_mxn: 1852
+    source: viator.com
     link: "https://www.viator.com/tours/Oahu/Polynesian-Cultural-Center-Admission/d672-3487PM"
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/15/7c/a3/4f.jpg
-  - nombre: "PCC — Gateway Buffet Package"
-    zona: Norte (Lāʻie)
-    duracion: "5-9h"
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/15/7c/a3/4f.jpg
+  - name: "PCC — Gateway Buffet Package"
+    area: North (Lāʻie)
+    duration: "5-9h"
     rating: 4.9
     reviews: 819
-    precio_mxn: 2827
-    fuente: viator.com
+    price_mxn: 2827
+    source: viator.com
     link: "https://www.viator.com/tours/Oahu/Gateway-Buffet-Package-Polynesian-Cultural-Center/d672-3487P2"
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/15/33/50/7f.jpg
-  - nombre: "PCC — Islands of Polynesia & HA: Breath of Life"
-    zona: Norte (Lāʻie)
-    duracion: "8h40"
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/15/33/50/7f.jpg
+  - name: "PCC — Islands of Polynesia & HA: Breath of Life"
+    area: North (Lāʻie)
+    duration: "8h40"
     rating: 4.9
     reviews: 420
-    precio_mxn: 2418
-    fuente: viator.com
+    price_mxn: 2418
+    source: viator.com
     link: "https://www.viator.com/tours/Oahu/Islands-of-Polynesia-and-HA-Breath-of-Life-Package/d672-3487P3"
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/15/72/44/70.jpg
-  - nombre: "PCC — Aliʻi Lūʻau Package (el completo)"
-    zona: Norte (Lāʻie)
-    duracion: 8h
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/15/72/44/70.jpg
+  - name: "PCC — Aliʻi Lūʻau Package (the full one)"
+    area: North (Lāʻie)
+    duration: 8h
     rating: 4.9
     reviews: 1425
-    precio_mxn: 3861
-    fuente: viator.com
+    price_mxn: 3861
+    source: viator.com
     link: "https://www.viator.com/tours/Oahu/Polynesian-Cultural-Center-Luau/d672-3487TICKET"
 
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/07/2a/e5/ea.jpg
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/07/2a/e5/ea.jpg
   luau:
-  - nombre: "Mauka Warriors Luau (mejor calificado, sitio Battle of Kipapa)"
-    zona: Este (Waimānalo — Battle of Kīpapa)
-    duracion: 4h
+  - name: "Mauka Warriors Luau (mejor calificado, sitio Battle of Kipapa)"
+    area: East (Waimānalo — Battle of Kīpapa)
+    duration: 4h
     rating: 4.8
     reviews: 3609
-    precio_mxn: 2604
-    fuente: viator.com
+    price_mxn: 2604
+    source: viator.com
     link: "https://www.viator.com/tours/Honolulu/Polynesian-activities-feast-and-Oahus-newest-most-unique-show/d59070-409905P1"
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/r/32/e6/0c/72/caption.jpg
-  - nombre: "Toa Luau at Waimea Valley"
-    zona: North Shore (Waimea Valley)
-    duracion: 3h
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/r/32/e6/0c/72/caption.jpg
+  - name: "Toa Luau at Waimea Valley"
+    area: North Shore (Waimea Valley)
+    duration: 3h
     rating: 4.9
     reviews: 3680
-    precio_mxn: 2380
-    fuente: viator.com
+    price_mxn: 2380
+    source: viator.com
     link: "https://www.viator.com/tours/Oahu/Toa-Luau-at-Waimea-Valley/d672-64093P2"
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/11/de/7f/85.jpg
-  - nombre: "Germaine's Luau"
-    zona: Oeste (Kapolei)
-    duracion: "3h15"
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/11/de/7f/85.jpg
+  - name: "Germaine's Luau"
+    area: West (Kapolei)
+    duration: "3h15"
     rating: 4.3
     reviews: 791
-    precio_mxn: 2061
-    fuente: viator.com
+    price_mxn: 2061
+    source: viator.com
     link: "https://www.viator.com/tours/Honolulu/Germaines-Luau/d59070-33188P2"
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/0e/89/e6/90.jpg
-  - nombre: "Ka Moana Lūʻau (Aloha Tower, oceanfront)"
-    zona: Honolulu (Aloha Tower)
-    duracion: 3h
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/0e/89/e6/90.jpg
+  - name: "Ka Moana Lūʻau (Aloha Tower, oceanfront)"
+    area: Honolulu (Aloha Tower)
+    duration: 3h
     rating: 4.1
     reviews: 1485
-    precio_mxn: 2175
-    fuente: viator.com
+    price_mxn: 2175
+    source: viator.com
     link: "https://www.viator.com/tours/Honolulu/Ka-Moana-Luau/d59070-64146P1"
 
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/r/32/97/bc/69/caption.jpg
-  shows_nocturnos:
-  - nombre: "Oahu: The Magical Mystery Show (Hilton Waikiki Beach)"
-    zona: Waikiki
-    duracion: 2h
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/r/32/97/bc/69/caption.jpg
+  night_shows:
+  - name: "Oahu: The Magical Mystery Show (Hilton Waikiki Beach)"
+    area: Waikiki
+    duration: 2h
     rating: 4.9
     reviews: 3405
-    precio_mxn: 1771
-    fuente: viator.com
+    price_mxn: 1771
+    source: viator.com
     link: https://www.viator.com/tours/Honolulu/The-Magical-Mystery-Show/d59070-361002P2 # buscar "Oahu: The Magical Mystery Show! at Hilton Waikiki Beach Hotel"
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/14/14/4c/43.jpg
-  - nombre: "Rock-A-Hula Show"
-    zona: Waikiki
-    duracion: "1-3h"
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/14/14/4c/43.jpg
+  - name: "Rock-A-Hula Show"
+    area: Waikiki
+    duration: "1-3h"
     rating: 4.6
     reviews: 459
-    precio_mxn: 1417
-    fuente: viator.com
+    price_mxn: 1417
+    source: viator.com
     link: https://www.viator.com/tours/Honolulu/Oahu-Waikiki-Rock-A-Hula-Hawaiian-Luau-Show/d59070-3961LEGENDS # buscar "Rock-A-Hula Show Ticket"
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/0a/2c/78/35.jpg
-  - nombre: "'Auana by Cirque du Soleil (Waikiki Beachcomber)"
-    zona: Waikiki
-    duracion: "1h20"
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/0a/2c/78/35.jpg
+  - name: "'Auana by Cirque du Soleil (Waikiki Beachcomber)"
+    area: Waikiki
+    duration: "1h20"
     rating: 4.9
     reviews: 698
-    precio_mxn: 1907
-    fuente: viator.com
+    price_mxn: 1907
+    source: viator.com
     link: https://www.viator.com/tours/Honolulu/Auana-by-Cirque-du-Soleil-at-the-Waikiki-Beachcomber-Hotel/d59070-469693P1 # buscar "'Auana by Cirque du Soleil at the Waikiki Beachcomber Hotel"
 
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/17/12/79/40.jpg
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/17/12/79/40.jpg
   sunset_cruise:
-  - nombre: "Waikiki Sunset Cruise"
-    zona: Waikiki
-    duracion: "1.5h"
+  - name: "Waikiki Sunset Cruise"
+    area: Waikiki
+    duration: "1.5h"
     rating: 4.9
     reviews: 207
-    precio_mxn: 895
-    fuente: viator.com
+    price_mxn: 895
+    source: viator.com
     link: "https://www.viator.com/tours/Oahu/Waikiki-Sunset-Cruise/d672-2774SUNSET"
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/13/eb/77/df.jpg
-  - nombre: "Waikiki Fireworks Dinner Cruise (viernes)"
-    zona: Waikiki
-    duracion: 2h
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/13/eb/77/df.jpg
+  - name: "Waikiki Fireworks Dinner Cruise (viernes)"
+    area: Waikiki
+    duration: 2h
     rating: 4.3
     reviews: 61
-    precio_mxn: 2239
-    fuente: viator.com
+    price_mxn: 2239
+    source: viator.com
     link: https://www.viator.com/tours/Oahu/Oahu-Fireworks-Dinner-Cruise/d672-2774FWSAIL # buscar "Waikiki Fireworks Dinner Cruise: Sail & Sparkle on Friday Nights"
 
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/09/63/be/96.jpg
-  aventura:
-  - nombre: "3 Zipline Adventure"
-    zona: Oeste (Kapolei / Coral Crater)
-    duracion: 1h
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/09/63/be/96.jpg
+  adventure:
+  - name: "3 Zipline Adventure"
+    area: West (Kapolei / Coral Crater)
+    duration: 1h
     rating: 4.9
     reviews: 434
-    precio_mxn: 1950
-    fuente: viator.com
+    price_mxn: 1950
+    source: viator.com
     link: https://www.viator.com/tours/Oahu/Half-Zipline-Tour-3-lines/d672-60779P2 # buscar "3 Zipline Adventure (Optional Waikiki Shuttle for 10am Tour)"
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/28/11/24.jpg
-  - nombre: "6 Zipline Adventure (Coral Crater)"
-    zona: Oeste (Kapolei / Coral Crater)
-    duracion: 2h
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/28/11/24.jpg
+  - name: "6 Zipline Adventure (Coral Crater)"
+    area: West (Kapolei / Coral Crater)
+    duration: 2h
     rating: 4.8
     reviews: 326
-    precio_mxn: 3561
-    fuente: viator.com
+    price_mxn: 3561
+    source: viator.com
     link: https://www.viator.com/tours/Oahu/Full-Zipline-Tour-6-lines/d672-60779P1 # buscar "Oahu:6 Zipline Adventure"
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/r/32/9e/24/f4/caption.jpg
-  - nombre: "Off-Road ATV + 3 Zipline Combo"
-    zona: Oeste (Kapolei / Coral Crater)
-    duracion: "2.5h"
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/r/32/9e/24/f4/caption.jpg
+  - name: "Off-Road ATV + 3 Zipline Combo"
+    area: West (Kapolei / Coral Crater)
+    duration: "2.5h"
     rating: 4.9
     reviews: 25
-    precio_mxn: 4724
-    fuente: viator.com
+    price_mxn: 4724
+    source: viator.com
     link: https://www.viator.com/tours/Oahu/Off-Road-ATV-and-3-Ziplines-Adventure-with-Waikiki-Transportation/d672-60779P15 # buscar "Off-Road ATV & 3 Zipline Combo"
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/17/15/5d/0b.jpg
-  - nombre: "Oahu ATV Off-Road Adventure (Coral Crater)"
-    zona: "Oeste (Kapolei) — 91-1780 Midway St, Kapolei, HI 96707"
-    duracion: "50 min"
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/17/15/5d/0b.jpg
+  - name: "Oahu ATV Off-Road Adventure (Coral Crater)"
+    area: "West (Kapolei) — 91-1780 Midway St, Kapolei, HI 96707"
+    duration: "50 min"
     rating: 4.8
     reviews: 189
-    precio_mxn: 2773
-    precio_nota: "precio varía por tamaño de grupo"
-    fuente: viator.com
+    price_mxn: 2773
+    price_note: "price varies by group size"
+    source: viator.com
     link: "https://www.viator.com/tours/Oahu/ATV-Off-Road-Adventure-on-Oahus-Coral-Crater/d672-60779P8"
-    imagen: "https://media.tacdn.com/media/attractions-splice-spp-674x446/11/ac/4f/b3.jpg"
-  - nombre: "Honolulu Off The Beaten Path Food Tour"
-    zona: Honolulu (Chinatown / centro)
-    duracion: 3h
+    image: "https://media.tacdn.com/media/attractions-splice-spp-674x446/11/ac/4f/b3.jpg"
+  - name: "Honolulu Off The Beaten Path Food Tour"
+    area: Honolulu (Chinatown / downtown)
+    duration: 3h
     rating: 5.0
     reviews: 778
-    precio_mxn: 2684
-    fuente: viator.com
+    price_mxn: 2684
+    source: viator.com
     link: "https://www.viator.com/tours/Oahu/Off-The-Beaten-Path-Oahu-Food-Tour/d672-259972P3"
 
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/12/18/88/7e.jpg
-  kualoa_ranch:   # todos en el mismo punto: 49-560 Kamehameha Hwy, Kāneʻohe, HI 96744
-  - nombre: "Kualoa Ranch — Jurassic Adventure Tour"
-    zona: "Este (Kāneʻohe) — 49-560 Kamehameha Hwy, Kāneʻohe, HI 96744"
-    duracion: "2h30"
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/12/18/88/7e.jpg
+  kualoa_ranch:   # all at the same location: 49-560 Kamehameha Hwy, Kāneʻohe, HI 96744
+  - name: "Kualoa Ranch — Jurassic Adventure Tour"
+    area: "East (Kāneʻohe) — 49-560 Kamehameha Hwy, Kāneʻohe, HI 96744"
+    duration: "2h30"
     rating: 4.6
     reviews: 594
-    precio_mxn: 2810
-    descripcion: "Recorrido en vehículo abierto por las locaciones de Jurassic Park/World (paddock, búnkers, jaulas de dinosaurios)"
-    fuente: viator.com
+    price_mxn: 2810
+    description: "Open-vehicle tour through the Jurassic Park/World filming locations (paddock, bunkers, dinosaur cages)"
+    source: viator.com
     link: "https://www.viator.com/tours/Oahu/Jurassic-Adventure-Tour/d672-5132P21"
-    imagen: "https://media.tacdn.com/media/attractions-splice-spp-674x446/0f/9d/12/3d.jpg"
-  - nombre: "Kualoa Ranch — Movie Sites & Ranch Tour (bus vintage)"
-    zona: "Este (Kāneʻohe) — 49-560 Kamehameha Hwy, Kāneʻohe, HI 96744"
-    duracion: "1h30"
+    image: "https://media.tacdn.com/media/attractions-splice-spp-674x446/0f/9d/12/3d.jpg"
+  - name: "Kualoa Ranch — Movie Sites & Ranch Tour (bus vintage)"
+    area: "East (Kāneʻohe) — 49-560 Kamehameha Hwy, Kāneʻohe, HI 96744"
+    duration: "1h30"
     rating: 4.6
     reviews: 1806
-    precio_mxn: 1123
-    descripcion: "El más económico; bus antiguo por Mokoliʻi Island, Kaneohe Bay y locaciones de Jumanji/Jurassic Park/50 First Dates"
-    fuente: viator.com
+    price_mxn: 1123
+    description: "The cheapest option; vintage bus past Mokoliʻi Island, Kaneohe Bay and Jumanji/Jurassic Park/50 First Dates filming locations"
+    source: viator.com
     link: "https://www.viator.com/tours/Oahu/Kualoa-Ranch-Movie-Tour/d672-5132MOVIE"
-    imagen: "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/6e/cc/78.jpg"
-  - nombre: "Kualoa Ranch — UTV Raptor Tour"
-    zona: "Este (Kāneʻohe) — 49-560 Kamehameha Hwy, Kāneʻohe, HI 96744"
-    duracion: "2h"
+    image: "https://media.tacdn.com/media/attractions-splice-spp-674x446/06/6e/cc/78.jpg"
+  - name: "Kualoa Ranch — UTV Raptor Tour"
+    area: "East (Kāneʻohe) — 49-560 Kamehameha Hwy, Kāneʻohe, HI 96744"
+    duration: "2h"
     rating: 4.7
     reviews: 1666
-    precio_mxn: 2903
-    descripcion: "El más activo/aventurero; manejas tu propio UTV por el valle Kaʻaʻawa, terreno lodoso e ríos"
-    fuente: viator.com
+    price_mxn: 2903
+    description: "The most active/adventurous option; you drive your own UTV through Kaʻaʻawa valley, muddy terrain and rivers"
+    source: viator.com
     link: "https://www.viator.com/tours/Oahu/Kualoa-Ranch-UTV-Tours/d672-5132P16"
-    imagen: "https://media.tacdn.com/media/attractions-splice-spp-674x446/0f/9d/12/69.jpg"
+    image: "https://media.tacdn.com/media/attractions-splice-spp-674x446/0f/9d/12/69.jpg"
 
-  pases_multiatraccion:   # "Go Hawaii package" — pase de varias atracciones, NO es un tour individual
-  - nombre: "Go City: Oahu All-Inclusive Pass (antes 'Go Oahu Card')"
-    que_es: "Pase digital multi-atracción con 3 niveles; catálogo oficial de 43 atracciones (actualizado jul 2026, gocity.com/en/oahu). Incluye 1 lūʻau premium a elegir (Ka Moana en Aloha Tower o Aloha Kai en Sea Life Park) SOLO en el nivel All-Inclusive."
-    zona: Toda la isla (pase multi-atracción)
+  multi_attraction_passes:   # "Go Hawaii package" — a multi-attraction pass, NOT an individual tour
+  - name: "Go City: Oahu All-Inclusive Pass (formerly 'Go Oahu Card')"
+    what_it_is: "Digital multi-attraction pass with 3 tiers; official catalog of 43 attractions (updated Jul 2026, gocity.com/en/oahu). Includes a choice of 1 premium lūʻau (Ka Moana at Aloha Tower or Aloha Kai at Sea Life Park) ONLY at the All-Inclusive tier."
+    area: Whole island (multi-attraction pass)
     rating: 4.0
     reviews: 328
-    advertencias:
-    - El transporte a las atracciones NO está incluido salvo en algunas selectas — normalmente necesitas tu propio auto o pagar traslado aparte (nosotros ya tenemos el Sixt rentado, así que esto es menos problema)
-    - Muchas atracciones requieren reservar cupo con anticipación aunque ya tengas el pase (marcadas 'Booking required' en el sitio oficial)
-    - Cancelación gratis hasta 90 días antes de la fecha de uso (política actualizada del sitio oficial, más generosa que lo reportado antes)
-    imagen: "https://media.tacdn.com/media/attractions-splice-spp-674x446/17/15/50/5f.jpg"
-    fuentes:
-    - sitio: gocity.com
+    warnings:
+    - Transport to attractions is NOT included except for a few select ones — you normally need your own car or a separate transfer (we already have the Sixt rented, so this is less of an issue)
+    - Many attractions require booking a slot ahead even with the pass (marked 'Booking required' on the official site)
+    - Free cancellation up to 90 days before the use date (updated official-site policy, more generous than previously reported)
+    image: "https://media.tacdn.com/media/attractions-splice-spp-674x446/17/15/50/5f.jpg"
+    sources:
+    - site: gocity.com
       link: https://gocity.com/en/oahu/passes/all-inclusive
-      nota: página oficial de precios y niveles, revisada jul 2026
-    - sitio: gocity.com
+      note: official pricing/tiers page, reviewed Jul 2026
+    - site: gocity.com
       link: https://gocity.com/en/oahu/attractions
-      nota: catálogo oficial completo de 43 atracciones con nivel de pase por cada una
-    - sitio: viator.com
+      note: official full catalog of 43 attractions with the pass tier for each
+    - site: viator.com
       link: https://www.viator.com/tours/Oahu/Go-Oahu-Card/d672-3958GOHNL
-    niveles:
-    - nombre: Essentials Pass
-      que_incluye: Elige 3 atracciones de un catálogo de 10 (las más populares/básicas)
-      precio_usd: $119.00 adulto / $99.00 niño (3-12)
-      precio_mxn_aprox: ≈ MX$2,048 adulto / MX$1,704 niño
-      validez: 30 días desde el primer uso · cancelación gratis hasta 90 días antes
-    - nombre: Explorer Pass
-      que_incluye: Elige de 3 a 7 atracciones de un catálogo de 41
-      precio_usd: desde $169.00 adulto (3 atracciones) — sube según cuántas elijas
-      precio_mxn_aprox: ≈ MX$2,908 en adelante
-      validez: 30 días desde el primer uso · cancelación gratis hasta 90 días antes
-    - nombre: All-Inclusive Pass
-      que_incluye: Acceso ilimitado a las 43 atracciones + 1 lūʻau premium a elegir (Ka Moana o Aloha Kai)
-      precio_usd: '2 días: $219 adulto / $169 niño — hasta 7 días: $379 adulto'
-      precio_mxn_aprox: ≈ MX$3,769 (2 días) hasta ≈ MX$6,523 (7 días)
-      validez: 14 días calendario desde el primer uso · cancelación gratis hasta 90 días antes
-    catalogo_43_atracciones:
-      premium_solo_all_inclusive:
-      - Aloha Kai Luau at Sea Life Park (premium, solo All-Inclusive)
-      - Ka Moana Luau at Aloha Tower (premium, solo All-Inclusive)
-      explorer_y_all_inclusive:
+    tiers:
+    - name: Essentials Pass
+      what_it_includes: Choose 3 attractions from a catalog of 10 (the most popular/basic ones)
+      price_usd: $119.00 adult / $99.00 child (3-12)
+      approx_price_mxn: ≈ MX$2,048 adult / MX$1,704 child
+      validity: 30 days from first use · free cancellation up to 90 days ahead
+    - name: Explorer Pass
+      what_it_includes: Choose 3 to 7 attractions from a catalog of 41
+      price_usd: from $169.00 adult (3 attractions) — rises with how many you choose
+      approx_price_mxn: ≈ MX$2,908 and up
+      validity: 30 days from first use · free cancellation up to 90 days ahead
+    - name: All-Inclusive Pass
+      what_it_includes: Unlimited access to all 43 attractions + a choice of 1 premium lūʻau (Ka Moana or Aloha Kai)
+      price_usd: '2 days: $219 adult / $169 child — up to 7 days: $379 adult'
+      approx_price_mxn: ≈ MX$3,769 (2 days) up to ≈ MX$6,523 (7 days)
+      validity: 14 calendar days from first use · free cancellation up to 90 days ahead
+    catalog_43_attractions:
+      premium_all_inclusive_only:
+      - Aloha Kai Luau at Sea Life Park (premium, All-Inclusive only)
+      - Ka Moana Luau at Aloha Tower (premium, All-Inclusive only)
+      explorer_and_all_inclusive:
       - Polynesian Cultural Center
       - Kualoa Secret Island Beach (Half-Day)
       - Oahu Circle Island Tour with Byodo In Temple
@@ -1246,7 +1249,7 @@ tours_viator:
       - Kona Brewing Hawaii Kai Tasting Flight
       - 'Hawaiian Style Rentals: Moped Rental'
       - Waikiki Whale Watching Tour (Nov-Apr)
-      essentials_explorer_y_all_inclusive:
+      essentials_explorer_and_all_inclusive:
       - Makani Catamaran Sail
       - Waikiki Turtle Canyon Snorkel Cruise
       - Diamond Head Shuttle & Hike
@@ -1257,446 +1260,425 @@ tours_viator:
       - Sea Life Park Hawaii
       - 'Choice of One: 3h Kayak or Stand Up Paddle Board Rental Oahu'
       - Waikiki Surfboard Rental
-  otros_relax_y_juegos:
-  - nombre: "Beach Yoga en Waikiki (vista a Diamond Head)"
-    zona: Waikiki
-    duracion: "1h15"
+  other_relax_and_games:
+  - name: "Beach Yoga in Waikiki (Diamond Head view)"
+    area: Waikiki
+    duration: "1h15"
     rating: 4.7
     reviews: 122
-    precio_mxn: 376
-    fuente: viator.com
+    price_mxn: 376
+    source: viator.com
     link: "https://www.viator.com/tours/Oahu/beach-yoga/d672-25862P3"
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/09/55/a5/0b.jpg
-  - nombre: "Renta de camastro + sombrilla + bodyboard en Waikiki Beach"
-    zona: Waikiki
-    duracion: "1-10h"
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/09/55/a5/0b.jpg
+  - name: "Lounger + umbrella + bodyboard rental on Waikiki Beach"
+    area: Waikiki
+    duration: "1-10h"
     rating: 5.0
     reviews: 2
-    precio_mxn: 268
-    fuente: viator.com
+    price_mxn: 268
+    source: viator.com
     link: "https://www.viator.com/tours/Oahu/Waikiki-Beach-Gear-Rentals-Chairs-Umbrellas-and-Boards/d672-370835P8"
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/r/33/5f/bc/1e/caption.jpg
-  - nombre: "The Escape Game Honolulu (Ala Moana, 60 min)"
-    zona: Waikiki
-    duracion: "1h15"
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/r/33/5f/bc/1e/caption.jpg
+  - name: "The Escape Game Honolulu (Ala Moana, 60 min)"
+    area: Waikiki
+    duration: "1h15"
     rating: 5.0
     reviews: 787
-    precio_mxn: 859
-    fuente: viator.com
+    price_mxn: 859
+    source: viator.com
     link: "https://www.viator.com/tours/Oahu/The-Escape-Game-Honolulu-Epic-60-Minute-Adventures/d672-380943P1"
 
-    imagen: https://media.tacdn.com/media/attractions-splice-spp-674x446/10/00/5f/6e.jpg
+    image: https://media.tacdn.com/media/attractions-splice-spp-674x446/10/00/5f/6e.jpg
   excluidos_bajo_4_estrellas:
   - "Waikiki Starlight Luau (Hilton) — 3.7★"
   - "Waikiki Snorkeling Adventure — 3.7★"
   - "[Free Pick-Up] Sunset & Wine Turtle Canyon Snorkeling — 3.6★"
   - "Arrival Transfer Airport Shuttle (Honolulu/Waikiki/Cruise) — 3.8★"
   - "Airport Shuttle Round Trip Honolulu-Waikiki — 3.9★"
-go_city_catalogo_completo:
-  fuente: https://gocity.com/en/oahu/attractions
-  revisado: '2026-08-01'
+go_city_full_catalog:
+  source: https://gocity.com/en/oahu/attractions
+  reviewed: '2026-08-01'
   total: 43
-  nota: Catálogo oficial completo. 'All passes' = incluido hasta en el Essentials (el más barato). 'Explorer | All-Inclusive' = requiere Explorer o superior. 'All-Inclusive' solo = lūʻau premium, solo en el pase completo.
-  atracciones:
-  - nombre: Aloha Kai Luau at Sea Life Park
+  note: Full official catalog. 'All passes' = included even at the Essentials tier (the cheapest). 'Explorer | All-Inclusive' = requires Explorer or higher. 'All-Inclusive' only = premium lūʻau, only on the full pass.
+  attractions:
+  - name: Aloha Kai Luau at Sea Life Park
     rating: 4.7
     reviews: 202
-    precio_sin_pase_usd: 194
-    nivel_pase: All-Inclusive
+    price_without_pass_usd: 194
+    pass_tier: All-Inclusive
     tags: Premium · Special offers! · Booking required
-    requiere_reservar: true
+    reservation_required: true
     link: https://gocity.com/en/oahu/attractions/aloha-kai-luau
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_1:1,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/IMG_0889_edit_y2ywjq?_a=BAVAZGDY0
-  - nombre: Waikiki Turtle Canyon Snorkel Cruise
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_1:1,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/IMG_0889_edit_y2ywjq?_a=BAVAZGDY0
+  - name: Waikiki Turtle Canyon Snorkel Cruise
     rating: 4.7
     reviews: 147
-    precio_sin_pase_usd: 94
-    nivel_pase: All passes
+    price_without_pass_usd: 94
+    pass_tier: All passes
     tags: Turtle spotting! · Booking required
-    requiere_reservar: true
+    reservation_required: true
     link: https://gocity.com/en/oahu/attractions/waikiki-cruise-snorkeling-2-hours
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_1:1,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/waikiki_cruise_snorkel_non-ed_from-rd_3_lqyqmy?_a=BAVAZGDY0
-  - nombre: Battleship Missouri Memorial at Pearl Harbor
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_1:1,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/waikiki_cruise_snorkel_non-ed_from-rd_3_lqyqmy?_a=BAVAZGDY0
+  - name: Battleship Missouri Memorial at Pearl Harbor
     rating: 4.8
     reviews: 44
-    precio_sin_pase_usd: 40
-    nivel_pase: Explorer | All-Inclusive
+    price_without_pass_usd: 40
+    pass_tier: Explorer | All-Inclusive
     tags: Must See
-    requiere_reservar: false
+    reservation_required: false
     link: https://gocity.com/en/oahu/attractions/battleship-missouri-memorial-pearl-harbor
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_1:1,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/battleship_missouri_from_partner_5_mxwzmg?_a=BAVAZGDY0
-  - nombre: Makani Catamaran Sail
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_1:1,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/battleship_missouri_from_partner_5_mxwzmg?_a=BAVAZGDY0
+  - name: Makani Catamaran Sail
     rating: 5.0
     reviews: 73
-    precio_sin_pase_usd: 143
-    nivel_pase: All passes
+    price_without_pass_usd: 143
+    pass_tier: All passes
     tags: Most popular · Booking required
-    requiere_reservar: true
+    reservation_required: true
     link: https://gocity.com/en/oahu/attractions/makani-catamaran-sail
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_1:1,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/IMG_6678_n5c92e_non-ed_from_rd?_a=BAVAZGDY0
-  - nombre: "Waterpark: Wet'n'Wild Hawaii"
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_1:1,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/IMG_6678_n5c92e_non-ed_from_rd?_a=BAVAZGDY0
+  - name: "Waterpark: Wet'n'Wild Hawaii"
     rating: 4.2
     reviews: 25
-    precio_sin_pase_usd: 82
-    nivel_pase: All passes
+    price_without_pass_usd: 82
+    pass_tier: All passes
     tags: Local favorite
-    requiere_reservar: false
+    reservation_required: false
     link: https://gocity.com/en/oahu/attractions/wet-n-wild-hawaii
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_1:1,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/Tornado_Mom_Dad_p9mrid?_a=BAVAZGDY0
-  - nombre: Waimea Valley
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_1:1,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/Tornado_Mom_Dad_p9mrid?_a=BAVAZGDY0
+  - name: Waimea Valley
     rating: 4.8
     reviews: 20
-    precio_sin_pase_usd: 26
-    nivel_pase: All passes
+    price_without_pass_usd: 26
+    pass_tier: All passes
     tags: Must See
-    requiere_reservar: false
+    reservation_required: false
     link: https://gocity.com/en/oahu/attractions/waimea-valley
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_1:1,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/Waimea%20Valley_6_verified?_a=BAVAZGDY0
-  - nombre: Kualoa Secret Island Beach (Half-Day)
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_1:1,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/Waimea%20Valley_6_verified?_a=BAVAZGDY0
+  - name: Kualoa Secret Island Beach (Half-Day)
     rating: 4.4
     reviews: 65
-    precio_sin_pase_usd: 63
-    nivel_pase: Explorer | All-Inclusive
+    price_without_pass_usd: 63
+    pass_tier: Explorer | All-Inclusive
     tags: Must See · Booking required
-    requiere_reservar: true
+    reservation_required: true
     link: https://gocity.com/en/oahu/attractions/secret-island-beach-kualoa-ranch
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_1:1,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/secret_island_beach_4_fdu55q?_a=BAVAZGDY0
-  - nombre: Diamond Head Shuttle & Hike
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_1:1,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/secret_island_beach_4_fdu55q?_a=BAVAZGDY0
+  - name: Diamond Head Shuttle & Hike
     rating: 4.7
     reviews: 64
-    precio_sin_pase_usd: 45
-    nivel_pase: All passes
+    price_without_pass_usd: 45
+    pass_tier: All passes
     tags: Booking required
-    requiere_reservar: true
+    reservation_required: true
     link: https://gocity.com/en/oahu/attractions/diamond-head-shuttle-and-hike
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_1:1,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/diamond_head_hike_1_tiygaf?_a=BAVAZGDY0
-  - nombre: Ka Moana Luau at Aloha Tower
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_1:1,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/diamond_head_hike_1_tiygaf?_a=BAVAZGDY0
+  - name: Ka Moana Luau at Aloha Tower
     rating: 4.0
     reviews: 80
-    precio_sin_pase_usd: 169
-    nivel_pase: All-Inclusive
+    price_without_pass_usd: 169
+    pass_tier: All-Inclusive
     tags: Premium · Booking required
-    requiere_reservar: true
+    reservation_required: true
     link: https://gocity.com/en/oahu/attractions/ka-moana-luau
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/aloha_tower_non-ed_from_rd_listing_iltndl?_a=BAVAZGDY0
-  - nombre: Polynesian Cultural Center
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/aloha_tower_non-ed_from_rd_listing_iltndl?_a=BAVAZGDY0
+  - name: Polynesian Cultural Center
     rating: 4.8
     reviews: 117
-    precio_sin_pase_usd: 104
-    nivel_pase: Explorer | All-Inclusive
-    requiere_reservar: false
+    price_without_pass_usd: 104
+    pass_tier: Explorer | All-Inclusive
+    reservation_required: false
     link: https://gocity.com/en/oahu/attractions/polynesian-cultural-center
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/polynesian_cultural_centre_4_v6aszi?_a=BAVAZGDY0
-  - nombre: Oahu Circle Island Tour with Byodo In Temple
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/polynesian_cultural_centre_4_v6aszi?_a=BAVAZGDY0
+  - name: Oahu Circle Island Tour with Byodo In Temple
     rating: 4.8
     reviews: 106
-    precio_sin_pase_usd: 178
-    nivel_pase: Explorer | All-Inclusive
+    price_without_pass_usd: 178
+    pass_tier: Explorer | All-Inclusive
     tags: Booking required
-    requiere_reservar: true
+    reservation_required: true
     link: https://gocity.com/en/oahu/attractions/oahu-hidden-gems-tour
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/banner%203.2021-3-2?_a=BAVAZGDY0
-  - nombre: Pearl Harbor & Hawaii History Tour
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/banner%203.2021-3-2?_a=BAVAZGDY0
+  - name: Pearl Harbor & Hawaii History Tour
     rating:
     reviews:
-    precio_sin_pase_usd: 77
-    nivel_pase: All passes
+    price_without_pass_usd: 77
+    pass_tier: All passes
     tags: Booking required
-    requiere_reservar: true
+    reservation_required: true
     link: https://gocity.com/en/oahu/attractions/pearl-harbor-and-hawaii-history-tour
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/Pearl_Harbor_Hawaii_History_Tour_3_verified?_a=BAVAZGDY0
-  - nombre: Bishop Museum Honolulu
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/Pearl_Harbor_Hawaii_History_Tour_3_verified?_a=BAVAZGDY0
+  - name: Bishop Museum Honolulu
     rating: 4.7
     reviews: 19
-    precio_sin_pase_usd: 39
-    nivel_pase: All passes
+    price_without_pass_usd: 39
+    pass_tier: All passes
     tags: Discounted upgrade
-    requiere_reservar: false
+    reservation_required: false
     link: https://gocity.com/en/oahu/attractions/bishop-museum
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/Pacific%20Hall%20Photo%20Linny%20Morris_0?_a=BAVAZGDY0
-  - nombre: Sea Life Park Hawaii
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/Pacific%20Hall%20Photo%20Linny%20Morris_0?_a=BAVAZGDY0
+  - name: Sea Life Park Hawaii
     rating: 4.0
     reviews: 8
-    precio_sin_pase_usd: 60
-    nivel_pase: All passes
+    price_without_pass_usd: 60
+    pass_tier: All passes
     tags: Local favorite
-    requiere_reservar: false
+    reservation_required: false
     link: https://gocity.com/en/oahu/attractions/sea-life-park-hawaii
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/sea_life_park_hawaii_2_pgfehg?_a=BAVAZGDY0
-  - nombre: 'Choice of One: 3h Kayak o Stand Up Paddle Board Rental'
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/sea_life_park_hawaii_2_pgfehg?_a=BAVAZGDY0
+  - name: 'Choice of One: 3h Kayak o Stand Up Paddle Board Rental'
     rating: 5.0
     reviews: 8
-    precio_sin_pase_usd: 75
-    nivel_pase: All passes
+    price_without_pass_usd: 75
+    pass_tier: All passes
     tags: Booking required
-    requiere_reservar: true
+    reservation_required: true
     link: https://gocity.com/en/oahu/attractions/stand-paddle-board-three-hour-rental
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/3-hour-kayak-or-sup-4_nzgoik?_a=BAVAZGDY0
-  - nombre: Waikiki Surfboard Rental
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/3-hour-kayak-or-sup-4_nzgoik?_a=BAVAZGDY0
+  - name: Waikiki Surfboard Rental
     rating: 4.0
     reviews: 21
-    precio_sin_pase_usd: 40
-    nivel_pase: All passes
+    price_without_pass_usd: 40
+    pass_tier: All passes
     tags: Discounted upgrade · Booking required
-    requiere_reservar: true
+    reservation_required: true
     link: https://gocity.com/en/oahu/attractions/waikiki-surfboard-rental
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/Surf%207?_a=BAVAZGDY0
-  - nombre: Pacific Fleet Submarine Museum at Pearl Harbor
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/Surf%207?_a=BAVAZGDY0
+  - name: Pacific Fleet Submarine Museum at Pearl Harbor
     rating: 4.7
     reviews: 68
-    precio_sin_pase_usd: 26
-    nivel_pase: Explorer | All-Inclusive
-    requiere_reservar: false
+    price_without_pass_usd: 26
+    pass_tier: Explorer | All-Inclusive
+    reservation_required: false
     link: https://gocity.com/en/oahu/attractions/uss-bowfin-submarine-pearl-harbor
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/USS%20Bowfin-1?_a=BAVAZGDY0
-  - nombre: Pearl Harbor Aviation Museum
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/USS%20Bowfin-1?_a=BAVAZGDY0
+  - name: Pearl Harbor Aviation Museum
     rating: 4.5
     reviews: 26
-    precio_sin_pase_usd: 30
-    nivel_pase: Explorer | All-Inclusive
+    price_without_pass_usd: 30
+    pass_tier: Explorer | All-Inclusive
     tags: Must See
-    requiere_reservar: false
+    reservation_required: false
     link: https://gocity.com/en/oahu/attractions/pacific-aviation-museum-pearl-harbor
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/pearl_harbor_aviation_museum_non-ed_from_rd_4_ibic5s?_a=BAVAZGDY0
-  - nombre: 'Coral Crater: Adventure Course'
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/pearl_harbor_aviation_museum_non-ed_from_rd_4_ibic5s?_a=BAVAZGDY0
+  - name: 'Coral Crater: Adventure Course'
     rating: 4.8
     reviews: 41
-    precio_sin_pase_usd: 65
-    nivel_pase: Explorer | All-Inclusive
+    price_without_pass_usd: 65
+    pass_tier: Explorer | All-Inclusive
     tags: Discounted upgrade · Booking required
-    requiere_reservar: true
+    reservation_required: true
     link: https://gocity.com/en/oahu/attractions/coral-crater-adventure-park-aerial-challenge-course
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/crater%20park%20teaser?_a=BAVAZGDY0
-  - nombre: Kualoa Grown Tour
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/crater%20park%20teaser?_a=BAVAZGDY0
+  - name: Kualoa Grown Tour
     rating: 4.5
     reviews: 26
-    precio_sin_pase_usd: 63
-    nivel_pase: Explorer | All-Inclusive
+    price_without_pass_usd: 63
+    pass_tier: Explorer | All-Inclusive
     tags: Booking required
-    requiere_reservar: true
+    reservation_required: true
     link: https://gocity.com/en/oahu/attractions/taste-kualoa
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/tok4?_a=BAVAZGDY0
-  - nombre: USS Arizona Pearl Harbor Captain's Narrated Multimedia Tour
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/tok4?_a=BAVAZGDY0
+  - name: USS Arizona Pearl Harbor Captain's Narrated Multimedia Tour
     rating: 4.8
     reviews: 36
-    precio_sin_pase_usd: 15
-    nivel_pase: Explorer | All-Inclusive
-    requiere_reservar: false
+    price_without_pass_usd: 15
+    pass_tier: Explorer | All-Inclusive
+    reservation_required: false
     link: https://gocity.com/en/oahu/attractions/uss-arizona-memorial-narrated-tour-pearl-harbor
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/shutterstock_30205072_1?_a=BAVAZGDY0
-  - nombre: 'Experiencia cultural hawaiana: Aina Tour & Kava'
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/shutterstock_30205072_1?_a=BAVAZGDY0
+  - name: 'Experiencia cultural hawaiana: Aina Tour & Kava'
     rating:
     reviews:
-    precio_sin_pase_usd: 61
-    nivel_pase: Explorer | All-Inclusive
+    price_without_pass_usd: 61
+    pass_tier: Explorer | All-Inclusive
     tags: Booking required
-    requiere_reservar: true
+    reservation_required: true
     link: https://gocity.com/en/oahu/attractions/taro-pounding-and-kava-experience
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/kava_drink_non-ed_from_rd_1_z4jgko?_a=BAVAZGDY0
-  - nombre: Stand-Up Paddleboard Nature and Turtle Tour
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/kava_drink_non-ed_from_rd_1_z4jgko?_a=BAVAZGDY0
+  - name: Stand-Up Paddleboard Nature and Turtle Tour
     rating: 4.9
     reviews: 47
-    precio_sin_pase_usd: 155
-    nivel_pase: Explorer | All-Inclusive
+    price_without_pass_usd: 155
+    pass_tier: Explorer | All-Inclusive
     tags: Booking required
-    requiere_reservar: true
+    reservation_required: true
     link: https://gocity.com/en/oahu/attractions/stand-paddleboard-nature-and-turtle-tour
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/SUP_nature_turtle_guided_2_jn9b5v?_a=BAVAZGDY0
-  - nombre: Hawaiian Lei Making on Sunset Beach
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/SUP_nature_turtle_guided_2_jn9b5v?_a=BAVAZGDY0
+  - name: Hawaiian Lei Making on Sunset Beach
     rating: 4.7
     reviews: 15
-    precio_sin_pase_usd: 50
-    nivel_pase: Explorer | All-Inclusive
+    price_without_pass_usd: 50
+    pass_tier: Explorer | All-Inclusive
     tags: Booking required
-    requiere_reservar: true
+    reservation_required: true
     link: https://gocity.com/en/oahu/attractions/hawaiian-lei-making-sunset-beach
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/5?_a=BAVAZGDY0
-  - nombre: Iolani Palace
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/5?_a=BAVAZGDY0
+  - name: Iolani Palace
     rating: 4.9
     reviews: 18
-    precio_sin_pase_usd: 30
-    nivel_pase: Explorer | All-Inclusive
+    price_without_pass_usd: 30
+    pass_tier: Explorer | All-Inclusive
     tags: Booking required
-    requiere_reservar: true
+    reservation_required: true
     link: https://gocity.com/en/oahu/attractions/iolani-palace
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/Iolani%20Palace%20Exterior%202?_a=BAVAZGDY0
-  - nombre: Ocean Voyage Adventure Kualoa Ranch Tour
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/Iolani%20Palace%20Exterior%202?_a=BAVAZGDY0
+  - name: Ocean Voyage Adventure Kualoa Ranch Tour
     rating: 4.3
     reviews: 30
-    precio_sin_pase_usd: 63
-    nivel_pase: Explorer | All-Inclusive
+    price_without_pass_usd: 63
+    pass_tier: Explorer | All-Inclusive
     tags: Booking required
-    requiere_reservar: true
+    reservation_required: true
     link: https://gocity.com/en/oahu/attractions/voyaging-catamaran-tour-kualoa-ranch
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/kualoa%20ocean%20voyage%20drone%20shot?_a=BAVAZGDY0
-  - nombre: Makapuu Lighthouse & Halona Blowhole Tour
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/kualoa%20ocean%20voyage%20drone%20shot?_a=BAVAZGDY0
+  - name: Makapuu Lighthouse & Halona Blowhole Tour
     rating: 4.7
     reviews: 6
-    precio_sin_pase_usd: 45
-    nivel_pase: Explorer | All-Inclusive
+    price_without_pass_usd: 45
+    pass_tier: Explorer | All-Inclusive
     tags: Booking required
-    requiere_reservar: true
+    reservation_required: true
     link: https://gocity.com/en/oahu/attractions/makapuu-lighthouse-hike
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/shutterstock_662784022_0?_a=BAVAZGDY0
-  - nombre: Fire Dance Workshop
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/shutterstock_662784022_0?_a=BAVAZGDY0
+  - name: Fire Dance Workshop
     rating: 4.9
     reviews: 10
-    precio_sin_pase_usd: 61
-    nivel_pase: Explorer | All-Inclusive
+    price_without_pass_usd: 61
+    pass_tier: Explorer | All-Inclusive
     tags: Booking required
-    requiere_reservar: true
+    reservation_required: true
     link: https://gocity.com/en/oahu/attractions/fire-dance-workshop
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/-%20firedance%20teaser%20workshop%205?_a=BAVAZGDY0
-  - nombre: North Shore Soap Factory
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/-%20firedance%20teaser%20workshop%205?_a=BAVAZGDY0
+  - name: North Shore Soap Factory
     rating: 4.1
     reviews: 9
-    precio_sin_pase_usd: 22
-    nivel_pase: Explorer | All-Inclusive
+    price_without_pass_usd: 22
+    pass_tier: Explorer | All-Inclusive
     tags: Booking required
-    requiere_reservar: true
+    reservation_required: true
     link: https://gocity.com/en/oahu/attractions/north-shore-soap-factory
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/soap%20factory%20teaser?_a=BAVAZGDY0
-  - nombre: 'Marriott North Shore: Boogie Board Rental'
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/soap%20factory%20teaser?_a=BAVAZGDY0
+  - name: 'Marriott North Shore: Boogie Board Rental'
     rating:
     reviews:
-    precio_sin_pase_usd: 20
-    nivel_pase: Explorer | All-Inclusive
-    requiere_reservar: false
+    price_without_pass_usd: 20
+    pass_tier: Explorer | All-Inclusive
+    reservation_required: false
     link: https://gocity.com/en/oahu/attractions/marriott-north-shore-boogie-board-rental
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/Marriott%20Boogie%20Board_3_verified?_a=BAVAZGDY0
-  - nombre: Wai Kai Paddle Pass & Splash Pad Experience
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/Marriott%20Boogie%20Board_3_verified?_a=BAVAZGDY0
+  - name: Wai Kai Paddle Pass & Splash Pad Experience
     rating:
     reviews:
-    precio_sin_pase_usd: 39
-    nivel_pase: Explorer | All-Inclusive
-    requiere_reservar: false
+    price_without_pass_usd: 39
+    pass_tier: Explorer | All-Inclusive
+    reservation_required: false
     link: https://gocity.com/en/oahu/attractions/wai-kai-lagoon-paddle-pass-ohana-splash-pad-experience
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/Paddle_Pass_4_Verified_i6gkda?_a=BAVAZGDY0
-  - nombre: Coconut Palm Basket Weaving
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/Paddle_Pass_4_Verified_i6gkda?_a=BAVAZGDY0
+  - name: Coconut Palm Basket Weaving
     rating:
     reviews:
-    precio_sin_pase_usd: 65
-    nivel_pase: Explorer | All-Inclusive
+    price_without_pass_usd: 65
+    pass_tier: Explorer | All-Inclusive
     tags: Booking required
-    requiere_reservar: true
+    reservation_required: true
     link: https://gocity.com/en/oahu/attractions/coconut-palm-basket-weaving
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/20190712_170415_2?_a=BAVAZGDY0
-  - nombre: 'Hawaiian Style Rentals: Bike Rentals'
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/20190712_170415_2?_a=BAVAZGDY0
+  - name: 'Hawaiian Style Rentals: Bike Rentals'
     rating:
     reviews:
-    precio_sin_pase_usd: 29
-    nivel_pase: Explorer | All-Inclusive
-    requiere_reservar: false
+    price_without_pass_usd: 29
+    pass_tier: Explorer | All-Inclusive
+    reservation_required: false
     link: https://gocity.com/en/oahu/attractions/bike-rental-waikiki-hawaiian-style-rentals
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/Bike%20Rental%202019_0?_a=BAVAZGDY0
-  - nombre: SUP Morning Yoga
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/Bike%20Rental%202019_0?_a=BAVAZGDY0
+  - name: SUP Morning Yoga
     rating: 5.0
     reviews: 8
-    precio_sin_pase_usd: 57
-    nivel_pase: Explorer | All-Inclusive
+    price_without_pass_usd: 57
+    pass_tier: Explorer | All-Inclusive
     tags: Booking required
-    requiere_reservar: true
+    reservation_required: true
     link: https://gocity.com/en/oahu/attractions/sup-yoga
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/Edited_drone_shot_dabf3o?_a=BAVAZGDY0
-  - nombre: 'Shaka Guide: Driving and Walking Audio Tours'
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/Edited_drone_shot_dabf3o?_a=BAVAZGDY0
+  - name: 'Shaka Guide: Driving and Walking Audio Tours'
     rating:
     reviews:
-    precio_sin_pase_usd: 34
-    nivel_pase: Explorer | All-Inclusive
+    price_without_pass_usd: 34
+    pass_tier: Explorer | All-Inclusive
     tags: Booking required
-    requiere_reservar: true
+    reservation_required: true
     link: https://gocity.com/en/oahu/attractions/shaka-guide-driving-and-walking-audio-tours
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/shaka_guide_non-ed_from_rd_4_kyncor?_a=BAVAZGDY0
-  - nombre: Hula Class on the North Shore
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/shaka_guide_non-ed_from_rd_4_kyncor?_a=BAVAZGDY0
+  - name: Hula Class on the North Shore
     rating:
     reviews:
-    precio_sin_pase_usd: 78
-    nivel_pase: Explorer | All-Inclusive
+    price_without_pass_usd: 78
+    pass_tier: Explorer | All-Inclusive
     tags: Booking required
-    requiere_reservar: true
+    reservation_required: true
     link: https://gocity.com/en/oahu/attractions/hula-class-north-shore
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/oahu_hula-class_original-photo_02_oikgfg?_a=BAVAZGDY0
-  - nombre: Beer Bike Tour in Kaka'ako
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/oahu_hula-class_original-photo_02_oikgfg?_a=BAVAZGDY0
+  - name: Beer Bike Tour in Kaka'ako
     rating:
     reviews:
-    precio_sin_pase_usd: 50
-    nivel_pase: Explorer | All-Inclusive
+    price_without_pass_usd: 50
+    pass_tier: Explorer | All-Inclusive
     tags: Booking required
-    requiere_reservar: true
+    reservation_required: true
     link: https://gocity.com/en/oahu/attractions/beer-bike-tour-kakaako
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/-%20paradise%20pedals%20IMG_6753%20(1).jpeg?_a=BAVAZGDY0
-  - nombre: Queen Emma Summer Palace
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/-%20paradise%20pedals%20IMG_6753%20(1).jpeg?_a=BAVAZGDY0
+  - name: Queen Emma Summer Palace
     rating:
     reviews:
-    precio_sin_pase_usd: 16
-    nivel_pase: Explorer | All-Inclusive
-    requiere_reservar: false
+    price_without_pass_usd: 16
+    pass_tier: Explorer | All-Inclusive
+    reservation_required: false
     link: https://gocity.com/en/oahu/attractions/queen-emma-summer-palace
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/1QESP%20Front%20of%20Palace%201200x1200?_a=BAVAZGDY0
-  - nombre: 'Waikiki: Sunset Beach Yoga'
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/1QESP%20Front%20of%20Palace%201200x1200?_a=BAVAZGDY0
+  - name: 'Waikiki: Sunset Beach Yoga'
     rating:
     reviews:
-    precio_sin_pase_usd: 23
-    nivel_pase: Explorer | All-Inclusive
+    price_without_pass_usd: 23
+    pass_tier: Explorer | All-Inclusive
     tags: Booking required
-    requiere_reservar: true
+    reservation_required: true
     link: https://gocity.com/en/oahu/attractions/waikiki-sunset-beach-yoga
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/waikiki_sunset_yoga_non-ed_from_partner_1_g7x1cg?_a=BAVAZGDY0
-  - nombre: Grand Tour around Oahu with snorkeling
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/waikiki_sunset_yoga_non-ed_from_partner_1_g7x1cg?_a=BAVAZGDY0
+  - name: Grand Tour around Oahu with snorkeling
     rating: 3.8
     reviews: 58
-    precio_sin_pase_usd: 126
-    nivel_pase: Explorer | All-Inclusive
+    price_without_pass_usd: 126
+    pass_tier: Explorer | All-Inclusive
     tags: Booking required
-    requiere_reservar: true
+    reservation_required: true
     link: https://gocity.com/en/oahu/attractions/grand-tour-with-snorkeling
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/shutterstock_784699975%20(1)%20(1)?_a=BAVAZGDY0
-  - nombre: Kona Brewing Hawaii Kai Tasting Flight
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/shutterstock_784699975%20(1)%20(1)?_a=BAVAZGDY0
+  - name: Kona Brewing Hawaii Kai Tasting Flight
     rating: 4.1
     reviews: 24
-    precio_sin_pase_usd: 16
-    nivel_pase: Explorer | All-Inclusive
-    requiere_reservar: false
+    price_without_pass_usd: 16
+    pass_tier: Explorer | All-Inclusive
+    reservation_required: false
     link: https://gocity.com/en/oahu/attractions/kona-brewing-hawaii-kai-tasting-flight
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/IMG_4199_lrzbvn?_a=BAVAZGDY0
-  - nombre: 'Hawaiian Style Rentals: Moped Rental'
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/IMG_4199_lrzbvn?_a=BAVAZGDY0
+  - name: 'Hawaiian Style Rentals: Moped Rental'
     rating: 4.0
     reviews: 6
-    precio_sin_pase_usd: 34
-    nivel_pase: Explorer | All-Inclusive
+    price_without_pass_usd: 34
+    pass_tier: Explorer | All-Inclusive
     tags: Special Upgrade Offer
-    requiere_reservar: false
+    reservation_required: false
     link: https://gocity.com/en/oahu/attractions/hawaiian-style-rentals-moped-rental
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/Moped%20Rental%20FI?_a=BAVAZGDY0
-  - nombre: Waikiki Whale Watching Tour (Nov-April)
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/Moped%20Rental%20FI?_a=BAVAZGDY0
+  - name: Waikiki Whale Watching Tour (Nov-April)
     rating: 4.5
     reviews: 61
-    precio_sin_pase_usd: 104
-    nivel_pase: Explorer | All-Inclusive
+    price_without_pass_usd: 104
+    pass_tier: Explorer | All-Inclusive
     tags: Seasonal · Booking required
-    requiere_reservar: true
+    reservation_required: true
     link: https://gocity.com/en/oahu/attractions/waikiki-whale-watching-tour
-    imagen: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/rsz_whales1_lrq8uv_BW_verified?_a=BAVAZGDY0
-pendientes_tecnicos:
-  sitio_github_pages:
-    problema: 'El sitio de GitHub Pages está CAÍDO (404). Causa: el repo juadolfob/hawai-islas se puso en privado, y Pages no funciona en repos privados con cuenta gratis.'
-    estado: PENDIENTE — se resuelve después del viaje o cuando haya tiempo
-    solucion_acordada: 'Volver al esquema de DOS repos que ya se usaba antes: uno PÚBLICO solo con el sitio, uno PRIVADO con toda la documentación y datos personales.'
-    repo_publico:
-      nombre: juadolfob/hawai-islas (público)
-      contenido: 'SOLO archivos del sitio: index.html, attractions.html, island-comparison.html, lodging-comparison.html, itinerary.html, img/, audio/'
-      url: https://juadolfob.github.io/hawai-islas/
-      nota: Mantener este nombre para no romper la URL que ya tiene la familia
-    repo_privado:
-      nombre: un repo aparte, privado (ej. hawai-planeacion)
-      contenido: data/ (itinerary_2026.yaml, islands.yaml), docs/, reservas/ (PDFs)
-    OJO_datos_sensibles:
-    - 'NO volver público el repo con estos datos dentro — y limpiar el historial de git, no basta con borrar los archivos:'
-    - 'PNR de United: XXXXXX — el más grave, con apellido + PNR se puede ver y cancelar el vuelo'
-    - 'Reserva de hotel: XXXXXXXX'
-    - Fechas de nacimiento de los papás
-    - Teléfonos y correo personales
-    - Terminación de tarjeta XXXX
-    - Referencias de todas las reservas de actividades
-    - PDFs de confirmación en reservas/
-    alternativa: GitHub Pro (~$4 USD/mes) permite Pages en repos privados — evita tener que separar, pero es de paga.
+    image: https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_90:120,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/oahu/rsz_whales1_lrq8uv_BW_verified?_a=BAVAZGDY0
+resolved_notes:
+  github_pages_status: "Resolved. The site is now the single public repo juadolfob/oahu-2026-ai-planned-trip, with all personal data replaced by placeholders and git history rebuilt from scratch. GitHub Pages is live again."
